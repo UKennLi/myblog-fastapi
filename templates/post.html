@@ -1,0 +1,123 @@
+{% extends "layout/main.html" %}
+{% set title = post.title ~ ' - ' ~ site_title %}
+{% set headerClass = 'post-bg' %}
+{% set headerStyle = 'background-image: url(' ~ ((post.thumbnail if not is_empty(post.thumbnail) else '/butterfly/img/DefualtThumbnail.jpg')) ~ ')' %}
+{% from "fragments/post_comments.html" import post_comments with context %}
+{% block header_content %}
+<div id="post-info">
+<h1 class="post-title">{{ post.title }}</h1>
+<div id="post-meta">
+<div class="meta-firstline">
+<span class="post-meta-date">
+<i class="far fa-calendar-alt fa-fw post-meta-icon"></i>
+<span class="post-meta-label">发表于</span>
+<time>{{ date_format(post.created, 'yyyy-MM-dd') }}</time>
+</span>
+{% if post.category != none %}<span class="article-meta">
+<span class="article-meta-separator">|</span>
+<i class="fas fa-inbox fa-fw post-meta-icon"></i>
+<a class="article-meta__categories" href="{{ '/category/' ~ post.category.slug }}">{{ post.category.name }}</a>
+</span>{% endif %}
+{% if not is_empty(post.tags) %}<span class="article-meta">
+<span class="article-meta-separator">|</span>
+<i class="fas fa-tags fa-fw post-meta-icon"></i>
+{% for tag in post.tags %}<a class="article-meta__tags" style="margin-right: 5px;" href="{{ '/tag/' ~ tag.slug }}">{{ tag.name }}</a>{% endfor %}
+</span>{% endif %}
+</div>
+</div>
+</div>
+{% endblock %}
+{% block main_content %}
+<div id="post">
+<link rel="stylesheet" href="/butterfly/css/comment.css">
+<article class="post-content" id="article-container">
+<div>{{ post.content | safe }}</div>
+</article>
+<div class="post-copyright">
+<div class="post-copyright__author">
+<span class="post-copyright-meta">作者: </span>
+<span class="post-copyright-info">
+<a href="#">{{ author_name }}</a>
+</span>
+</div>
+<div class="post-copyright__type">
+<span class="post-copyright-meta">文章链接: </span>
+<span class="post-copyright-info">
+<a href="{{ '/post/' ~ post.slug }}">{{ ('null' if siteUrl is none else siteUrl) ~ '/post/' ~ post.slug }}</a>
+</span>
+</div>
+<div class="post-copyright__notice">
+<span class="post-copyright-meta">版权声明: </span>
+<span class="post-copyright-info">
+                    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="#">{{ site_title }}</a>！
+                </span>
+</div>
+</div>
+<hr>
+<div id="post-comment">
+<div class="comment-head">
+<i class="fas fa-comments fa-fw"></i> <span>评论</span>
+</div>
+<div class="comment-wrap">
+<div id="vcomment">
+<form id="comment-form" method="post" action="/comment/submit">
+<input type="hidden" name="postId" value="{{ post.id }}">
+<input type="hidden" name="parentId" id="comment-parent-id" value="">
+<div class="vwrap">
+<div class="vheader">
+<input name="author" class="vinput" type="text" placeholder="昵称 (必填)" required="required">
+<input name="email" class="vinput" type="email" placeholder="邮箱 (选填)">
+<input name="url" class="vinput" type="url" placeholder="网址 (选填)">
+</div>
+<div class="vedit">
+<textarea id="comment-content" name="content" class="veditor" placeholder="在这里写下你的评论..." required=""></textarea>
+</div>
+<div class="vcontrol">
+<span class="vemoji-btn" title="插入表情" onclick="toggleEmoji()"><i class="far fa-laugh"></i></span>
+<div class="vright"><button type="submit" class="vbtn submit">提交评论</button></div>
+</div>
+<!--
+                            <div id="vemojis" class="vemojis">
+                                <i onclick="insertEmoji('(≧∇≦)ﾉ')">(≧∇≦)ﾉ</i>
+                                <i onclick="insertEmoji('(￣▽￣)&quot;')">(￣▽￣)"</i>
+                                <i onclick="insertEmoji('╮(╯▽╰)╭')">╮(╯▽╰)╭</i>
+                                <i onclick="insertEmoji('(°ー°〃)')">(°ー°〃)</i>
+                                <i onclick="insertEmoji('😀')">😀</i>
+                                <i onclick="insertEmoji('😂')">😂</i>
+                                <i onclick="insertEmoji('😍')">😍</i>
+                                <i onclick="insertEmoji('🤔')">🤔</i>
+                                <i onclick="insertEmoji('😭')">😭</i>
+                                <i onclick="insertEmoji('👍')">👍</i>
+                                <i onclick="insertEmoji('🎉')">🎉</i>
+                                <i onclick="insertEmoji('🚀')">🚀</i>
+                            </div>
+							-->
+{% include "fragments/emoji.html" %}
+</div>
+</form>
+</div>
+{% if not is_empty(comments) %}<div class="vlist">
+{{ post_comments(comments) }}
+</div>{% endif %}
+{% if is_empty(comments) %}<div class="vlist">
+<p style="text-align: center; color: #999; padding: 20px;">快来抢沙发吧！</p>
+</div>{% endif %}
+</div>
+</div>
+{{ post_comments(comments) }}
+</div>
+{% endblock %}
+{% block scripts %}
+
+<script>
+        function toggleEmoji() { document.getElementById('vemojis').style.display = (document.getElementById('vemojis').style.display === 'block' ? 'none' : 'block'); }
+        function insertEmoji(emoji) { document.getElementById('comment-content').value += emoji; document.getElementById('comment-content').focus(); }
+        function reply(parentId, author) { 
+            document.getElementById('comment-parent-id').value = parentId;
+            document.getElementById('comment-content').setAttribute('placeholder', '回复 @' + author + ' ：');
+            document.getElementById('post-comment').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('comment-content').focus();
+        }
+    </script>
+
+{% endblock %}

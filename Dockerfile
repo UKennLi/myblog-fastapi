@@ -1,0 +1,14 @@
+FROM python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app
+COPY requirements.lock ./
+RUN pip install --no-cache-dir -r requirements.lock && pip check
+RUN groupadd --gid 1000 blog && useradd --uid 1000 --gid blog --no-create-home blog
+COPY --chown=blog:blog app ./app
+COPY --chown=blog:blog templates ./templates
+COPY --chown=blog:blog static ./static
+RUN mkdir -p /app/uploads /app/state && chown blog:blog /app/uploads /app/state
+USER blog
+EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/', timeout=4).read()"
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]

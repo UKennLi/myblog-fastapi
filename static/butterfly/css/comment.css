@@ -1,0 +1,291 @@
+/* ================== 评论区整体容器 ================== */
+#post-comment {
+    margin-top: 40px;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--card-box-shadow);
+}
+#post-comment .comment-head {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 10px;
+}
+
+/* ================== 评论输入表单 ================== */
+.vwrap {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+.vheader .vinput {
+    width: 33.33%;
+    border: none;
+    border-bottom: 1px dashed #dedede;
+    padding: 10px 5px;
+    outline: none;
+    background: transparent;
+    font-size: 0.875em;
+    color: var(--font-color);
+    transition: all .3s;
+}
+.vheader .vinput:focus {
+    border-bottom-color: #49b1f5;
+}
+@media screen and (max-width: 768px) {
+    .vheader .vinput {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+.vedit {
+    position: relative;
+    padding-top: 10px;
+}
+.veditor {
+    width: 100%;
+    min-height: 120px;
+    font-size: 0.875em;
+    background: transparent;
+    resize: vertical;
+    outline: none;
+    border: none;
+    color: var(--font-color);
+    background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.veditor:focus {
+    background-position-y: 200px;
+    transition: all .2s;
+}
+.vcontrol {
+    padding-top: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vbtn {
+    transition-duration: .4s;
+    text-align: center;
+    color: #555;
+    border: 1px solid #ededed;
+    border-radius: .3em;
+    display: inline-block;
+    background: #ededed;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: .5em 1.25em;
+    font-size: .875em;
+    line-height: 1.42857143;
+    user-select: none;
+    outline: none;
+}
+.vbtn:hover {
+    border-color: #49b1f5;
+    color: #49b1f5;
+    background: #fff;
+}
+.vbtn.submit {
+    background: #49b1f5;
+    color: #fff;
+    border-color: #49b1f5;
+}
+.vbtn.submit:hover {
+    background: #ff7242;
+    border-color: #ff7242;
+}
+
+/* ================== 表情选择器 ================== */
+.vemoji-btn {
+    cursor: pointer;
+    font-size: 1.4em;
+    color: #999;
+    transition: color .3s;
+}
+.vemoji-btn:hover {
+    color: #49b1f5;
+}
+.vemojis {
+    display: none;
+    font-size: 1.2em;
+    max-height: 145px;
+    overflow: auto;
+    margin-top: 10px;
+    box-shadow: 0 0 1px #f0f0f0;
+    padding: 10px;
+    background: var(--card-bg);
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+}
+.vemojis i {
+    cursor: pointer;
+    padding: 5px;
+    display: inline-block;
+    font-style: normal;
+}
+.vemojis i:hover {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* ================== 评论列表 ================== */
+.vlist {
+    padding: 0;
+    margin: 20px 0 0;
+}
+.vcard {
+    padding-top: 20px;
+    position: relative;
+    display: block;
+}
+.vcard:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #f0f0f0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+.vimg {
+    width: 45px;
+    height: 45px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 1px solid #f0f0f0;
+    padding: 3px;
+    transition: transform .5s;
+}
+.vimg:hover {
+    transform: rotate(360deg);
+}
+.vhead {
+    line-height: 1.5;
+    margin-top: 0;
+}
+.vnick {
+    position: relative;
+    font-size: .875em;
+    font-weight: 500;
+    margin-right: .875em;
+    cursor: pointer;
+    color: #6190e8;
+    text-decoration: none;
+}
+.vtag {
+    font-size: 12px;
+    background: #ededed;
+    color: #b3b3b3;
+    border-radius: 2px;
+    padding: 1px 3px;
+    margin-right: 0.5em;
+}
+.vtag.admin {
+    background: #ffa51e;
+    color: #fff;
+}
+.vtime {
+    color: #b3b3b3;
+    font-size: .75em;
+    margin-right: .875em;
+}
+.vcontent {
+    padding-top: 10px;
+    font-size: 0.95em;
+    word-wrap: break-word;
+    line-height: 2;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 60px;
+}
+.vcontent p {
+    margin: 0;
+}
+.vreply-btn {
+    font-size: .75em;
+    color: #ef2f11;
+    cursor: pointer;
+    opacity: 0; /* 默认隐藏回复按钮 */
+    transition: opacity .3s;
+}
+.vcard:hover .vreply-btn {
+    opacity: 1; /* 鼠标悬停时显示 */
+}
+
+/* 子评论缩进 */
+.vchildren {
+    padding-left: 60px;
+}
+.vchildren .vcard {
+    border-bottom: none;
+    padding-top: 15px;
+}
+.vchildren .vcard:after {
+    display: none;
+}
+/* 引用父评论样式 */
+.vquote {
+    padding-left: 1em;
+    border-left: 4px solid #f0f0f0;
+    color: #999;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* ================== 评论输入表单优化 ================== */
+.vwrap {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+
+/* ✨ 新增：使用 Flex 布局让三个输入框在一行 */
+.vheader {
+    display: flex;
+    flex-wrap: wrap; /* 允许在超小屏幕下换行 */
+}
+
+.vheader .vinput {
+    flex: 1; /* ✨ 核心：让三个输入框自动平分宽度 */
+    min-width: 200px; /* 防止在极小屏幕上挤得太扁 */
+    border: none;
+    border-bottom: 1px dashed #dedede;
+    padding: 10px 5px;
+    outline: none;
+    background: transparent;
+    font-size: 0.875em;
+    color: var(--font-color);
+    transition: all .3s;
+}
+
+.vheader .vinput:focus {
+    border-bottom-color: #49b1f5;
+}
+
+/* 移动端适配：在手机上还是让它们各占一行比较好 */
+@media screen and (max-width: 768px) {
+    .vheader {
+        display: block;
+    }
+    .vheader .vinput {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "GET /",
+      "passed": true
+    },
+    {
+      "name": "GET /about",
+      "passed": true
+    },
+    {
+      "name": "GET /archive",
+      "passed": true
+    },
+    {
+      "name": "GET /links",
+      "passed": true
+    },
+    {
+      "name": "GET /post/hello-world",
+      "passed": true
+    },
+    {
+      "name": "GET /login",
+      "passed": true
+    },
+    {
+      "name": "GET /butterfly/css/index.css",
+      "passed": true
+    },
+    {
+      "name": "anonymous admin login redirect",
+      "passed": true
+    },
+    {
+      "name": "existing BCrypt login",
+      "passed": true
+    },
+    {
+      "name": "real multipart image write",
+      "passed": true
+    },
+    {
+      "name": "persisted image access",
+      "passed": true
+    },
+    {
+      "name": "database article+tag write",
+      "passed": true
+    },
+    {
+      "name": "render saved article",
+      "passed": true
+    },
+    {
+      "name": "ZIP response",
+      "passed": true
+    },
+    {
+      "name": "ZIP real uploaded image",
+      "passed": true
+    },
+    {
+      "name": "restart invalidates session like original Java",
+      "passed": true
+    },
+    {
+      "name": "persistent uploads after restart",
+      "passed": true
+    },
+    {
+      "name": "relogin after restart",
+      "passed": true
+    },
+    {
+      "name": "logout and revocation",
+      "passed": true
+    },
+    {
+      "name": "image has no Java or original checkout",
+      "passed": true
+    }
+  ],
+  "scope": "Nonroot Docker Compose image, only isolated MySQL, persistent uploads mount and session file volume; sessions invalidated on application restart to match Java, original Java baseline stopped before smoke test, original checkout absent from image; smoke records/files cleaned."
+}

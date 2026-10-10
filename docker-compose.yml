@@ -1,0 +1,22 @@
+services:
+  blog:
+    build: .
+    image: myblog-fastapi:1.0.0
+    restart: unless-stopped
+    env_file: ${APP_ENV_FILE:-.env}
+    environment:
+      SESSION_FILE: /app/state/sessions.sqlite3
+      UPLOADS_DIR: /app/uploads
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - sessions:/app/state
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+volumes:
+  sessions:

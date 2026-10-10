@@ -1,0 +1,92 @@
+<div class="aside-content" id="aside-content">
+<div class="card-widget card-info">
+<div class="card-info-avatar is-center">
+<div class="avatar-img">
+<img onerror="this.onerror=null;this.src=&#x27;/butterfly/img/friend_404.gif&#x27;" alt="avatar" src="{{ (author_avatar if author_avatar != none else '/butterfly/img/friend_404.gif') }}">
+</div>
+<div class="author-info__name">{{ author_name }}</div>
+<div class="author-info__description">{{ site_description }}</div>
+</div>
+<div class="card-info-data">
+<div class="card-info-data site-data is-center">
+<a href="/archive">
+<div class="headline">归档</div>
+<div class="length-num">{{ statsArticleCount }}</div>
+</a>
+<a href="/links">
+<div class="headline">友链</div>
+<div class="length-num">{{ statsTagCount }}</div>
+</a>
+<a href="/about">
+<div class="headline">关于我</div>
+<div class="length-num">{{ statsCategoryCount }}</div>
+</a>
+</div>
+</div>
+<a class="button--animated" id="card-info-btn" target="_blank" href="https://github.com/UKennLi">
+<i class="fab fa-github"></i>
+<span>Github</span>
+</a>
+</div>
+{% if not is_empty(site_announcement) %}<div class="card-widget card-announcement">
+<div class="item-headline">
+<i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span>
+</div>
+<div class="announcement_content">{{ site_announcement | safe }}</div>
+</div>{% endif %}
+<div class="sticky_layout">
+<div class="card-widget card-recent-post">
+<div class="item-headline">
+<i class="fas fa-history"></i><span>最新文章</span>
+</div>
+<div class="aside-list">
+{% for post in sidebarRecentPosts %}<div class="aside-list-item">
+<a class="thumbnail" href="{{ '/post/' ~ post.slug }}" title="{{ post.title }}">
+<img onerror="this.onerror=null;this.src=&#x27;/butterfly/img/404.jpg&#x27;" src="{{ (post.thumbnail if not is_empty(post.thumbnail) else '/butterfly/img/DefualtThumbnail.jpg') }}" alt="{{ post.title }}">
+</a>
+<div class="content">
+<a class="title" href="{{ '/post/' ~ post.slug }}">{{ post.title }}</a>
+<time datetime="{{ date_format(post.created, 'yyyy-MM-dd') }}">{{ date_format(post.created, 'yyyy-MM-dd') }}</time>
+</div>
+</div>{% endfor %}
+</div>
+</div>
+<div class="card-widget card-categories">
+<div class="item-headline">
+<i class="fas fa-folder-open"></i><span>分类</span>
+</div>
+<ul class="card-category-list" id="aside-cat-list">
+{% for category in categories %}<li class="card-category-list-item">
+<a class="card-category-list-link" href="{{ '/category/' ~ category.slug }}">
+<span class="card-category-list-name">{{ category.name }}</span>
+<span class="card-category-list-count">{{ category.count }}</span>
+</a>
+</li>{% endfor %}
+</ul>
+</div>
+<div class="card-widget card-tags">
+<div class="item-headline">
+<i class="fas fa-tags"></i><span>标签</span>
+</div>
+<div class="card-tag-cloud">
+{% for tag in tags %}<a style="font-size: 1.1em; color: #999" href="{{ '/tag/' ~ tag.slug }}">{{ tag.name }}</a>{% endfor %}
+{% if is_empty(tags) %}<p>暂无标签</p>{% endif %}
+</div>
+</div>
+<div class="card-widget card-webinfo">
+<div class="item-headline">
+<i class="fas fa-chart-line"></i><span>网站资讯</span>
+</div>
+<div class="webinfo">
+<div class="webinfo-item">
+<div class="item-name">文章数目 :</div>
+<div class="item-count">{{ siteArticleCount }}</div>
+</div>
+<div class="webinfo-item">
+<div class="item-name">总访问量 :</div>
+<div class="item-count">-</div>
+</div>
+</div>
+</div>
+</div>
+</div>

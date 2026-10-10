@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include "fragments/head.html" %}
+<body>
+<div id="web_bg"></div>
+<header id="page-header" class="{{ headerClass }}" style="{{ headerStyle }}">
+{% block header_content %}{% endblock %}
+{% include "fragments/nav.html" %}
+</header>
+<main class="layout" id="content-inner">
+{% block main_content %}{% endblock %}
+{% include "fragments/sidebar.html" %}
+</main>
+{% include "fragments/footer.html" %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+/ MATCH
+/?page=2 MATCH
+/category/default?page=2 MATCH
+/tag/visual-tag MATCH
+/post/visual-probe-0 MATCH
+/post/hello-world MATCH
+/admin/posts?page=2 MATCH
+/admin/posts/edit/650001 MATCH
+/admin/comments MATCH

@@ -1,0 +1,105 @@
+<div>
+<footer id="footer">
+<div id="footer-wrap">
+<div class="copyright">
+                ©
+                <span>{{ date_format(date_now(), 'yyyy') }}</span>
+                By <span>{{ author_name }}</span>
+</div>
+<div class="framework-info">
+<span>Powered by</span>
+<a target="_blank" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<span class="footer-separator">|</span>
+<span>Theme - Butterfly</span>
+</div>
+</div>
+</footer>
+<div id="rightside">
+<div id="rightside-config-hide">
+<button id="darkmode" type="button" title="浅色和深色模式转换">
+<i class="fas fa-adjust"></i>
+</button>
+<button id="hide-aside-btn" type="button" title="单栏和双栏切换">
+<i class="fas fa-arrows-alt-h"></i>
+</button>
+</div>
+<div id="rightside-config-show">
+<button id="rightside_config" type="button" title="设置">
+<i class="fas fa-cog fa-spin"></i>
+</button>
+<button id="go-up" type="button" title="回到顶部">
+<i class="fas fa-arrow-up"></i>
+</button>
+</div>
+</div>
+<div id="local-search">
+<div class="search-dialog">
+<nav class="search-nav">
+<span class="search-dialog-title">站内搜索</span>
+<button class="search-close-button"><i class="fas fa-times"></i></button>
+</nav>
+<div class="search-wrap" style="display: block;">
+<div id="local-search-input">
+<form class="local-search-box" method="get" action="/search">
+<input class="search-txt" type="text" name="keyword" placeholder="输入关键词并回车..." required="">
+</form>
+</div>
+</div>
+</div>
+<div id="search-mask"></div>
+</div>
+<script src="/butterfly/js/utils.js"></script>
+<script src="/butterfly/js/main.js"></script>
+<script>
+        var GLOBAL_CONFIG = {
+            root: {{ root_js | safe }},
+            algolia: undefined,
+            localSearch: undefined,
+            translate: { defaultEncoding: 2, translateDelay: 0, msgToTraditionalChinese: "繁", msgToSimplifiedChinese: "簡" },
+            highlight: { plugin: "highlighjs", highlightCopy: true, highlightLang: true, highlightHeightLimit: false },
+            copy: { success: '复制成功', error: '复制失败', noSupport: '浏览器不支持' },
+            relativeDate: { homepage: false, post: false },
+            runtime: '天',
+            date_suffix: { just: '刚刚', min: '分钟前', hour: '小时前', day: '天前', month: '个月前' },
+            copyright: undefined,
+            lightbox: 'fancybox',
+            Snackbar: undefined,
+            source: {
+                justifiedGallery: {
+                    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+                    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+                }
+            },
+            isPhotoFigcaption: false,
+            islazyload: false,
+            isAnchor: false
+        };
+        var GLOBAL_CONFIG_SITE = { isPost: false, isHome: true, isHighlightShrink: false, isToc: false, postUpdate: '2023-10-27' };
+    </script>
+{% if isPost %}<script>
+        GLOBAL_CONFIG_SITE.isPost = true; GLOBAL_CONFIG_SITE.isHome = false; GLOBAL_CONFIG_SITE.isToc = true;
+    </script>{% endif %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const $searchMask = document.getElementById('search-mask');
+        const $searchDialog = document.querySelector('#local-search .search-dialog');
+        const openSearch = () => {
+            document.body.style.cssText = 'width: 100%; overflow: hidden';
+            $searchMask.style.display = 'block';
+            $searchMask.classList.add('to_show');
+            $searchDialog.style.display = 'block';
+            setTimeout(() => { document.querySelector('#local-search-input input').focus() }, 100);
+        }
+        const closeSearch = () => {
+            document.body.style.cssText = '';
+            $searchMask.style.display = 'none';
+            $searchDialog.style.display = 'none';
+        }
+        const $searchBtn = document.querySelector('#search-button > .search');
+        if ($searchBtn) $searchBtn.addEventListener('click', openSearch);
+        const $closeBtn = document.querySelector('#local-search .search-close-button');
+        if ($closeBtn) $closeBtn.addEventListener('click', closeSearch);
+        if ($searchMask) $searchMask.addEventListener('click', closeSearch);
+    });
+    </script>
+</div>

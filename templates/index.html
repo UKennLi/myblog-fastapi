@@ -1,0 +1,65 @@
+{% extends "layout/main.html" %}
+{% set title = '首页 - ' ~ site_title %}
+{% set headerClass = 'full_page' %}
+{% set headerStyle = 'background-image: url(/butterfly/img/DefualtThumbnail.jpg)' %}
+{% block header_content %}
+<div id="site-info">
+<h1 id="site-title">{{ (('分类：' ~ currentCategory.name) if currentCategory != none else ((('标签：' ~ currentTag.name) if currentTag != none else ((('搜索：' ~ keyword) if keyword != none else site_title))))) }}</h1>
+<div id="site-subtitle"><span id="subtitle">{{ site_description }}</span></div>
+<div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div>
+</div>
+{% endblock %}
+{% block main_content %}
+<div class="recent-posts" id="recent-posts">
+{% for post in recentPosts %}<div class="recent-post-item">
+<div class="post_cover {{ ('right' if (loop.index is even) else 'left') }}">
+<a href="{{ '/post/' ~ post.slug }}" title="{{ post.title }}">
+<img class="post-bg" onerror="this.onerror=null;this.src=&#x27;/butterfly/img/404.jpg&#x27;" src="{{ (post.thumbnail if not is_empty(post.thumbnail) else '/butterfly/img/DefualtThumbnail.jpg') }}" alt="{{ post.title }}">
+</a>
+</div>
+<div class="recent-post-info">
+<a class="article-title" href="{{ '/post/' ~ post.slug }}">{{ post.title }}</a>
+<div class="article-meta-wrap">
+<span class="post-meta-date">
+<i class="far fa-calendar-alt"></i>
+<span class="article-meta-label">发表于</span>
+<time>{{ date_format(post.created, 'yyyy-MM-dd') }}</time>
+</span>
+{% if post.category != none %}<span class="article-meta">
+<span class="article-meta-separator">|</span>
+<i class="fas fa-inbox"></i>
+<a class="article-meta__categories" href="{{ '/category/' ~ post.category.slug }}">{{ post.category.name }}</a>
+</span>{% endif %}
+{% if not is_empty(post.tags) %}<span class="article-meta">
+<span class="article-meta-separator">|</span>
+<i class="fas fa-tags fa-fw"></i>
+{% for tag in post.tags %}<a class="article-meta__tags" style="margin-right: 5px;" href="{{ '/tag/' ~ tag.slug }}">{{ tag.name }}</a>{% endfor %}
+</span>{% endif %}
+</div>
+<div class="content">{{ post.summary }}</div>
+</div>
+</div>{% endfor %}
+{% if pageInfo.pages > 1 %}<nav id="pagination">
+<div class="pagination">
+{% if pageInfo.hasPreviousPage %}<a class="extend prev" rel="prev" href="{{ page_url(paginationUrl, pageInfo.prePage) }}">
+<i class="fas fa-chevron-left"></i>
+</a>{% endif %}
+{% if pageInfo.navigateFirstPage > 1 %}
+<a class="page-number" href="{{ page_url(paginationUrl, 1) }}">1</a>
+<span class="space">…</span>
+{% endif %}
+{% for pageNum in pageInfo.navigatepageNums %}
+{% if pageNum == pageInfo.pageNum %}<span class="page-number current">{{ pageNum }}</span>{% endif %}
+{% if pageNum != pageInfo.pageNum %}<a class="page-number" href="{{ page_url(paginationUrl, pageNum) }}">{{ pageNum }}</a>{% endif %}
+{% endfor %}
+{% if pageInfo.navigateLastPage < pageInfo.pages %}
+<span class="space">…</span>
+<a class="page-number" href="{{ page_url(paginationUrl, pageInfo.pages) }}">{{ pageInfo.pages }}</a>
+{% endif %}
+{% if pageInfo.hasNextPage %}<a class="extend next" rel="next" href="{{ page_url(paginationUrl, pageInfo.nextPage) }}">
+<i class="fas fa-chevron-right"></i>
+</a>{% endif %}
+</div>
+</nav>{% endif %}
+</div>
+{% endblock %}

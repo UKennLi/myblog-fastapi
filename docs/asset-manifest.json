@@ -1,0 +1,2849 @@
+{
+  "assets": [
+    {
+      "path": "butterfly/css/GrayMac.css",
+      "source": "src/main/resources/static/butterfly/css/GrayMac.css",
+      "sha256": "bdc7111ac1428115dcfedb2ce41a01349985ff72ea2becbc9745a5a74dd2011c"
+    },
+    {
+      "path": "butterfly/css/comment.css",
+      "source": "src/main/resources/static/butterfly/css/comment.css",
+      "sha256": "fa69420b7c161216ef4195c1b0710b7d6cdc157c74b106bc95d61780b97c789c"
+    },
+    {
+      "path": "butterfly/css/custom.css",
+      "source": "src/main/resources/static/butterfly/css/custom.css",
+      "sha256": "ad327bea546d953b98808d4c15cb0679cd7428681c3a1392ee3155538c8511b7"
+    },
+    {
+      "path": "butterfly/css/edit.css",
+      "source": "src/main/resources/static/butterfly/css/edit.css",
+      "sha256": "d747b56ed89c8abce70feb8921c4b69a1173b377317cd7ed3002d38951359e67"
+    },
+    {
+      "path": "butterfly/css/index.css",
+      "source": "src/main/resources/static/butterfly/css/index.css",
+      "sha256": "84c9324f36990aaad16e05d5464681868b2d6785d8b5e4cdb1d70c1dd625333f"
+    },
+    {
+      "path": "butterfly/css/snackbar.min.css",
+      "source": "src/main/resources/static/butterfly/css/snackbar.min.css",
+      "sha256": "a9fb1d56a55e28f572e7c1f1f6a0889fc36c761d93535ca2704ec1e441e2f92b"
+    },
+    {
+      "path": "butterfly/css/style.css",
+      "source": "src/main/resources/static/butterfly/css/style.css",
+      "sha256": "29166fca734d6631df7aa7800e258c7c4c64fb40bbeb7b950f55019b4bcc3641"
+    },
+    {
+      "path": "butterfly/css/themedash.css",
+      "source": "src/main/resources/static/butterfly/css/themedash.css",
+      "sha256": "2f2e92082ad51bfb5d1b3c285d3fa3c6c04b3b17e9facd9314aa635197f10d84"
+    },
+    {
+      "path": "butterfly/img/1d.png",
+      "source": "src/main/resources/static/butterfly/img/1d.png",
+      "sha256": "d962997dec3c58303b94b5f1a711da63c9674cb9b868b0f830fbfc59be4368c8"
+    },
+    {
+      "path": "butterfly/img/404.jpg",
+      "source": "src/main/resources/static/butterfly/img/404.jpg",
+      "sha256": "63b243bed823182ec7ce97bae097e3790d4194f155db93c1e41ea2bfd669c161"
+    },
+    {
+      "path": "butterfly/img/404.png",
+      "source": "src/main/resources/static/butterfly/img/404.png",
+      "sha256": "08d68a5713e3a93c1660d88b202056813a2b0b9d18fa5fa6b702dd592edbd6b0"
+    },
+    {
+      "path": "butterfly/img/DefualtThumbnail.jpg",
+      "source": "src/main/resources/static/butterfly/img/DefualtThumbnail.jpg",
+      "sha256": "16c1f21670e606162079a56913fbaf2b2702b56ee9f6a8f453d1420a237f20d5"
+    },
+    {
+      "path": "butterfly/img/archive.jpg",
+      "source": "src/main/resources/static/butterfly/img/archive.jpg",
+      "sha256": "614b344657916c95ef10f3e403d9b1344621292bdab55d550c1660853e6ad57b"
+    },
+    {
+      "path": "butterfly/img/avatar.jpg",
+      "source": "src/main/resources/static/butterfly/img/avatar.jpg",
+      "sha256": "0a73b128c8cd32fb425b94d32ac1b0a3466b4860dc6af089d7e35b95eedf82e7"
+    },
+    {
+      "path": "butterfly/img/comment.png",
+      "source": "src/main/resources/static/butterfly/img/comment.png",
+      "sha256": "14eb5b3f3222739be60a18da0274d081b2a927cd4442b432bb36454f834e7fb2"
+    },
+    {
+      "path": "butterfly/img/default.cur",
+      "source": "src/main/resources/static/butterfly/img/default.cur",
+      "sha256": "77ba4d4998b7b42dbc871fef86d0fc5b6a6f50e97b821d2db5dc7d5d47f7c513"
+    },
+    {
+      "path": "butterfly/img/friend_404.gif",
+      "source": "src/main/resources/static/butterfly/img/friend_404.gif",
+      "sha256": "b318d5c673db6aac52aaa1b73e235d0a9d804306e0e4e29b1e27a94259c51b68"
+    },
+    {
+      "path": "butterfly/img/icon-search.png",
+      "source": "src/main/resources/static/butterfly/img/icon-search.png",
+      "sha256": "43012f4b1951bdef9686abf16a4fb613c898d0213ef80eaa7a960b644838454d"
+    },
+    {
+      "path": "butterfly/img/icon-search@2x.png",
+      "source": "src/main/resources/static/butterfly/img/icon-search@2x.png",
+      "sha256": "3205e514aeff74a99bc1602256d34ce9ffde3204dde74f5fbe1ffa86913dffc1"
+    },
+    {
+      "path": "butterfly/img/logo.png",
+      "source": "src/main/resources/static/butterfly/img/logo.png",
+      "sha256": "ab6ae497588b726cdb8d3a6b9687ac7aa7cc18b034f5e98e457ac1c2b409fb8c"
+    },
+    {
+      "path": "butterfly/img/pointer.cur",
+      "source": "src/main/resources/static/butterfly/img/pointer.cur",
+      "sha256": "f1f5f2508a304a60219973cd5cb6c45b8642969034c1d969358a4b183a373eed"
+    },
+    {
+      "path": "butterfly/img/qq.png",
+      "source": "src/main/resources/static/butterfly/img/qq.png",
+      "sha256": "d962997dec3c58303b94b5f1a711da63c9674cb9b868b0f830fbfc59be4368c8"
+    },
+    {
+      "path": "butterfly/img/snow.gif",
+      "source": "src/main/resources/static/butterfly/img/snow.gif",
+      "sha256": "6f6fe8aaa04351d9ffc204afa0a3f90aa51c8d949cbba84933831c8b037a7436"
+    },
+    {
+      "path": "butterfly/js/clipboard.min.js",
+      "source": "src/main/resources/static/butterfly/js/clipboard.min.js",
+      "sha256": "99e1761c92764dcaeec33df3e1773160344cc4aa6b8ddaee0477372279a2c424"
+    },
+    {
+      "path": "butterfly/js/comjs.js",
+      "source": "src/main/resources/static/butterfly/js/comjs.js",
+      "sha256": "cc90b806177e017423aef0a12aa8fef69b191ce8a58d385714042c2298041423"
+    },
+    {
+      "path": "butterfly/js/custom.js",
+      "source": "src/main/resources/static/butterfly/js/custom.js",
+      "sha256": "1838f8980ab07fa1fbc733f7b1dbd09f354268a6dc8547ed86ff46dbb9e6a6b5"
+    },
+    {
+      "path": "butterfly/js/custom.main.js",
+      "source": "src/main/resources/static/butterfly/js/custom.main.js",
+      "sha256": "4d44b8d704db425357b10093de887e9cda108a16b8d5be61edb4c35799b4802f"
+    },
+    {
+      "path": "butterfly/js/extend.js",
+      "source": "src/main/resources/static/butterfly/js/extend.js",
+      "sha256": "dcf0989fe4392f58f117fd2170ccf94205c40b295fdb1c025c5b45f975560e1d"
+    },
+    {
+      "path": "butterfly/js/letterAvatar.js",
+      "source": "src/main/resources/static/butterfly/js/letterAvatar.js",
+      "sha256": "12c663df278fc004a05a7c668d51b6e2a995549da02b523d324d9774a3aa2e77"
+    },
+    {
+      "path": "butterfly/js/local-search.js",
+      "source": "src/main/resources/static/butterfly/js/local-search.js",
+      "sha256": "4018d92ed57b93008b43df90148865bdaa5681e654b1bd3cb4e8bc9739049838"
+    },
+    {
+      "path": "butterfly/js/prism.js",
+      "source": "src/main/resources/static/butterfly/js/prism.js",
+      "sha256": "cc700fcbbcf5dc7cf591d1547321fa3044ccf24b12c36b7c7f905d6e89fdf220"
+    },
+    {
+      "path": "butterfly/js/smooth.min.js",
+      "source": "src/main/resources/static/butterfly/js/smooth.min.js",
+      "sha256": "12d632cbfa75d73e6a47f7e8b4b1d5870359b38534ed5102c6fecc93faa3f971"
+    },
+    {
+      "path": "butterfly/js/snackbar.min.js",
+      "source": "src/main/resources/static/butterfly/js/snackbar.min.js",
+      "sha256": "79dad5f24938d53d80dc7915b880af377e54617caa646274aa6d60f11e16a54e"
+    },
+    {
+      "path": "butterfly/js/themecustom.js",
+      "source": "src/main/resources/static/butterfly/js/themecustom.js",
+      "sha256": "841e80af377ebf2110ddd99bd7f8ecf854f5c8a1a887f09fab9a000f19ce91af"
+    },
+    {
+      "path": "butterfly/js/tw_cn.js",
+      "source": "src/main/resources/static/butterfly/js/tw_cn.js",
+      "sha256": "763633033c006fb9bb5ffea600e75dcee01b45ead45398d0eefb7412b5a05f91"
+    },
+    {
+      "path": "butterfly/js/typed.min.js",
+      "source": "src/main/resources/static/butterfly/js/typed.min.js",
+      "sha256": "5154391ed1d39ada814f7298e5c77802f238ee9a74809c0833eab8e470fda0b9"
+    },
+    {
+      "path": "butterfly/js/utils.js",
+      "source": "src/main/resources/static/butterfly/js/utils.js",
+      "sha256": "58d25f9771704b1d4c0051a1700fef958c751ed23f3729c89fd29eeabc651149"
+    },
+    {
+      "path": "butterfly/js/wehao.js",
+      "source": "src/main/resources/static/butterfly/js/wehao.js",
+      "sha256": "4ff2a6406347ac008861f5b5d8f373d8a3186f4f374348986f2c81c9d487438c"
+    },
+    {
+      "path": "plugins/editormd/.gitignore",
+      "source": "src/main/resources/static/plugins/editormd/.gitignore",
+      "sha256": "f0667d694f1c50b02e024a7589065eeb62ff9406bccb8a3f5dd0fc94553838d1"
+    },
+    {
+      "path": "plugins/editormd/.jshintrc",
+      "source": "src/main/resources/static/plugins/editormd/.jshintrc",
+      "sha256": "b12b3e0f4eff46ded75ea1a490a092ced2d2262c536688bcc9dee7c614d6e4c8"
+    },
+    {
+      "path": "plugins/editormd/BUGS.md",
+      "source": "src/main/resources/static/plugins/editormd/BUGS.md",
+      "sha256": "fd7ad4a8180c2699871cb095d1e6170fa73f982a582994e36cf3789a7c113e5d"
+    },
+    {
+      "path": "plugins/editormd/CHANGE.md",
+      "source": "src/main/resources/static/plugins/editormd/CHANGE.md",
+      "sha256": "24dbe2b4c480a6aa70f342d359670b5ec0ed205dcbdae0b87ac2b6d3f310092a"
+    },
+    {
+      "path": "plugins/editormd/Gulpfile.js",
+      "source": "src/main/resources/static/plugins/editormd/Gulpfile.js",
+      "sha256": "f7fe7ac0520fbce4c549bac2ad30f45cdb6cc3546fd7f2b1d16aee2a899409e4"
+    },
+    {
+      "path": "plugins/editormd/LICENSE",
+      "source": "src/main/resources/static/plugins/editormd/LICENSE",
+      "sha256": "8d3d793c4f42461a95d09f3213b5bf5960ad2c419e72a1e2d8cc7f0e1f7a890c"
+    },
+    {
+      "path": "plugins/editormd/README.md",
+      "source": "src/main/resources/static/plugins/editormd/README.md",
+      "sha256": "5d085319d22c0767b9848db9bb65d6de58900bd49159a299491862740ca37dfb"
+    },
+    {
+      "path": "plugins/editormd/bower.json",
+      "source": "src/main/resources/static/plugins/editormd/bower.json",
+      "sha256": "36a04836238c7887f1b7ffbfd9a7a9a7af19bc900730d8e36c2a7452c0e4925b"
+    },
+    {
+      "path": "plugins/editormd/css/editormd.css",
+      "source": "src/main/resources/static/plugins/editormd/css/editormd.css",
+      "sha256": "063b11676e342bec94dd4180e8061fcc742984c49d7079e9f41e8d78707e6e8a"
+    },
+    {
+      "path": "plugins/editormd/css/editormd.logo.css",
+      "source": "src/main/resources/static/plugins/editormd/css/editormd.logo.css",
+      "sha256": "9d63bd7f78738b8b6b23844b695a3fedd158b25140c99235567a913ce9f87b59"
+    },
+    {
+      "path": "plugins/editormd/css/editormd.logo.min.css",
+      "source": "src/main/resources/static/plugins/editormd/css/editormd.logo.min.css",
+      "sha256": "3faf16e6e5da83c6361685740d1d78bd88d4ca0adc7952cbccfe81102feea788"
+    },
+    {
+      "path": "plugins/editormd/css/editormd.min.css",
+      "source": "src/main/resources/static/plugins/editormd/css/editormd.min.css",
+      "sha256": "0631e49fb8e2cccdef4560c2a8cfba454a33fe942c7b47849d3991a53f4decfe"
+    },
+    {
+      "path": "plugins/editormd/css/editormd.preview.css",
+      "source": "src/main/resources/static/plugins/editormd/css/editormd.preview.css",
+      "sha256": "fa8740916eed11f5f26cdb8d118219a4b4dfe44244178ec4e7199070343661f7"
+    },
+    {
+      "path": "plugins/editormd/css/editormd.preview.min.css",
+      "source": "src/main/resources/static/plugins/editormd/css/editormd.preview.min.css",
+      "sha256": "eeb557d9154598f2be3479785c24a6999a5c552e0a65562c165bd41b8685fef4"
+    },
+    {
+      "path": "plugins/editormd/docs/editormd.js.html",
+      "source": "src/main/resources/static/plugins/editormd/docs/editormd.js.html",
+      "sha256": "d2d5ce056a2cca758bf97acc4dc9e4f01ae2193c51a58d86918d1d9204a9bd0a"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Bold-webfont.eot",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Bold-webfont.eot",
+      "sha256": "5753780fe4ed044cfb98144f0bd6f8da560e00e485573ee038acf26b26a849b2"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Bold-webfont.svg",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Bold-webfont.svg",
+      "sha256": "c2ed48332ad6c7760c53dfa2a191a7ac7d943f66d3e8c304f7aa87623818a9e9"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Bold-webfont.woff",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Bold-webfont.woff",
+      "sha256": "a0357cb694b5284870c77c0dbcaf33f238004800419288afde313317b0dbd0b7"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-BoldItalic-webfont.eot",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-BoldItalic-webfont.eot",
+      "sha256": "4b19a030678b683e03bea77934eb9e8322fa707c6647510fe960dbbfc7173d43"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-BoldItalic-webfont.svg",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-BoldItalic-webfont.svg",
+      "sha256": "96b0b1e218e7edff8edd5d47a9f6946252b257be013515992eb37d9e4d18ee16"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-BoldItalic-webfont.woff",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-BoldItalic-webfont.woff",
+      "sha256": "d3cd72b3406363d94d62d7ae9305bdad3654ffb99dd041d574524077a2c0972f"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Italic-webfont.eot",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Italic-webfont.eot",
+      "sha256": "99e6e0467bb7563740c6bb641144f3dac0faf2837775adc073e71abbdd73b92f"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Italic-webfont.svg",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Italic-webfont.svg",
+      "sha256": "acfff465cdd737f5e493632b802e642c861bd3787087eac0e3fec2eec31e419a"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Italic-webfont.woff",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Italic-webfont.woff",
+      "sha256": "1e2916c514af4531e75fc3b6ab19dced7708cd47a7702cb1c91c1d53416c6a2c"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Light-webfont.eot",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Light-webfont.eot",
+      "sha256": "83a5c3512b7e56bef9b0d5451adf664b070eb3cf6278e69e2cf4fa0b2d2ef379"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Light-webfont.svg",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Light-webfont.svg",
+      "sha256": "3527f01b330c2a9eb7fadb347da4e485e5ad7e1a1a30832c73f6442d4f44abeb"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Light-webfont.woff",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Light-webfont.woff",
+      "sha256": "a1cb81c9f07f1f399db66ec188c02a1c74bc382df9a8550ab8091aac93dff8a2"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-LightItalic-webfont.eot",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-LightItalic-webfont.eot",
+      "sha256": "fbabc5a719bc6c152b2871a552939ad8b0bc3e26e71ef8c68279cd96fc34a077"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-LightItalic-webfont.svg",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-LightItalic-webfont.svg",
+      "sha256": "05ec48e6d45659eac6a2c9b9a40eb0a476d22f0b866d5713ce4179b9e2a6e76d"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-LightItalic-webfont.woff",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-LightItalic-webfont.woff",
+      "sha256": "641673bef88ac6746fb4bb5cc05efa040d03603aea985ab84e44ecc9fc51cb26"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Regular-webfont.eot",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Regular-webfont.eot",
+      "sha256": "25f7c6430e4b537dfa6bbe5554d4641c0fbdbf3f9351aab6cd91d43d11738528"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Regular-webfont.svg",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Regular-webfont.svg",
+      "sha256": "9ecb8504258d8576dadbe37b75bb434cc95a0dde24225ebfea9c8aea99df8ea9"
+    },
+    {
+      "path": "plugins/editormd/docs/fonts/OpenSans-Regular-webfont.woff",
+      "source": "src/main/resources/static/plugins/editormd/docs/fonts/OpenSans-Regular-webfont.woff",
+      "sha256": "22e7a1b10c110072f5a0bfd16e2197a76b279ec879bcce8978fada1dc9ee5d40"
+    },
+    {
+      "path": "plugins/editormd/docs/index.html",
+      "source": "src/main/resources/static/plugins/editormd/docs/index.html",
+      "sha256": "792efd8d49b0779435fadc48fbb8461b18264595506bb2eb5eeef1f317831edf"
+    },
+    {
+      "path": "plugins/editormd/docs/scripts/linenumber.js",
+      "source": "src/main/resources/static/plugins/editormd/docs/scripts/linenumber.js",
+      "sha256": "bcc1057a550d0865cd8fcebc0e7531b76226d25d42ebdfa8cabc11f2314c3787"
+    },
+    {
+      "path": "plugins/editormd/docs/scripts/prettify/Apache-License-2.0.txt",
+      "source": "src/main/resources/static/plugins/editormd/docs/scripts/prettify/Apache-License-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "plugins/editormd/docs/scripts/prettify/lang-css.js",
+      "source": "src/main/resources/static/plugins/editormd/docs/scripts/prettify/lang-css.js",
+      "sha256": "9b6ac483033b02572714eb4d37ee199185c41008eb2b3f46a00ab0ebce6a20c5"
+    },
+    {
+      "path": "plugins/editormd/docs/scripts/prettify/prettify.js",
+      "source": "src/main/resources/static/plugins/editormd/docs/scripts/prettify/prettify.js",
+      "sha256": "e2e576e3bc607cd179ff511947010f645d3441a35313aec0dbd06c4437f83b77"
+    },
+    {
+      "path": "plugins/editormd/docs/styles/jsdoc-default.css",
+      "source": "src/main/resources/static/plugins/editormd/docs/styles/jsdoc-default.css",
+      "sha256": "2edf81516d8b96855ad7c2281f196ac74a455ae15e5f9ba2323fd980bd57b59b"
+    },
+    {
+      "path": "plugins/editormd/docs/styles/prettify-jsdoc.css",
+      "source": "src/main/resources/static/plugins/editormd/docs/styles/prettify-jsdoc.css",
+      "sha256": "bca3215630ba8c2438924b78cd97f1cf7bd85b34521f684792804e07c74e966c"
+    },
+    {
+      "path": "plugins/editormd/docs/styles/prettify-tomorrow.css",
+      "source": "src/main/resources/static/plugins/editormd/docs/styles/prettify-tomorrow.css",
+      "sha256": "cc89c4a9a3301cf1355d13d3aa730fdae64e104605436ce371ab00bf64759d78"
+    },
+    {
+      "path": "plugins/editormd/editormd.amd.js",
+      "source": "src/main/resources/static/plugins/editormd/editormd.amd.js",
+      "sha256": "fa9454921a8f030d6bc8c89a6a671b3b1f9e711271ec377fe6daf42bbdc2d39f"
+    },
+    {
+      "path": "plugins/editormd/editormd.amd.min.js",
+      "source": "src/main/resources/static/plugins/editormd/editormd.amd.min.js",
+      "sha256": "6abcc54b201d442b4385de4db8c24adf96455b31b607f77512e4fe4d08afa381"
+    },
+    {
+      "path": "plugins/editormd/editormd.js",
+      "source": "src/main/resources/static/plugins/editormd/editormd.js",
+      "sha256": "55e68c227e128f5fa0e354e875ea0db68689cbc6eb5216c48a06e3bd6667f8c2"
+    },
+    {
+      "path": "plugins/editormd/editormd.min.js",
+      "source": "src/main/resources/static/plugins/editormd/editormd.min.js",
+      "sha256": "b488b2150e29e6f9994790afcdab3113c9f09fbf26694ae5c716fb9972018628"
+    },
+    {
+      "path": "plugins/editormd/examples/@links.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/@links.html",
+      "sha256": "f7a2575b06d3bc4a6f6e8e2d12dafef340071871549266597c882bf6cb6a30b5"
+    },
+    {
+      "path": "plugins/editormd/examples/auto-height.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/auto-height.html",
+      "sha256": "9192faf8b829a47f7f0743b90f0aa78d62284c6f042f9628c09e3c9d3b255468"
+    },
+    {
+      "path": "plugins/editormd/examples/change-mode.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/change-mode.html",
+      "sha256": "7dc0294ad5801fe4f980e365df8ea9ac6a8beb9b19b8ebface77ed8f717d17a0"
+    },
+    {
+      "path": "plugins/editormd/examples/code-fold.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/code-fold.html",
+      "sha256": "bb86805f9427e6b3fa789e384ea73c903e1c61c9ca9713853ddd881ed44d3bcf"
+    },
+    {
+      "path": "plugins/editormd/examples/css/style.css",
+      "source": "src/main/resources/static/plugins/editormd/examples/css/style.css",
+      "sha256": "40f2c0c43a5b19fbcce5d3e80111b28d93d3bb8f4e959f7de65400a62a044ef7"
+    },
+    {
+      "path": "plugins/editormd/examples/custom-keyboard-shortcuts.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/custom-keyboard-shortcuts.html",
+      "sha256": "4aa49ec02ad65c70db0028baec93320d0f98582b1d18f84fbf95321eb293a8cf"
+    },
+    {
+      "path": "plugins/editormd/examples/custom-toolbar.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/custom-toolbar.html",
+      "sha256": "14c52c012ce2baff9c5ebdc81bbbcff11a99bfc28f4bbb5537debd6ccbf151e1"
+    },
+    {
+      "path": "plugins/editormd/examples/define-plugin.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/define-plugin.html",
+      "sha256": "ae97a131c4ac90469f94673115d10a692fd3386c954e9d587a2a2475e6f29ed9"
+    },
+    {
+      "path": "plugins/editormd/examples/delay-renderer-preview.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/delay-renderer-preview.html",
+      "sha256": "961ff8627bae89b9e40780903585e94e1fbec42ddb92de0668d0979bc191ccda"
+    },
+    {
+      "path": "plugins/editormd/examples/dynamic-create-editormd.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/dynamic-create-editormd.html",
+      "sha256": "d04a1ad0bfd7dd3c40cf8be05f67536cd6a4822d3f758057f79b2d104aa5e4c4"
+    },
+    {
+      "path": "plugins/editormd/examples/emoji.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/emoji.html",
+      "sha256": "df2a618d716589fec077fcfcb451482dfe1ac7e2a8eabf77e6502afd05d975ac"
+    },
+    {
+      "path": "plugins/editormd/examples/extends.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/extends.html",
+      "sha256": "b238d7fdd9dc1d4b6beeaabfdfea644fe34d2fe4b131384ed033148331c1789a"
+    },
+    {
+      "path": "plugins/editormd/examples/external-use.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/external-use.html",
+      "sha256": "8ffde104f38810a76bee8b0e99863808318610111466408c4c4b3a54269556dd"
+    },
+    {
+      "path": "plugins/editormd/examples/flowchart.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/flowchart.html",
+      "sha256": "7c1224c3307bbb9b23860ca92a997471d946a67c91fb31f6e1cfd7fb0e89bc79"
+    },
+    {
+      "path": "plugins/editormd/examples/form-get-value.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/form-get-value.html",
+      "sha256": "82e6545504e1f0aba9df845a263dc78340dd47c4a359c138d08e3e9bcff1519e"
+    },
+    {
+      "path": "plugins/editormd/examples/full.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/full.html",
+      "sha256": "77bcab16ff6363ddc48394566fbc56112a619d7f8a9190ed87dca4a2e4df3777"
+    },
+    {
+      "path": "plugins/editormd/examples/goto-line.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/goto-line.html",
+      "sha256": "08a1da8dae67850af89dd29861b5340f86970e8c384a737fbd85e9b1bb3b414b"
+    },
+    {
+      "path": "plugins/editormd/examples/html-preview-markdown-to-html-custom-toc-container.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/html-preview-markdown-to-html-custom-toc-container.html",
+      "sha256": "c663b2c546816c7eec3d5870a0f98f505ce91ba701bebc070f07c3ae1cd9a8b9"
+    },
+    {
+      "path": "plugins/editormd/examples/html-preview-markdown-to-html.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/html-preview-markdown-to-html.html",
+      "sha256": "af1cfc9ba016ad804846a7c8bea31f54a9f40f18c90b41aa4a3f2648b60b58f4"
+    },
+    {
+      "path": "plugins/editormd/examples/html-tags-decode.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/html-tags-decode.html",
+      "sha256": "365b8f5f3200f940e19b85938cc472fa8d6d58561b5b1726c430f8ff60a66bf7"
+    },
+    {
+      "path": "plugins/editormd/examples/image-cross-domain-upload.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/image-cross-domain-upload.html",
+      "sha256": "f3d1968543e7ae008138b43e3bc03fc91f6b6a81351a3b58ee70b2443cf401d9"
+    },
+    {
+      "path": "plugins/editormd/examples/image-upload.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/image-upload.html",
+      "sha256": "3e0c902db4f3762d19812e36d230bfc802480cb709e4ce10577f491e7464b4f1"
+    },
+    {
+      "path": "plugins/editormd/examples/images/4.jpg",
+      "source": "src/main/resources/static/plugins/editormd/examples/images/4.jpg",
+      "sha256": "2d7fc8e5cd28a8716ddf5428114fe6d8b854c97de8c54708b7f1cdc85d7aa6ce"
+    },
+    {
+      "path": "plugins/editormd/examples/images/7.jpg",
+      "source": "src/main/resources/static/plugins/editormd/examples/images/7.jpg",
+      "sha256": "531287b1f8db7eb0214deed71c816db33c17873dd8981d344e1d37330e44acd1"
+    },
+    {
+      "path": "plugins/editormd/examples/images/8.jpg",
+      "source": "src/main/resources/static/plugins/editormd/examples/images/8.jpg",
+      "sha256": "2abd0280a84168cef2cde00a9cac4f157893011e01e0c3b734ae1b8c26b474ff"
+    },
+    {
+      "path": "plugins/editormd/examples/images/editormd-screenshot.png",
+      "source": "src/main/resources/static/plugins/editormd/examples/images/editormd-screenshot.png",
+      "sha256": "037b70b62dfed9022c09c630d7ac63254992514b6fdc32e7e4543bd48a226a54"
+    },
+    {
+      "path": "plugins/editormd/examples/index.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/index.html",
+      "sha256": "e7f0ad142d29f0601471e0ceadcb7be4878abcff7a8cc2814ebcbdf52480d27f"
+    },
+    {
+      "path": "plugins/editormd/examples/js/jquery.min.js",
+      "source": "src/main/resources/static/plugins/editormd/examples/js/jquery.min.js",
+      "sha256": "109cf3fdd0a36b4c781ea2460a72f2c0fca8152be7d3696acb2231eee2bce190"
+    },
+    {
+      "path": "plugins/editormd/examples/js/require.min.js",
+      "source": "src/main/resources/static/plugins/editormd/examples/js/require.min.js",
+      "sha256": "46daecbbe610b974f54a6b158b1b689711d6ed7e73413eb810d2defd27cd62c5"
+    },
+    {
+      "path": "plugins/editormd/examples/js/sea.js",
+      "source": "src/main/resources/static/plugins/editormd/examples/js/sea.js",
+      "sha256": "df58e032dd99d296a5adf6aba9bf6aa3f0a931a6572c751f105e5763c7fa61ae"
+    },
+    {
+      "path": "plugins/editormd/examples/js/seajs-main.js",
+      "source": "src/main/resources/static/plugins/editormd/examples/js/seajs-main.js",
+      "sha256": "e53aeea9f6e4b7f8bc850fb9783c7599a38b18bdce4c5676017883bc432fea18"
+    },
+    {
+      "path": "plugins/editormd/examples/js/zepto.min.js",
+      "source": "src/main/resources/static/plugins/editormd/examples/js/zepto.min.js",
+      "sha256": "e094daff39a7fadab01be75eb3652905ff64fd5c67ba4b10929e9845abbf7b72"
+    },
+    {
+      "path": "plugins/editormd/examples/katex.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/katex.html",
+      "sha256": "5e480e170b9c70bba0cf5224b640a1ae82a2b4bb3269fc40a82a805dcae1642c"
+    },
+    {
+      "path": "plugins/editormd/examples/manually-load-modules.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/manually-load-modules.html",
+      "sha256": "79f8a43f949dfb5adad0ca11362a6000a6d698ffc046a0bb0a265d44a26c3433"
+    },
+    {
+      "path": "plugins/editormd/examples/multi-editormd.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/multi-editormd.html",
+      "sha256": "e56532e92a7bfd28f07e34190068eec400004bf458779f771a6c40b5064ffb9a"
+    },
+    {
+      "path": "plugins/editormd/examples/multi-languages.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/multi-languages.html",
+      "sha256": "782ed0682bc98ed7853e7d2a500ee4fec953be851dcc783255c446a583697b4b"
+    },
+    {
+      "path": "plugins/editormd/examples/on-off.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/on-off.html",
+      "sha256": "279b9dbc94a8371d0a31ec383e9e6dd496c3c8a5b41917a470c49d7ccfc930dd"
+    },
+    {
+      "path": "plugins/editormd/examples/onchange.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/onchange.html",
+      "sha256": "57ae735545aabb935d43c1bc4aa1645b013bfc1c7ab8bdd325e93a87de7c42eb"
+    },
+    {
+      "path": "plugins/editormd/examples/onfullscreen.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/onfullscreen.html",
+      "sha256": "746ebd07ef51e414f5172913e5019d9aa2741eee4b77326512e8acf923aeb73c"
+    },
+    {
+      "path": "plugins/editormd/examples/onload.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/onload.html",
+      "sha256": "b9e84ddf5d317aad2c9044b4eee3b0edb3a649b8a5a8c9a5da0cc73afc0845a8"
+    },
+    {
+      "path": "plugins/editormd/examples/onpreviewing-onpreviewed.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/onpreviewing-onpreviewed.html",
+      "sha256": "0f02f9c9ff42a60b9f963069967c8cd1a70882a1be2c08c246bf4f690abccfe5"
+    },
+    {
+      "path": "plugins/editormd/examples/onresize.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/onresize.html",
+      "sha256": "4b912590938c77640593626f374668124a4e3a783c2a09198f178db8670241a3"
+    },
+    {
+      "path": "plugins/editormd/examples/onscroll-onpreviewscroll.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/onscroll-onpreviewscroll.html",
+      "sha256": "27f29ce60a268b131dd7b9ab2dc03071d510580e72b140eef5df6c758e31a37d"
+    },
+    {
+      "path": "plugins/editormd/examples/onwatch-onunwatch.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/onwatch-onunwatch.html",
+      "sha256": "ba791097d25bbd9e3835e15ea8e58585a54b3b918bd20d404f80931956880540"
+    },
+    {
+      "path": "plugins/editormd/examples/page-break.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/page-break.html",
+      "sha256": "dd72e003dbff54535397b21a5beff332861c6d92f7ae994d88ffd24308232b51"
+    },
+    {
+      "path": "plugins/editormd/examples/php/cross-domain-upload.php",
+      "source": "src/main/resources/static/plugins/editormd/examples/php/cross-domain-upload.php",
+      "sha256": "46f6f592dfac315829cc2eb1cefef22e9442a1ce4f1133c7b312610b23d73e81"
+    },
+    {
+      "path": "plugins/editormd/examples/php/editormd.uploader.class.php",
+      "source": "src/main/resources/static/plugins/editormd/examples/php/editormd.uploader.class.php",
+      "sha256": "bfc65ddbd5cd8f3ca676656ebc3096b54e39cc943309663028b9ab68f5c9a997"
+    },
+    {
+      "path": "plugins/editormd/examples/php/post.php",
+      "source": "src/main/resources/static/plugins/editormd/examples/php/post.php",
+      "sha256": "7ca90982d043cd3f89ca2bd550f83d03d992ddfa349e3e572886c295df8aa8dd"
+    },
+    {
+      "path": "plugins/editormd/examples/php/upload.php",
+      "source": "src/main/resources/static/plugins/editormd/examples/php/upload.php",
+      "sha256": "74742d8fed9fb999a8fc7cea3c0fda434af79159839aec4d368828ead610bb52"
+    },
+    {
+      "path": "plugins/editormd/examples/php/upload_callback.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/php/upload_callback.html",
+      "sha256": "d47d628b1f4def8a3d066cf200dcd62675f48f2465a14de583b7af367216037c"
+    },
+    {
+      "path": "plugins/editormd/examples/readonly.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/readonly.html",
+      "sha256": "34173a4a9f704372814a93ca80ea7d2d299232549127aa2558c4f992cd7c5438"
+    },
+    {
+      "path": "plugins/editormd/examples/resettings.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/resettings.html",
+      "sha256": "217f7ab268f8b638d7fede2157b478a7fd45f182f93aa534ed7e71d52fda4037"
+    },
+    {
+      "path": "plugins/editormd/examples/search-replace.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/search-replace.html",
+      "sha256": "c45f982238010d7696e96ad01703a0c3d57e7a07e090f97faf29fd89fccbe129"
+    },
+    {
+      "path": "plugins/editormd/examples/sequence-diagram.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/sequence-diagram.html",
+      "sha256": "11a85f441b44ca9a0baee377db7af9eff3ec6f4c4cc15626ee2e9a098ec736de"
+    },
+    {
+      "path": "plugins/editormd/examples/set-get-replace-selection.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/set-get-replace-selection.html",
+      "sha256": "b14399ac6d768f2432c92b6334957d94e62e6c30d2c6abcfcaf8a7016ef9ec43"
+    },
+    {
+      "path": "plugins/editormd/examples/simple.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/simple.html",
+      "sha256": "8bdb2338f871f16bbdfc4107aca46aecafbc8d98a76b0bd33bcbcfc11eb660ec"
+    },
+    {
+      "path": "plugins/editormd/examples/sync-scrolling.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/sync-scrolling.html",
+      "sha256": "cb5ebb62ec028b7f58357158d0ed4aae90fc66b30b55ce426e0fa772eb49ce73"
+    },
+    {
+      "path": "plugins/editormd/examples/task-lists.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/task-lists.html",
+      "sha256": "efc6386dc62dfe8d2544d0c589e191ff11cff8a898506ce5369177bca6cd66ab"
+    },
+    {
+      "path": "plugins/editormd/examples/test.md",
+      "source": "src/main/resources/static/plugins/editormd/examples/test.md",
+      "sha256": "79582048394fe7d6f8d9d327ca12015c651f55253b26f60a2a12a7b9ecf2e807"
+    },
+    {
+      "path": "plugins/editormd/examples/themes.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/themes.html",
+      "sha256": "a8adba6557733d4d843694b14f0839cfac0ee5ef3ac9f19078215d4d7d62c394"
+    },
+    {
+      "path": "plugins/editormd/examples/toc.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/toc.html",
+      "sha256": "175cf2f5994a3d170a50b57ea056dc001a2b599341dc18820bc8d0303e5b0e5c"
+    },
+    {
+      "path": "plugins/editormd/examples/toolbar-auto-fixed.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/toolbar-auto-fixed.html",
+      "sha256": "ab9cb8faf59799a294a14b415f5af87b8131cb80e834f9d85a1dc5e33efed8dc"
+    },
+    {
+      "path": "plugins/editormd/examples/use-requirejs.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/use-requirejs.html",
+      "sha256": "4ec120b383753c79477ab64dbfa902c66966c9ceaba50fa52bacde329adeb13a"
+    },
+    {
+      "path": "plugins/editormd/examples/use-seajs.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/use-seajs.html",
+      "sha256": "7898c8ff2b9527549e8621cc98a890bb5a6a4621b4af6781572780a37d360bc4"
+    },
+    {
+      "path": "plugins/editormd/examples/use-zepto.html",
+      "source": "src/main/resources/static/plugins/editormd/examples/use-zepto.html",
+      "sha256": "a796d0cedece213e4a6bd3159f60d198fac96944ebe7d6ef2f88d17ab9225148"
+    },
+    {
+      "path": "plugins/editormd/fonts/FontAwesome.otf",
+      "source": "src/main/resources/static/plugins/editormd/fonts/FontAwesome.otf",
+      "sha256": "bdc5d0b9f397be83e886c74b0141d1954aa4384b359dce49829994c4a2e1f7bf"
+    },
+    {
+      "path": "plugins/editormd/fonts/editormd-logo.eot",
+      "source": "src/main/resources/static/plugins/editormd/fonts/editormd-logo.eot",
+      "sha256": "f170ff6c81f7947652c72ba910d1662428c0e16db9c39e1dbdab2e3884f8be85"
+    },
+    {
+      "path": "plugins/editormd/fonts/editormd-logo.svg",
+      "source": "src/main/resources/static/plugins/editormd/fonts/editormd-logo.svg",
+      "sha256": "2eae510525532e62bb0e58152136a498e0d3af29f74516c795f4424dcff7aecf"
+    },
+    {
+      "path": "plugins/editormd/fonts/editormd-logo.ttf",
+      "source": "src/main/resources/static/plugins/editormd/fonts/editormd-logo.ttf",
+      "sha256": "776729874d15343d3571fc9b4542311237da6701d86864ff3f0204ac6e3e3a83"
+    },
+    {
+      "path": "plugins/editormd/fonts/editormd-logo.woff",
+      "source": "src/main/resources/static/plugins/editormd/fonts/editormd-logo.woff",
+      "sha256": "ec025fd9216168f2a3e0464312aca3c491c01c3b6b6b8924a160a17d2fbac558"
+    },
+    {
+      "path": "plugins/editormd/fonts/fontawesome-webfont.eot",
+      "source": "src/main/resources/static/plugins/editormd/fonts/fontawesome-webfont.eot",
+      "sha256": "cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d"
+    },
+    {
+      "path": "plugins/editormd/fonts/fontawesome-webfont.svg",
+      "source": "src/main/resources/static/plugins/editormd/fonts/fontawesome-webfont.svg",
+      "sha256": "bfdef833219a6edffd9c3cbc28db72739d22bb4d20cc2e2f8d56a7a4d408a206"
+    },
+    {
+      "path": "plugins/editormd/fonts/fontawesome-webfont.ttf",
+      "source": "src/main/resources/static/plugins/editormd/fonts/fontawesome-webfont.ttf",
+      "sha256": "9e540a087924a6e64790149d735cac022640e4fa6bff6bd65f5e9f41529bf0b3"
+    },
+    {
+      "path": "plugins/editormd/fonts/fontawesome-webfont.woff",
+      "source": "src/main/resources/static/plugins/editormd/fonts/fontawesome-webfont.woff",
+      "sha256": "e3870de89716b72cb61a4bba0e17c75783b361cdaba35ea96961c3070bd8ca18"
+    },
+    {
+      "path": "plugins/editormd/fonts/fontawesome-webfont.woff2",
+      "source": "src/main/resources/static/plugins/editormd/fonts/fontawesome-webfont.woff2",
+      "sha256": "aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c"
+    },
+    {
+      "path": "plugins/editormd/images/loading.gif",
+      "source": "src/main/resources/static/plugins/editormd/images/loading.gif",
+      "sha256": "d12b2280dce259b2c92abf80717eceaed0db58494c7c945eeac19382bd28a19f"
+    },
+    {
+      "path": "plugins/editormd/images/loading@2x.gif",
+      "source": "src/main/resources/static/plugins/editormd/images/loading@2x.gif",
+      "sha256": "7045caa73200510bba4cabba9c473b093595a15b75035c2084f7c4c55ca01172"
+    },
+    {
+      "path": "plugins/editormd/images/loading@3x.gif",
+      "source": "src/main/resources/static/plugins/editormd/images/loading@3x.gif",
+      "sha256": "7f7b559b03fd7c10048b8d820c6d1d610c70b74f809e14c9891b73e7274d66ca"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-favicon-16x16.ico",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-favicon-16x16.ico",
+      "sha256": "edf61e3f74b9bb8a85033a9cf9201d32de86458411f6d8a85d8d7cb6ecd3a484"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-favicon-24x24.ico",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-favicon-24x24.ico",
+      "sha256": "d0f1dd292461735b40cdfcb58911ec1e2bc8544a1b62250bcc94629b84639c7f"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-favicon-32x32.ico",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-favicon-32x32.ico",
+      "sha256": "df19eec489af8dac67a9a746091b8170936984f508d4e763365ccdd90616159e"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-favicon-48x48.ico",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-favicon-48x48.ico",
+      "sha256": "cfb1e86c68cd56e3810d1ad2e25781fb5452a1bd582816a62ae6c3b53735c4e3"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-favicon-64x64.ico",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-favicon-64x64.ico",
+      "sha256": "f07abe14dd740007447834093383bbe566985c36a019608a55b9bdd128b0080b"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-114x114.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-114x114.png",
+      "sha256": "7ea5c867279da9bd4824e16b275f9530dcb2606414cc2bb5afdb5af61d975fd7"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-120x120.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-120x120.png",
+      "sha256": "ee5d2ee10ff707169534d1d673083e87a73b71cc275c344353f3879770d643bc"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-144x144.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-144x144.png",
+      "sha256": "df427bb70af896d68eab7ce0713c9ba7c0350f53de45b73f05f8812444cd1205"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-16x16.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-16x16.png",
+      "sha256": "9b2e648a655915ec2aa2a06916f0a17f4e97c71967045d9333b29d0971d16485"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-180x180.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-180x180.png",
+      "sha256": "66d6c6c48838fc30228ef2498b8ef6451dc02c3087bc937d61ac9f1b4cdcce65"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-240x240.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-240x240.png",
+      "sha256": "178bc34498c384f7a0a3ade1a368b5de6071cced476ba1f2f47dca0590c770c2"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-24x24.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-24x24.png",
+      "sha256": "0e52b123f9acc45a514910efbbfaf17ab342391afce5220659ab2683aca7c769"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-320x320.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-320x320.png",
+      "sha256": "0418bdb64bd94ed3206cad9cfda7a27a564fe794d511298b4784116547013ae1"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-32x32.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-32x32.png",
+      "sha256": "b9672ff87efa87a022dcf03bb946c212b9ae475564e8bad98027ce4787f8a261"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-48x48.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-48x48.png",
+      "sha256": "d998bf77916de0b7aca77976dfb098a0097c5dedd4a94f38daa863327234042d"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-57x57.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-57x57.png",
+      "sha256": "f39252feb700bde6e93f15d023d16215920a3453b8e36eb418da358bc351e386"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-64x64.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-64x64.png",
+      "sha256": "6f4ae515edb675f78c9221ed7a7e3d8ed5cbff93985cf42bb371058d50d376c1"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-72x72.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-72x72.png",
+      "sha256": "74fdd633926045e495639914e078d072519fc7b1c013ceaf68451d05dfab839d"
+    },
+    {
+      "path": "plugins/editormd/images/logos/editormd-logo-96x96.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/editormd-logo-96x96.png",
+      "sha256": "d345e107e205be6142461fd3f317a3954e44aebdbc753e3c9f93fcd2aca5baf7"
+    },
+    {
+      "path": "plugins/editormd/images/logos/vi.png",
+      "source": "src/main/resources/static/plugins/editormd/images/logos/vi.png",
+      "sha256": "5eb73d2543bd8db3011a69a0acf965681fdb1773d1b1cd3146c6d63c06f7223e"
+    },
+    {
+      "path": "plugins/editormd/languages/en.js",
+      "source": "src/main/resources/static/plugins/editormd/languages/en.js",
+      "sha256": "d9a20ca609023a127654632cedb3ac0e80845d8a2e475bf9787e1759312000a8"
+    },
+    {
+      "path": "plugins/editormd/languages/zh-tw.js",
+      "source": "src/main/resources/static/plugins/editormd/languages/zh-tw.js",
+      "sha256": "113ca1d8632fc4404a25093453215dab1d3b4638a98b1b9280303cbecd7c0563"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/AUTHORS",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/AUTHORS",
+      "sha256": "a07054423616f6a1886010bb94e3cd207dadc6ab9b12f79ff88f67d9c7fe5ad5"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/LICENSE",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/LICENSE",
+      "sha256": "c7bae4ff453a099c61e5906014d3644319181834a47db839696dca0a85a76378"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/README.md",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/README.md",
+      "sha256": "e4ab6eed16ec938e1bb5fd7445fa1bbb71088e10898bbe066b031236943c0160"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/comment/comment.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/comment/comment.js",
+      "sha256": "9c49e2537443a0330ff74380b36f6eb923e6313ba3418307eeaaf75298512b73"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/comment/continuecomment.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/comment/continuecomment.js",
+      "sha256": "6a43140b00139d6eed50624c5ee12c01151f51864cbf7b1d03dc38f5b7bb3890"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/dialog/dialog.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/dialog/dialog.css",
+      "sha256": "b6fdbcc4806a1723d06e10d3495a81b8397ba4e7340f266aed87cea44f5f453f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/dialog/dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/dialog/dialog.js",
+      "sha256": "1193dd0139ab069c076d3e1270b3e8be91deb3297d881f4a2b5c79b5d00d00cd"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/display/fullscreen.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/display/fullscreen.css",
+      "sha256": "4a9b9a3588038c131d7b28eb8edb02f94e5fa520e97ed3cdbfba0ef0742f1bbc"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/display/fullscreen.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/display/fullscreen.js",
+      "sha256": "8045a6104cd1bd2097cc9fba12febe8b9b8fea391baa6d7298d9288c864fb446"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/display/panel.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/display/panel.js",
+      "sha256": "699c033fd529891d0363ba9c97a6ab8baed6ff009de7e27f4a4c3d9b38ba8e02"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/display/placeholder.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/display/placeholder.js",
+      "sha256": "58b93b261727ce3b4a30d9ecead95a84e0cd71db0b9d26a6860437466326f7b0"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/display/rulers.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/display/rulers.js",
+      "sha256": "31670397f13f1eceb86bb8e54de6b145672b543fe4991215d6672e389a1c6eb4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/edit/closebrackets.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/edit/closebrackets.js",
+      "sha256": "4de1729b9eeed67d077ec3687daec1450b243dbbce0b8eb56dd0f8905d43cb3d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/edit/closetag.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/edit/closetag.js",
+      "sha256": "16c7b2a882336487e347bb46e6bc17aadae88de3edf6869761adc7615d364c73"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/edit/continuelist.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/edit/continuelist.js",
+      "sha256": "255a9e30c13763c93bab861a79efe1e1dd1658b04465e421872f03e42f064c88"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/edit/matchbrackets.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/edit/matchbrackets.js",
+      "sha256": "163645f77d865488e02cc7024ee91d66e61214a6c788b9d5f443f9e249f2131d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/edit/matchtags.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/edit/matchtags.js",
+      "sha256": "68a03604c53100863790d2b399887150530288d2ffb3fa85df3231bd13ac9e6f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/edit/trailingspace.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/edit/trailingspace.js",
+      "sha256": "a7d57a0bcf75b71b83c3fde31ae347daafeb446875343e10eb8373ee2a086221"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/brace-fold.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/brace-fold.js",
+      "sha256": "57f604be4b8b85e823896ad1bb1c84da2c60fc7ab8cec46061f4d3c7b581dd47"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/comment-fold.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/comment-fold.js",
+      "sha256": "39d04671dff86d18959442163ac5a548448f132c4c0dc1e07e9a5de2b629b222"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/foldcode.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/foldcode.js",
+      "sha256": "3b96e7b607778be4df710fcc13ef625154012169b5bc37892e8a5ced0783d7a4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/foldgutter.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/foldgutter.css",
+      "sha256": "576efcd340b770b60d77d8c29e9df36bf58576391beab51b439114e4ed01ac56"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/foldgutter.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/foldgutter.js",
+      "sha256": "2ba690ad83402b45db0805a79fcd9d2d629608fe7be1ad12a7c8768d77492491"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/indent-fold.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/indent-fold.js",
+      "sha256": "73b5e9c8f8aec0c843fe1914969cc165228e9938af11113932a8de9c073631f8"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/markdown-fold.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/markdown-fold.js",
+      "sha256": "4796215562e6a6695cd013ac35311eb29c18fff27147c48f2a16623d6656c4d4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/fold/xml-fold.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/fold/xml-fold.js",
+      "sha256": "d5675c5b6821431215c93004eafd1cc1577db684a404f67e1176bbea076534a5"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/anyword-hint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/anyword-hint.js",
+      "sha256": "65923a3b0add3cd96089757a11565fea86f4fc88623f821d2717e895530b6ae6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/css-hint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/css-hint.js",
+      "sha256": "3aea20d5cbf0abbf1b3186c7b68ccb58df2a124a3e4068c7271c7666421d488d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/html-hint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/html-hint.js",
+      "sha256": "3d80302b25e3d32cfa49868bbaeb5ad1d6f5aa8c8b20474510a176a54dce94fc"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/javascript-hint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/javascript-hint.js",
+      "sha256": "668c5ebfefb04cbe2207f6b505ba69927a35818f55a349453524aa9fc19c50c2"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/show-hint.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/show-hint.css",
+      "sha256": "6e2f632941466645d05680348abf4e04100a40d8178949ba092c67bbb8911c45"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/show-hint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/show-hint.js",
+      "sha256": "a477606294224f0d5a724365308d39242034cb6a9849d9fc5e3cb90564340ae6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/sql-hint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/sql-hint.js",
+      "sha256": "81ae973b79ad078deb8afe2a6872992af53615398a0ff5a73d335dcab66da63c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/hint/xml-hint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/hint/xml-hint.js",
+      "sha256": "513f82582a0ed66c9e89c21973488dd735b7363f92e64e13ee0ee39ee9bd54d8"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/lint/coffeescript-lint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/lint/coffeescript-lint.js",
+      "sha256": "4ef78b4bfbed9239fab1f408e7ae917450243f4e1e092a7f6586099315543cc1"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/lint/css-lint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/lint/css-lint.js",
+      "sha256": "8d7fd5e3f0a6c53241ae923a57ce5a7fa27e4c36d1abfdbda7c3ab605bb3fa2d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/lint/javascript-lint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/lint/javascript-lint.js",
+      "sha256": "1ce19ed0e7a5dcd0cc915e2752f2e787c49724856b2efc15b0a15d81d688144c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/lint/json-lint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/lint/json-lint.js",
+      "sha256": "b725bc02cf882c76a6e40c6946010886ec3b07321d71bbeaea2ee274d6afff68"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/lint/lint.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/lint/lint.css",
+      "sha256": "16a8ff6fd12650656c975fa1d9a6f35a4962e5d07bfda386aa076245238da9ec"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/lint/lint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/lint/lint.js",
+      "sha256": "ec9db12fd868ffee7f90640de510d2f1af3adaed1cf919330b7eb0de4ea7b134"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/lint/yaml-lint.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/lint/yaml-lint.js",
+      "sha256": "a7fcbc285fc91caa5d8e44b1653e2c34ae9f1c35f8f496918f8598afed01ccd5"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/merge/merge.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/merge/merge.css",
+      "sha256": "d03328e3187858483f7e56fa5acb0a5c3af9f53d9924b6ad3b30600edc86d0e1"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/merge/merge.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/merge/merge.js",
+      "sha256": "7b6d3ddea6d181c7213394eb5131ac3064adad4ba83f0ebbced89677584b2aff"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/mode/loadmode.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/mode/loadmode.js",
+      "sha256": "091f88d2403c829a8172b9b3ef1db166c79a6daf4d17c93ca1e6787295b946af"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/mode/multiplex.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/mode/multiplex.js",
+      "sha256": "8e27ae37da34dbfa0320825a3c2ff6d000b2100a50205b12c57c624ac804be12"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/mode/multiplex_test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/mode/multiplex_test.js",
+      "sha256": "a22aecbdc39634437e6cbba62a92fe88b46b33e5cd468bb225a38f48c443ecec"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/mode/overlay.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/mode/overlay.js",
+      "sha256": "326efdb76f2106cf17f39b5e74cb0dd6d8be3df7c5505351b1f9b370787d9f3c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/mode/simple.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/mode/simple.js",
+      "sha256": "89733744e7db42e01049a71bce42c9f656989b19599236db2973988fd2d3d191"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/runmode/colorize.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/runmode/colorize.js",
+      "sha256": "89b7ebd01e86983873c02941c2b3a03c16702f42567576b91971998c040620e3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/runmode/runmode-standalone.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/runmode/runmode-standalone.js",
+      "sha256": "fa748646f4ed7aa33790a863675fa9056b358caace8d1635682828602c722859"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/runmode/runmode.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/runmode/runmode.js",
+      "sha256": "c2ba4c2eb28626c1caf566119c84933c05aa8ebca61e99b3738f346fa851b1cb"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/runmode/runmode.node.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/runmode/runmode.node.js",
+      "sha256": "d02fc2ed8e4981f89ba1807f9d1e9de27a3ddb8ced286f825f87afb4bada1fc0"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/scroll/annotatescrollbar.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/scroll/annotatescrollbar.js",
+      "sha256": "3c471d959d6a525a323884d11651413ccadce09f78d0998f96ec51d08c6079aa"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/scroll/scrollpastend.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/scroll/scrollpastend.js",
+      "sha256": "6ad5d1bc1208aa1c0e8049118b9831638d82c2b5a2a1ccdc223d86d1890647b5"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/scroll/simplescrollbars.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/scroll/simplescrollbars.css",
+      "sha256": "e2693b54abcd2168d89c0fab131c6d2cdb2319a3cf239aa5d814408261714341"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/scroll/simplescrollbars.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/scroll/simplescrollbars.js",
+      "sha256": "896e9f15b87868286b2c3f4c97046e057adfa2caccb99dec024ca7b4d50896bc"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/search/match-highlighter.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/search/match-highlighter.js",
+      "sha256": "950f959111ca358193fbb28026d2ad39b2f9ff60c4ed922e750014dec4a429db"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/search/matchesonscrollbar.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/search/matchesonscrollbar.css",
+      "sha256": "ee4dfbe9b6d1177a1ed95f2f6c94465471657d65b67e67194de51db06dc775fb"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/search/matchesonscrollbar.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/search/matchesonscrollbar.js",
+      "sha256": "732e61cf2f67daa7f43f4a6c0d16d6720f7228aafdfe84cc6b7709cc1eb555e9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/search/search.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/search/search.js",
+      "sha256": "396bb6071c86b8b3d3d12c1daa1e63b3429f306a6eecf85e675fab965d2c980a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/search/searchcursor.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/search/searchcursor.js",
+      "sha256": "53573d1e7519b4c73fb5aff98b72dcfa8928ec765b04d17be9f1602c459aae57"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/selection/active-line.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/selection/active-line.js",
+      "sha256": "56e23c967a6fff565f98e2309e8544d4d926ace72a9ec42a6c66f11262d3ebed"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/selection/mark-selection.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/selection/mark-selection.js",
+      "sha256": "9faa2bb0845b0f13ad0adde7b87019693d29a736b7bde145ba129d41eaf26fe6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/selection/selection-pointer.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/selection/selection-pointer.js",
+      "sha256": "edb05fcfacba82a7ee1257ceb6c8d172a62ac09b2bb03529f2b6b49a4b3b8581"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/tern/tern.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/tern/tern.css",
+      "sha256": "fa5e908f91820f833e3f107ff89037f721dcd72f0970804275be8170e048cd45"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/tern/tern.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/tern/tern.js",
+      "sha256": "836d93d9c79c3765ddfd870923255548414dbbd6cb5d2e7c7a323fbbf3db099e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/tern/worker.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/tern/worker.js",
+      "sha256": "5d93afb0e47c2906d1bcced886a780de4e838e4cd404fd69e1d3e824acd9751f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addon/wrap/hardwrap.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addon/wrap/hardwrap.js",
+      "sha256": "5de5cdd6a99d83b945699f4b5533ed98114cc5add6433ead31af03b5fb9d19fe"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/addons.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/addons.min.js",
+      "sha256": "73bb1c1ddac4e02fc9ac58128372915601da73fb17ce1adf941468780baef90e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/bower.json",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/bower.json",
+      "sha256": "2e6d63244f4dd96cdb0102e3747f84edf4062970f03b05ca79b4d3447f6ab03d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/codemirror.min.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/codemirror.min.css",
+      "sha256": "2839dc04fc7fa33b9c49d4b54ace1305e574547063529f853c44bd69e49f0c52"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/codemirror.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/codemirror.min.js",
+      "sha256": "339d3b361412164d73a7d72c30729cee5115c2a252498a7bd32f83c3701ed1d3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/lib/codemirror.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/lib/codemirror.css",
+      "sha256": "fb5655159ea615bea8e1a89aa4af00c811007527bd541f97f5b8d00309605d27"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/lib/codemirror.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/lib/codemirror.js",
+      "sha256": "c4a7f53c02090b14f5bc3173410a2e1115e64496f0d83dd13c63bd62078888fd"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/apl/apl.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/apl/apl.js",
+      "sha256": "ef13279898311136ac9a10c6291c063e1906b12bac2adba97b0068f9548e67a6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/apl/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/apl/index.html",
+      "sha256": "e82b1625444d69bfd47da2f8386dd8cfc833612cc3fe0252762b293cfe0bc42d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/asterisk/asterisk.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/asterisk/asterisk.js",
+      "sha256": "77e7417024a1904bacf863dabc34232a66950723d6d06b89799ef673d897ca8c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/asterisk/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/asterisk/index.html",
+      "sha256": "538cb3083f7d770874aa0cf46c18b0c93f005ae7db805614bb7ad5f905a000d3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/clike/clike.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/clike/clike.js",
+      "sha256": "22a362a8a205b6583e2d26e8f7e88a5ab9c1978dd0a8cb407a7bc012fd215313"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/clike/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/clike/index.html",
+      "sha256": "3ebb562420216e3644d86ca0d699646567c810784b6e855a84b9eadee4076096"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/clike/scala.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/clike/scala.html",
+      "sha256": "72099d11aed78ef0a8522c60f88ba5d05e3398cf58d25b7432616096391219d4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/clojure/clojure.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/clojure/clojure.js",
+      "sha256": "a3e5aadb471f7d51b5e14e8311cae1da770f9cbc028976364e2357ed6c1a2ca0"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/clojure/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/clojure/index.html",
+      "sha256": "47ac18dfb9bed2315e505b5a61b084ca9b6813cd3bcb479e4062dbd5b473575f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/cobol/cobol.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/cobol/cobol.js",
+      "sha256": "e91310e59657afc519b252cb0e2a227762d2d039723b54df6f5759339fcd3691"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/cobol/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/cobol/index.html",
+      "sha256": "5d3ac81c0ed82da72f5016505c957996c95893d09b837b6e5283575d9744dd2e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/coffeescript/coffeescript.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/coffeescript/coffeescript.js",
+      "sha256": "f476976dfb43511d3797c9619e191d59abad05282b98c0dcf62f8ed82fe74b7b"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/coffeescript/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/coffeescript/index.html",
+      "sha256": "9b4ced92491b5ec60366f88e263f9f95015f3872c2350b368b6cb1956a58797a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/commonlisp/commonlisp.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/commonlisp/commonlisp.js",
+      "sha256": "123c5a7410a17399e212e6dd34817a031c7613b24b39567fb161d3a57b22d752"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/commonlisp/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/commonlisp/index.html",
+      "sha256": "48304f82d2691b5690111a61da280a7d0329824ff1967632db394f4107ca11f3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/css/css.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/css/css.js",
+      "sha256": "03f69820eb6ab980adb8d87f22eb12725d0211daf52951be4cf86579872d08ec"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/css/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/css/index.html",
+      "sha256": "a542850e4bb2185a77d321be8e90e5a9cdc9e2949d50d435b26b45c9d12886a4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/css/less.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/css/less.html",
+      "sha256": "5ff18e688e9b26da6e48b63688082abd709a8091efb57682698441391a535477"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/css/less_test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/css/less_test.js",
+      "sha256": "612a321533fb9c140479622c3fad181d7534ed1a8d1b0015b57d14c68a6a5f22"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/css/scss.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/css/scss.html",
+      "sha256": "4acadfdb8b33c05e5b048e039021715ecf5a3cd402e5c718f2a3677677a1cb72"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/css/scss_test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/css/scss_test.js",
+      "sha256": "7912f3f4f3c9a54870b0ea0c9c440560b800ed905e4ead616b5abf701b7e06c5"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/css/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/css/test.js",
+      "sha256": "44d053ca3987c873b1bf5760517cd7f80792578dd48a6bab67787dd8abe4b6fd"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/cypher/cypher.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/cypher/cypher.js",
+      "sha256": "5348214729356e17aecef8d228a948de2ae3c8049c8c0640e9c5cd06ad77c0d6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/cypher/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/cypher/index.html",
+      "sha256": "25593e8a4c7e047b523fc96228625a8a13afc9f7fb214974da0ce591054f96c4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/d/d.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/d/d.js",
+      "sha256": "93a25aadaeb926dc963d0213daf87a73aef219832d293a90a67a2b62b18c9f49"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/d/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/d/index.html",
+      "sha256": "5cdfcc46e0c88f11311c5d932908efe7b27a9ceee3dd1feafa4bb0b6f896d2d3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dart/dart.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dart/dart.js",
+      "sha256": "f3dff4171108d262009ef0a816999b2d5c8186f3982428a24b7096aea8fc4c0f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dart/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dart/index.html",
+      "sha256": "c03784de63af8f63bafc8b036bc2318c01b8d8613ead5fc61519e1be1bad13fd"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/diff/diff.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/diff/diff.js",
+      "sha256": "5cab816a0957616d31d9a3f88cce01793f39dc5a484670d36a939c66935c0cae"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/diff/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/diff/index.html",
+      "sha256": "f4c85d5a8b5dbd55837515c495bc0159a81a5e3028b367f263140624152a4114"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/django/django.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/django/django.js",
+      "sha256": "6e66a54523e54e484fb073ff28f275dbde7af7b982ce895bb24985e36de3a850"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/django/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/django/index.html",
+      "sha256": "ac536eba536fb649e333c29517c942ea74aaf370343f49b9062f50ef61be8043"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dockerfile/dockerfile.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dockerfile/dockerfile.js",
+      "sha256": "d589f558a549951b7de390b3e7cb9c9c7b86f5fe4ac6be4b791710cf862a315f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dockerfile/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dockerfile/index.html",
+      "sha256": "837202d427f6994af58ea72fbd08ec8f7f3b14887448fd84e31ee68852bda824"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dtd/dtd.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dtd/dtd.js",
+      "sha256": "5c10aaaa674e7bcdcd64057083c6ea74141a7280720ddd9c79afc6a84a07bea5"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dtd/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dtd/index.html",
+      "sha256": "95a09de1e3b7cfac2d173c0122061d24ec5443349a6e90e0eb60c37a6cb104b6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dylan/dylan.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dylan/dylan.js",
+      "sha256": "86695736fc84852aef547661bcbe82a3353399861308cad46e749b4720a981d6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/dylan/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/dylan/index.html",
+      "sha256": "5fc1569b8ea290ccd09ee7e4c3a5ad2a293dae2b900a3eb9c852b02c0eda60c7"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ebnf/ebnf.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ebnf/ebnf.js",
+      "sha256": "611cd6c6d50015a0335ba536b85a73dd2a60dc6de603183b4bce848d241dd8ca"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ebnf/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ebnf/index.html",
+      "sha256": "4a84b7daeb03d0d13694856346275efa75ea479916facc8f2e51e7449a614bc7"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ecl/ecl.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ecl/ecl.js",
+      "sha256": "1319921804f8929ad2b8a425aeeb29603c56f8036279db3b1d7e11dc438ffaee"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ecl/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ecl/index.html",
+      "sha256": "40b83fd98fb29f95c99f07e0241cfc83258f0d7fb5b6bd218a8b8aa6f727c99d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/eiffel/eiffel.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/eiffel/eiffel.js",
+      "sha256": "9156c259ee296f2304d76e251d78b37ad1c5062e2b4a119a788e82efa07a244d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/eiffel/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/eiffel/index.html",
+      "sha256": "633c0371cfb21c067bb4b882a9e09c159095c476d4875cd54abffbc2817dc30d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/erlang/erlang.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/erlang/erlang.js",
+      "sha256": "f946b64daecd283e8b13457bdc359e7bb0c17dfb0e68e36cfecfb34820f29c13"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/erlang/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/erlang/index.html",
+      "sha256": "aea2656ee99602ca62ccacddd6e77c1c03ac514926cba2db7ee3aab92e8f9500"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/forth/forth.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/forth/forth.js",
+      "sha256": "99d52d4994ed7183bd1581077d4efbaf726f49ea2a5d1f2b2295932402d50ffa"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/forth/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/forth/index.html",
+      "sha256": "b41b4d5daa7774401579db3d0d1d68c166b97da46c3fd1c72fbfe13d70ae4cc2"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/fortran/fortran.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/fortran/fortran.js",
+      "sha256": "d0f8c98c879a02a197d06bcf931de5462e15fe80a52cf4101f06d75c089fb72e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/fortran/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/fortran/index.html",
+      "sha256": "f81e9b5cdc19e6703eb3e2477d53b6d6c778cb3d5d8360d658fff3ae9d0962cd"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/gas/gas.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/gas/gas.js",
+      "sha256": "64f40bde7bf8c35b5590841d7829e85ba6aa35c6f073915cebede4fa3b8e9c7f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/gas/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/gas/index.html",
+      "sha256": "84080f5d09d01d8b6e6211cbed029e53f4b92a3eea3e662306e6282aa2b81d79"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/gfm/gfm.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/gfm/gfm.js",
+      "sha256": "efb725cae52e2f47dca4409278d04aad386c13bdd43afe90c7d3effaebfb3c53"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/gfm/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/gfm/index.html",
+      "sha256": "c160a39d93f31a72060f1488273a9d62fd32705f2d3bacba525460ba576c2915"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/gfm/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/gfm/test.js",
+      "sha256": "3c4dbfe7130eb44274a90a737fd7cca16ebcb846f13686893ffd7845424ff7d1"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/gherkin/gherkin.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/gherkin/gherkin.js",
+      "sha256": "61a7e9859e5b2b026e42851abfc911fc218405319d6935fb58ad99ab603467bf"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/gherkin/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/gherkin/index.html",
+      "sha256": "43eeb9bc6783d63288bb59560e7fae8b8073671c26d83dd2e094bbd4b5c43dcb"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/go/go.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/go/go.js",
+      "sha256": "c18a01bba4b8d5cdeb819a38bd58fdbef6707fa734d933bec3ad067322d53860"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/go/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/go/index.html",
+      "sha256": "4c0ba11e08a29b6396787edcaffce4ec2148426d8276d329596d47e92477801c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/groovy/groovy.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/groovy/groovy.js",
+      "sha256": "4341dc6e1cc6182defef5f2b29b70ce70c84f45e52233618fd2a443500131275"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/groovy/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/groovy/index.html",
+      "sha256": "108e5a8c12693ebcaa1fefabcb2674fba31687c8cc86d6bb422abc3d085108e9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/haml/haml.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/haml/haml.js",
+      "sha256": "67f4d942abf9d7c2dc9fa5e574383ca29b2f1f759540a2f8df25e15e868fe918"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/haml/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/haml/index.html",
+      "sha256": "c6fc029a6ab99692007433b79e187d25c3e779645d0cf1039dda43bc983d5022"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/haml/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/haml/test.js",
+      "sha256": "38777cbf9db7d727bdb8ec7f618e2c44a53334fb634e0b2ec96457459c756a7b"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/haskell/haskell.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/haskell/haskell.js",
+      "sha256": "bd9e9fe468cbef16b192342588f4ce34204d2ae8fced0fc1bad5e08d396e7919"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/haskell/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/haskell/index.html",
+      "sha256": "2d97b253b8c1e55fa57b53a01a6b2dea00044a94c547013ba556048c57ad1220"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/haxe/haxe.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/haxe/haxe.js",
+      "sha256": "1ad2f837f7063b58050fb96b3acdf7b7aa6f6be166bc1503b2d3879b365afb8e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/haxe/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/haxe/index.html",
+      "sha256": "0157d6b13154667286ac02ade73a4751fa14d1556de17e3aea300662a2c1495b"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/htmlembedded/htmlembedded.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/htmlembedded/htmlembedded.js",
+      "sha256": "25267a16cc8fe4f519af53f79aae93ca2dbed93cc109a57ce8787db721bbfa08"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/htmlembedded/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/htmlembedded/index.html",
+      "sha256": "1d7645319ca59c60289d4f84aed58ba2a6ee472b52c13c08ce33d1278c47c436"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/htmlmixed/htmlmixed.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/htmlmixed/htmlmixed.js",
+      "sha256": "b92105d2ad8692bb8713c03c5fc50b468ad7324f2d895546f4748e55b356753c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/htmlmixed/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/htmlmixed/index.html",
+      "sha256": "489fbfd5b5d1b3881fb004b4efce8d384440a1a81247e7129b5a3f48dbb6f619"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/http/http.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/http/http.js",
+      "sha256": "3a1a5459b6620405e43b554448417861940954fc75c029cd4e26b8eb06a03866"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/http/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/http/index.html",
+      "sha256": "e23ab67dbfa5e965759ce5674b9805f7b2e865df9cd7a5687428168b96d7fa09"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/idl/idl.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/idl/idl.js",
+      "sha256": "20b940faf7f577fe1e79aae4aacf7e02cd6f6a5e12327f4a52b831fe244bc2df"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/idl/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/idl/index.html",
+      "sha256": "eef618ca8efbdfe31b9c4c05f7c59113e394abe8a5c34ed02fc6019bfcdfa810"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/index.html",
+      "sha256": "c6dde6d618203f277d59e0306081db89271035c0e4929a5d1a47eb08483f87ef"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/jade/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/jade/index.html",
+      "sha256": "14c16d8520e4dfde6de6d7f5d0f1e5edbee429aa5b0deeec0745caa2f022c660"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/jade/jade.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/jade/jade.js",
+      "sha256": "d93c2aa7434e8b1212ec75013dfc4d69ae39b2d828b66a46c5dedcbf1dd33045"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/javascript/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/javascript/index.html",
+      "sha256": "bd3eb54016a0d4bba846aa86a8dd5f451459f02c0a09352094b3d974ddabd6c3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/javascript/javascript.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/javascript/javascript.js",
+      "sha256": "8766809834829e0f7c3bf6c53ebe9b298a2ecbeee7d98a55a6284dfb83453d35"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/javascript/json-ld.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/javascript/json-ld.html",
+      "sha256": "ac787941ea8a1b871daf68054ca196a99d05cd6873587d4b62586aff9fb92452"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/javascript/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/javascript/test.js",
+      "sha256": "4c63eec359fcd0a0bed35e7eecb4a045d3f911b0be1c0c5279cbf0818b14101a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/javascript/typescript.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/javascript/typescript.html",
+      "sha256": "a29c079f73956b80973c613887660c237fcee6c9a703fd22d3397fc2d21efbf9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/jinja2/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/jinja2/index.html",
+      "sha256": "608e6e527bdc28247284a45fd070e4100bcd1f476dfbb74ba063418420b2334f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/jinja2/jinja2.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/jinja2/jinja2.js",
+      "sha256": "7214fe2e75215d9d71ee4de928b8658d9d318346ba7520248897d52cd4d3d184"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/julia/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/julia/index.html",
+      "sha256": "b4104011f18d67932667afa644812a14b68f9046f8ac15172b4a2a1669db5357"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/julia/julia.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/julia/julia.js",
+      "sha256": "bd33ae9e95f136d2c22fa7ed580d64f0088fc12d0c677e1f45d9fa396e2dd848"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/kotlin/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/kotlin/index.html",
+      "sha256": "059748a46063c1ced29b99e2813901cafb89c0e39b7a324412ed26de4920684f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/kotlin/kotlin.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/kotlin/kotlin.js",
+      "sha256": "6a5121a824c6cc73fc0d404cf81d74a97c43da7b97fa9437570eab79364015db"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/livescript/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/livescript/index.html",
+      "sha256": "e9fdf512b3321fa72c23e729c40820b6059dba89b1ec2605d4d9a3bfecf88360"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/livescript/livescript.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/livescript/livescript.js",
+      "sha256": "4d744d2b73356f8c0fc0307056d2cc9363cbf5d26e85bebb09af2c051d1a9fd6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/lua/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/lua/index.html",
+      "sha256": "51fdca64612a75538b38f4b4395d96147f1691185c447d1bc624577f62503fb7"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/lua/lua.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/lua/lua.js",
+      "sha256": "27fce58bc535aa199702b16980712c41e4cb936182b5e47cc54243b69f74868f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/markdown/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/markdown/index.html",
+      "sha256": "bf0bc9308b210d2e19c1675db4590fe51839d9689ad7a159fe7de4460c9cbe6d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/markdown/markdown.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/markdown/markdown.js",
+      "sha256": "245c6343fc8fa6acb4bf3fb6480fbe41dcb80ece0911fbf6ea33e24f0cd70907"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/markdown/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/markdown/test.js",
+      "sha256": "537ab180f99927da6ef8f3db126dc9ca52a20d4d4e39358d11ffb450ee69c6b8"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/meta.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/meta.js",
+      "sha256": "8a0ed1bbee334f1ff34344d73eca0e131d9ae29b1049be6329fbccb6abbdeee1"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/mirc/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/mirc/index.html",
+      "sha256": "b0e481aa910a9fb697e8f3b199a7fc824768e606f89a4e5b0b66b2962e896a82"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/mirc/mirc.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/mirc/mirc.js",
+      "sha256": "28ad22486393f2758542872eae4bc2ed87d957a25fe51a73cb321ae7b25e2fd3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/mllike/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/mllike/index.html",
+      "sha256": "c0f7c1bf7b6819a0321afb25004e6cd985d25cb10da241f68d29570b47bb8f9c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/mllike/mllike.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/mllike/mllike.js",
+      "sha256": "06fe07f5eb04a304b5bfe4bc337e3156e85116c38952b166dbcdc258156ff94f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/modelica/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/modelica/index.html",
+      "sha256": "49461eedb80f01dcc87eafe11f7546f1523b6e9bf414bd50640f7f71384a7c4e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/modelica/modelica.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/modelica/modelica.js",
+      "sha256": "c7f86d76d577c68601bc584d8e5d623ec08b6705dce4cb3192ead99559b7856b"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/nginx/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/nginx/index.html",
+      "sha256": "17824cfd66ab561bf31a9449ffa280e3635d83af495a6473df00ae6b1737e697"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/nginx/nginx.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/nginx/nginx.js",
+      "sha256": "b1903df2b60b3de99ca9d693a2f40d3582ae69a48aa066033d563c85f13c8a89"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ntriples/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ntriples/index.html",
+      "sha256": "67fac63b38d5f5263dc7fb850903d39766f3bf12e492c417ed617c55f8899e5a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ntriples/ntriples.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ntriples/ntriples.js",
+      "sha256": "c51d22a1315bbbe991e07236dd4669cb91be03575c094efac167dc53545b25d9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/octave/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/octave/index.html",
+      "sha256": "8b9d323754519b21f013150f7ae718d2c367a98311d22254c706bf8f6664ebc2"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/octave/octave.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/octave/octave.js",
+      "sha256": "2b09f10791e8a496b36b42895ae61d0208fcd159d162013fa0a8e3e97e8ba737"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/pascal/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/pascal/index.html",
+      "sha256": "0c1b9513656b584e6ee216c216fb61b3dea5d99688cfefabdc557e75e5ee1865"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/pascal/pascal.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/pascal/pascal.js",
+      "sha256": "e18a93ee401e7726e45518ea0396b838614ed1b8f7e7c3892a97679551a0ba6f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/pegjs/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/pegjs/index.html",
+      "sha256": "2a91062d1e3316c68c6f37ea563cc2dc1d7e0267b16226b5b1e40ebe16ed399e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/pegjs/pegjs.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/pegjs/pegjs.js",
+      "sha256": "32072c37e79fd56cbf088b2c73fba08ce970cb15713e687b98374ae6d560342d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/perl/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/perl/index.html",
+      "sha256": "2a592e6ef6bea7d797fa6b8f29d14588026c956c7e775463ede6deff36555373"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/perl/perl.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/perl/perl.js",
+      "sha256": "ff8220a8ff53acf4dc8b142d3af9c14880c60e95fc207920326733801f234975"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/php/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/php/index.html",
+      "sha256": "40fb40791478bb5fb61edd34a8a7e08ac590ec7a21b2b335d85d7ebd90618628"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/php/php.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/php/php.js",
+      "sha256": "5050424ec8cedec47e20b8a936b83fc246867fa81cf15808fdfa75a0eac8b730"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/php/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/php/test.js",
+      "sha256": "05deb4c55c621b90fced9cb6b46cb9b2edee01a8fb47266eff7dcb1962b91238"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/pig/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/pig/index.html",
+      "sha256": "76781fc2ff85be2b7e948bf14e566bdc483c495db632be63f117ee8f9f29014e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/pig/pig.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/pig/pig.js",
+      "sha256": "703a3fa9e1a724c475cb52f3aff52f609a0bd4c94a0ad42a4cb9d2238faf316f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/properties/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/properties/index.html",
+      "sha256": "a261171d5f85d0b5098635d00f4c8b3390fc5a1bee030b5a9506c80d590aaa46"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/properties/properties.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/properties/properties.js",
+      "sha256": "fe1df30e1b268342a0c7f61d450d9ac55e9d48a5af712adb7a5d43ffcf2f2745"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/puppet/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/puppet/index.html",
+      "sha256": "7b59ea058ab4941bc7f368f1aa8b38bb9a3875d5077dd5a46422a508f328376f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/puppet/puppet.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/puppet/puppet.js",
+      "sha256": "143bdc2737d8e53ad448da6419da4a3ebb6a5d90a06d692e3c9375187a99888d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/python/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/python/index.html",
+      "sha256": "97632c2653731ca5c3dd002d3ca6c382c20e6880a2d97a0267a7c9cec409468c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/python/python.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/python/python.js",
+      "sha256": "e955ab884678f3feda504a42c1735d9cddc118b2f326c1c8fcc88f8c4347145e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/q/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/q/index.html",
+      "sha256": "aefdb56e4ca7eac678569d0faabc2ded6797a6eb4e4432632e9a708aadc89790"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/q/q.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/q/q.js",
+      "sha256": "1f6afc94c771438d6b3717dea7b6202713a46867e5c0bbb5bd1b4b6ff725b64e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/r/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/r/index.html",
+      "sha256": "412c8f95de797c5ffa01a4a7004b95e874c596882e716ab568586a6a0e857737"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/r/r.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/r/r.js",
+      "sha256": "30ff971f45675887307f550419605588850db5ef9d5e9efec4722d4f8c0f05a7"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/rpm/changes/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/rpm/changes/index.html",
+      "sha256": "29c17c32afbbbbf513542d44ccdb29167944677f12d1350348f050e412b8bbce"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/rpm/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/rpm/index.html",
+      "sha256": "97ebe73276ae323601194b0adc0bd0e55fafb8387da1901fc8ccad74feb2235f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/rpm/rpm.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/rpm/rpm.js",
+      "sha256": "da83ac183906489df1515933e89f3254eda5a1b82acfc0e5088514c2d36ab2f2"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/rst/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/rst/index.html",
+      "sha256": "aeeb4f3a8079f5dbb2dcff34c45f4567b946c49de91efea9caf60a4f8eb98350"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/rst/rst.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/rst/rst.js",
+      "sha256": "93db2a574c7c9c31364313654a1d52d68eddb4a9e78baf9ea1790cc714511d36"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ruby/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ruby/index.html",
+      "sha256": "00f454d5eff4cef18448d1b8a0052595272d1414c208fb346222ab81eaef1d5a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ruby/ruby.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ruby/ruby.js",
+      "sha256": "08fbefb8c4f027e821e714b886ab69858f15bb43f43e3d587071c6cf6c0a25f8"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/ruby/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/ruby/test.js",
+      "sha256": "e5e97a5712f1f1cfa7643394090e73708b2dff3a6bbf21f4cafbc26ab72d52bc"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/rust/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/rust/index.html",
+      "sha256": "c684e70689bc8108e67413c11e4ca68f4f267710795569f5d7a64935ca00858e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/rust/rust.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/rust/rust.js",
+      "sha256": "de91e138ae6551ca205ad834caaff786b0e3cafc8db2561c67a0cc56bca4d775"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sass/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sass/index.html",
+      "sha256": "d08e9d1738b274d76720f56840b85fafd0294718d58e56965e89d6eb60899063"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sass/sass.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sass/sass.js",
+      "sha256": "e535fecb39e952ee3ce43d7ac3589986d2c43dbf86f2e64702a544ac7e6abe8a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/scheme/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/scheme/index.html",
+      "sha256": "bfe7c782b06074acead8d4f1746c3c3b270860cf0ea00950d890cbd99e75f71d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/scheme/scheme.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/scheme/scheme.js",
+      "sha256": "1279e6b64cb026d5a1eff3b2a2d1151f5fd25ae2c8233ae8e5b740f7a804063d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/shell/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/shell/index.html",
+      "sha256": "0f2ee5468bdeda2a1970ccb11376a720399fe9c2aa80210127a8f30909dfb6b0"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/shell/shell.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/shell/shell.js",
+      "sha256": "ec78c118850cdf965f6ef0739774331b6cebc88cc5cf08e29d046ec06c93575f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/shell/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/shell/test.js",
+      "sha256": "cdaff690080dec73e2f9044eb89e1426fd2645ea6d8b253cd51cd992717b8a06"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sieve/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sieve/index.html",
+      "sha256": "a24a23764765a02d10f78354bf405c08ecf38c617218319b008fe163cbd4b03d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sieve/sieve.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sieve/sieve.js",
+      "sha256": "e5710e36e9b47286809b888da1f6118ebd643dfc8f46c45d7749d46fc73d1462"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/slim/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/slim/index.html",
+      "sha256": "457fd0808eba92e4bb712541ef94bccc0b7c0f880bd0119e413f752a198b842e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/slim/slim.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/slim/slim.js",
+      "sha256": "a836d2047b16a54b0fc64e033ef753304356fecb406984770e66d8a8365da7c4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/slim/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/slim/test.js",
+      "sha256": "4c7e76beb724f3954a55a6a3fd2e96bc2a2baed32907c6bc9f457771f2d3580e"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/smalltalk/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/smalltalk/index.html",
+      "sha256": "75abf2b24f6557a413072ca3d8c76b0594617c6de8c33b1c1d2da10e27e2765d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/smalltalk/smalltalk.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/smalltalk/smalltalk.js",
+      "sha256": "bf18a089d1616f72353c20d98ba3be68a6d31777ec4778de9c04ef1a2945052c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/smarty/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/smarty/index.html",
+      "sha256": "b252086bda37703c7700e37ec9258e3efba6cb0c8704fe8d9031b75918e8fa06"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/smarty/smarty.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/smarty/smarty.js",
+      "sha256": "54040cb849cd6aaae7ccae2e9aebe72e67d71704bd8bf7b4b2c119d4501090d9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/smartymixed/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/smartymixed/index.html",
+      "sha256": "31c3dfe3ffa50cccef1496c7dabb19431171316f2e1c187090d9a22c99120440"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/smartymixed/smartymixed.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/smartymixed/smartymixed.js",
+      "sha256": "5ed3489640d8aa60cbb31ae73465abc8d93d574a88cc83af6b568e60f80a0fb3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/solr/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/solr/index.html",
+      "sha256": "cfafee84ee32d526e973a20d6cd7f4851e4b8b5621cf57a6400c0c0cc021d8ea"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/solr/solr.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/solr/solr.js",
+      "sha256": "be8f29c0a22a0b8896ed37965e8ac1e4adc824308f91f8c4cac0795a76442f89"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/soy/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/soy/index.html",
+      "sha256": "cc65aaad55e20d0a06ebb15a7920de4b36a82548eabaa23712f1dd800bfdc803"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/soy/soy.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/soy/soy.js",
+      "sha256": "b021fbe8e6bd77811926879e989d8805933ee3b0d38834b0df28481e910c2ad0"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sparql/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sparql/index.html",
+      "sha256": "6969fd470f5c10032a3c530f1bc4c0801ff2bdc12f232371df16f71406020abf"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sparql/sparql.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sparql/sparql.js",
+      "sha256": "cac2b98b49501967e19a704ce0fe7a5517009fd82cd107c9eba43b658eeca37d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/spreadsheet/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/spreadsheet/index.html",
+      "sha256": "818f6cfa02ef52c7f988c5af7d4570c096023893e18c8e6eed8ec5e0155dc083"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/spreadsheet/spreadsheet.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/spreadsheet/spreadsheet.js",
+      "sha256": "dc4b7eb65a4d435119c4a19abf6699948d8a701e272afa4c9acd085e930d6e77"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sql/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sql/index.html",
+      "sha256": "56647ce78d89f5fb5c246cb2cde524da92c35933678ba7b474a7661b08724815"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/sql/sql.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/sql/sql.js",
+      "sha256": "4eb0fcc12a954d29a8336868fa4fc75374ea77d49c4e57717d152d275f383508"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/stex/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/stex/index.html",
+      "sha256": "2618a134d06084758619cbe414c86dee10eff1e7ed3b24517e71cc0caece5c0a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/stex/stex.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/stex/stex.js",
+      "sha256": "05cac9760fb049787e6bd7ba60d7afdc4a642360ed0f2122ea1f17c60b3850df"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/stex/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/stex/test.js",
+      "sha256": "98079995a5f1aef432e18112073fb7590fe40202e958088358fd3805e5fac022"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/stylus/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/stylus/index.html",
+      "sha256": "cd4bd2b6cfbde7f864b0ac5b1154c4e3ef2635cb629210de8a553cce9ceb16fe"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/stylus/stylus.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/stylus/stylus.js",
+      "sha256": "5ec0e691405e233d6e2f1f13e77fb9e7c3d0089750d4b1483c438129e92ffec6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tcl/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tcl/index.html",
+      "sha256": "1a03f78f8583051e262410faa8f294ebf003acc0bb200e9d3e1629a0d76864f8"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tcl/tcl.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tcl/tcl.js",
+      "sha256": "3a4b963e45a7b5c4ce62d984903a1dc66911b9cad52d87e0e92c625a3c8461ee"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/textile/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/textile/index.html",
+      "sha256": "3d5aebf5b7b7d6e590f2ceaaf1d8c1c9faeee0d1ab92a3741ab3a5ec2d736dcb"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/textile/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/textile/test.js",
+      "sha256": "09418771660cfdd14563a73ce735512271e17667376378d62fbc0ad1c02e9089"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/textile/textile.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/textile/textile.js",
+      "sha256": "2a397b6a8c8d7d7c7edd8bcae786bd730cd652f94baaa808985479cb54fc594d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tiddlywiki/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tiddlywiki/index.html",
+      "sha256": "bcbee637025612882cc372a16079939bdd14b3391f01956637340d078df12b53"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.css",
+      "sha256": "12e784b7a98f6319e3b55ff8f14ba090d7bd2aa2c8ac0df3ebc8e848c48301d2"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.js",
+      "sha256": "23d38676eeb5bbeebd3789ee4af2b86828003dc7c804e9a43e86a2eee7362904"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tiki/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tiki/index.html",
+      "sha256": "4f91bbaae451a16fb274af0c31a23a5a8c6a2f07c27f8481ecba56566a1078f6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tiki/tiki.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tiki/tiki.css",
+      "sha256": "21b8360692f1b0025e522f07c2aef08c8ccd5a427d798c7e0df50163c7c0208f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tiki/tiki.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tiki/tiki.js",
+      "sha256": "b30c951763c47228e0fea1f9f31c32da69f73dd0472567d4b5981fe9ae63d4e1"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/toml/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/toml/index.html",
+      "sha256": "3d4e1701062ad0190a1f00e97330ee3ee16bb0848bff96a097445653ef2179a6"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/toml/toml.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/toml/toml.js",
+      "sha256": "f7926b1ba59b01eeea814a1c2a7a0e6f54020b7bbb23c826440a1e0917a464a3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tornado/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tornado/index.html",
+      "sha256": "a904afec9d78cec77574991a9f7218406548c1f90253d9868108b0568e6bc097"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/tornado/tornado.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/tornado/tornado.js",
+      "sha256": "21a80b0171fcc141e2e7ff25c372174c8c6827dcbafef24597b8a0346c751845"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/turtle/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/turtle/index.html",
+      "sha256": "7874367f2d85335edb2061d0ef8ad9cb3668cff64fd6b58633fbcb1c2e964124"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/turtle/turtle.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/turtle/turtle.js",
+      "sha256": "d79d686eb24968a2791be08d71ff46aefe289208dd669e0e6da764eabcb34f7a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/vb/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/vb/index.html",
+      "sha256": "59c99015e349910d3dc04b4febb522a6657105912d2b32f25101ec45c96120e7"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/vb/vb.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/vb/vb.js",
+      "sha256": "60591695ea06c77dba5c72d4ad1b9c538b1fb91a233fb0259198bb5030c4c88d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/vbscript/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/vbscript/index.html",
+      "sha256": "6325c73a8dc155e1fb598b20577c4017dea6a65f85c3c00d11e01c81466c9e50"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/vbscript/vbscript.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/vbscript/vbscript.js",
+      "sha256": "ec66727ff3fb8a84b16a389e91e8457dc718762c94dad93b8e54489dad3d958a"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/velocity/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/velocity/index.html",
+      "sha256": "3fdff11ffdc8c321b2b5d7e022955b1fdfd6fe8e44e8ee68a7d91785104d2887"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/velocity/velocity.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/velocity/velocity.js",
+      "sha256": "03be55111f0cf7cd1abc12094c750a2444f09551757dd55b8319685ffe64f513"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/verilog/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/verilog/index.html",
+      "sha256": "c89dc4992e0cfcf0df5e6f0de4ae13d2072efda9002beb2226fe3e1ab8a54dfe"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/verilog/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/verilog/test.js",
+      "sha256": "5880e689160e4164b98087c51e6f770d0f2c27b05b58af9fed82598e6e4c30b9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/verilog/verilog.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/verilog/verilog.js",
+      "sha256": "ddd106df5ccc8a553e48107d8c738b1619ba85f6bbe22b9398a3ed8d9b178f47"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/xml/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/xml/index.html",
+      "sha256": "b351304e7502ff28489fef9d00672ada8123468b75a19c2016c5ba06089d82b9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/xml/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/xml/test.js",
+      "sha256": "4fc59c5c6c9d08e422cb65fda79a565d541653d9fc0f0359ccd6dc0ff1231863"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/xml/xml.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/xml/xml.js",
+      "sha256": "534312dba2b5db0c7d230f7ac3625b2d2fb8807fe498d51cf1139cfe5a8916b2"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/xquery/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/xquery/index.html",
+      "sha256": "fcf3f8c87d85fd3d7f8d15a24e49cac68ea225ffa7f195769401632e58702562"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/xquery/test.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/xquery/test.js",
+      "sha256": "6cb9e048e1ee5c9ada53bf39f105185f03e99a2618d62cc3fa4a1af846b4e1a3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/xquery/xquery.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/xquery/xquery.js",
+      "sha256": "cf60b55e85bb96159d6f26814bfbe3057859bde94406e91360a0047aae64c116"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/yaml/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/yaml/index.html",
+      "sha256": "f998ecd3cffb4f8f1b0d8fcff32462681f7ea38e59bd66599ccd789d3d8b638f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/yaml/yaml.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/yaml/yaml.js",
+      "sha256": "7bdfc4674140abdb36ef36d4a63ac60194398954bce65fb547e9ae366323e3ef"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/z80/index.html",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/z80/index.html",
+      "sha256": "142bbccf3564394f2bc572f361770744902b9b79e97c9fa51fb45f745d0656b1"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/mode/z80/z80.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/mode/z80/z80.js",
+      "sha256": "ff23cd06eb953e644142e924c54cb1ad6c377a1a80dc3044d9a1a7363c2157f4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/modes.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/modes.min.js",
+      "sha256": "65d64fec32dea176c17b550597574b0798ae0e9bbfc234c267609b29df8ae9e3"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/package.json",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/package.json",
+      "sha256": "7ea729d8f8855009f425092c2bfaeba3f1a5d741be6c4682a4bf78c3a9d699a9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/3024-day.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/3024-day.css",
+      "sha256": "4d2e8859726e43b9343d0b882d40ad77a0d0bc674a042dae7c67a2668fb3024c"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/3024-night.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/3024-night.css",
+      "sha256": "2dc98d2966a9ac0bbdb75beca1fdea86099a6d10cb1e6bbacf3b9e448e7c7b09"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/ambiance-mobile.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/ambiance-mobile.css",
+      "sha256": "356cf9d539a70462808d76851e24bb0049676621d00b6d851c2b1ee2b0f6ac57"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/ambiance.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/ambiance.css",
+      "sha256": "1b2a91a568410ab87dac76a42b11269db03fc75eae613a31c6d203df236742a9"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/base16-dark.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/base16-dark.css",
+      "sha256": "62d8338726db47d28fdc3b69c9248294613f22e22a84b99f15b9fe1b58dfb94d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/base16-light.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/base16-light.css",
+      "sha256": "bedfef2073b7a5f83c7e7b516ac891539e24b473f7b3ecfc6115a9ef02111e6f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/blackboard.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/blackboard.css",
+      "sha256": "0bf25a556953b14bc2ae38f0ba0bf58063efc30061dde97c52c4b6ac2818d774"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/cobalt.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/cobalt.css",
+      "sha256": "e040b9216b837525984fc3a6b871ec3dda5673038b11f8d388bd3a551f7ae5e4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/colorforth.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/colorforth.css",
+      "sha256": "4e4445ed73a7761c6f63c99ae577661621ec9860efc732d0306beab91b5b312b"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/eclipse.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/eclipse.css",
+      "sha256": "a56e7e54b267ce6282427bd5ae83925a04170232aa3691ba5e21d1a907107d62"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/elegant.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/elegant.css",
+      "sha256": "81e5a4d66705fe3d69c022fbab3242428b49cdd60ef138d70cb6a4874691120f"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/erlang-dark.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/erlang-dark.css",
+      "sha256": "d098fb8836801d376c51cb69b46e845a5d67fa9e0ff4cb47c4b826b642496eb5"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/lesser-dark.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/lesser-dark.css",
+      "sha256": "2ce0bc1f189eea3bf6372c5e52c36dd3aef1fd98b37c12d644777adc31620cbe"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/mbo.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/mbo.css",
+      "sha256": "e691f82459df73d32c5fa1207a9d2a90226f7ef9292e82059fd60240773467fa"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/mdn-like.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/mdn-like.css",
+      "sha256": "b2be9ce68aa3e0b5a75b636444b1f6e74a3abe209b8b038fc9589198bb8536f4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/midnight.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/midnight.css",
+      "sha256": "c795588268b89ac5a657d35bd1cd0367df38a05eebb462eed1cf5f9c2de12946"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/monokai.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/monokai.css",
+      "sha256": "4457b553ea7c83910f28ddb442cfeefb54f1be83b3f494b1588ffa686408b1ab"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/neat.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/neat.css",
+      "sha256": "b8dbfebeccb21add8c5537156e44dceace4016f1f81094b3718e20a81c7d3d79"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/neo.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/neo.css",
+      "sha256": "d1e0c5270efb6d0e80a6c1acd915987bb19419cf6cb5489f6b028fd1dd789f14"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/night.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/night.css",
+      "sha256": "8097938658a0382a224decadcd5115820446c76d575659c692fd813d7ca806a7"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/paraiso-dark.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/paraiso-dark.css",
+      "sha256": "9cb9e865e15c40f89b718511e4a781bdf934fd5ccbd411c9e7772c5b5a574f15"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/paraiso-light.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/paraiso-light.css",
+      "sha256": "dc5e27f44c076fdac36cae611d59d9ef2dbd1fb394164f2fbce6d7bacbf7cd01"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/pastel-on-dark.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/pastel-on-dark.css",
+      "sha256": "5780082d161e7d1d933f06b83fa7cf848800c65a5afcde696d7e7fe613b0ae94"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/rubyblue.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/rubyblue.css",
+      "sha256": "2d71a13dba270bd783e7d5ffeb43876431ada927a4ef319703ae4296fc92750b"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/solarized.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/solarized.css",
+      "sha256": "9a73f4764dfb73ff587d4f926099cd0c83e71e3e77092f6889c29b701e7f20e7"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/the-matrix.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/the-matrix.css",
+      "sha256": "46d1b7e82ed8bcb4b03eace0e229b041128317117261affa67e46ddb9147a1f4"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/tomorrow-night-bright.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/tomorrow-night-bright.css",
+      "sha256": "66dc6622e4b8cb7b70e2e9de092e15e0cb87df6525f8f78d52cb761045806430"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/tomorrow-night-eighties.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/tomorrow-night-eighties.css",
+      "sha256": "e1e7fb87a799122c6a811cf50fe7f3a5d1fd0c1fe0e071d0cb81781798368d15"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/twilight.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/twilight.css",
+      "sha256": "f5d2ff143a1d420b392c8840060054755a1f9ab058afb1b474b22b9ab511f9bc"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/vibrant-ink.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/vibrant-ink.css",
+      "sha256": "5d176e6c237c83e9e0937a8b93f958954a1a77f534cebbf411b5235db7532f46"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/xq-dark.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/xq-dark.css",
+      "sha256": "af4234e400f92e2bad36353d9958a74525d4debf844ab8d89d5bbfc6a5ee5d4d"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/xq-light.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/xq-light.css",
+      "sha256": "6d71911e9db069d281fa4f2b939a7e806d9713f207c8eb9119e1be4008220fec"
+    },
+    {
+      "path": "plugins/editormd/lib/codemirror/theme/zenburn.css",
+      "source": "src/main/resources/static/plugins/editormd/lib/codemirror/theme/zenburn.css",
+      "sha256": "4a936f0f7802d0641c380c161dda606269d6149d09205f10ed9d9c28a4428c95"
+    },
+    {
+      "path": "plugins/editormd/lib/flowchart.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/flowchart.min.js",
+      "sha256": "8cfd3c00a56399912231eabb8ccdcd994c4fb754331fdb4f02a6058d72294265"
+    },
+    {
+      "path": "plugins/editormd/lib/jquery.flowchart.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/jquery.flowchart.min.js",
+      "sha256": "d173fa2a1c6c7a38928e3b0aad0212bf3341d2ea45d2e15008be311e584584c1"
+    },
+    {
+      "path": "plugins/editormd/lib/marked.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/marked.min.js",
+      "sha256": "1ba49026b64923089e48bffd7b2fb8dcd7f461e75310ce4cedc2c50ad6c60add"
+    },
+    {
+      "path": "plugins/editormd/lib/prettify.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/prettify.min.js",
+      "sha256": "2599318d2321936d91e514bd59889b1d2092ea002c9126baba089cf290eda145"
+    },
+    {
+      "path": "plugins/editormd/lib/raphael.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/raphael.min.js",
+      "sha256": "3ba12946eab8f5295467701ba54ef03f227bad2d73e907b286173da1db2bda28"
+    },
+    {
+      "path": "plugins/editormd/lib/sequence-diagram.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/sequence-diagram.min.js",
+      "sha256": "78f272cf52bbda7c71c20b9d075070422b1d7e2a3c7c818b2e7619d747fe46f1"
+    },
+    {
+      "path": "plugins/editormd/lib/underscore.min.js",
+      "source": "src/main/resources/static/plugins/editormd/lib/underscore.min.js",
+      "sha256": "c3a45a9aa7adf430df26b8f5f12708f28f73a8abb12d382113bbbca227891e9c"
+    },
+    {
+      "path": "plugins/editormd/package.json",
+      "source": "src/main/resources/static/plugins/editormd/package.json",
+      "sha256": "a8e5fac109844c085223e785864350981f643d8189caf38dfe4d255aade49c5c"
+    },
+    {
+      "path": "plugins/editormd/plugins/code-block-dialog/code-block-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/code-block-dialog/code-block-dialog.js",
+      "sha256": "5d5a8f2c2a2d05620df07bdae466e26f8ccfaef8641aa4013d0145dc57168c8a"
+    },
+    {
+      "path": "plugins/editormd/plugins/emoji-dialog/emoji-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/emoji-dialog/emoji-dialog.js",
+      "sha256": "ef562b7be2cc9c9c077105910575d5e7c88b43a434c0cb00c2b350fc63f5e9ae"
+    },
+    {
+      "path": "plugins/editormd/plugins/emoji-dialog/emoji.json",
+      "source": "src/main/resources/static/plugins/editormd/plugins/emoji-dialog/emoji.json",
+      "sha256": "d00b1d3226055c36755dead2a348752deebdfe16abd29455b8dc64dbd5a1d7f6"
+    },
+    {
+      "path": "plugins/editormd/plugins/goto-line-dialog/goto-line-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/goto-line-dialog/goto-line-dialog.js",
+      "sha256": "b1fef10b51429c866c6d331d35d128d65c6e4da053ef30ab656109945b0b351d"
+    },
+    {
+      "path": "plugins/editormd/plugins/help-dialog/help-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/help-dialog/help-dialog.js",
+      "sha256": "b8780b47e8ec7df5a8208ec735f55380bf315c1566fa5e0baf39525ab9006d3e"
+    },
+    {
+      "path": "plugins/editormd/plugins/help-dialog/help.md",
+      "source": "src/main/resources/static/plugins/editormd/plugins/help-dialog/help.md",
+      "sha256": "aef208b02040a7cfc751642e68fabef0e3476cadc1586ee2d9bf6e375a877e29"
+    },
+    {
+      "path": "plugins/editormd/plugins/html-entities-dialog/html-entities-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/html-entities-dialog/html-entities-dialog.js",
+      "sha256": "1e59c18d92c05b0f353ba4f16a208433cce01778bece5ef380939c8e32948b08"
+    },
+    {
+      "path": "plugins/editormd/plugins/html-entities-dialog/html-entities.json",
+      "source": "src/main/resources/static/plugins/editormd/plugins/html-entities-dialog/html-entities.json",
+      "sha256": "4cabb0f2e7865a31c03cf004b22daeca0845a3ebaa568e82ec1e34a42d321da7"
+    },
+    {
+      "path": "plugins/editormd/plugins/image-dialog/image-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/image-dialog/image-dialog.js",
+      "sha256": "6528fbeb9f48a22b633aa447830dbb191aef333d25eb4bc5ee555400d828f1d9"
+    },
+    {
+      "path": "plugins/editormd/plugins/link-dialog/link-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/link-dialog/link-dialog.js",
+      "sha256": "5225bd1f630ad4a3de9f70f5f3eef096265c3d35b307595695630c365ca50206"
+    },
+    {
+      "path": "plugins/editormd/plugins/plugin-template.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/plugin-template.js",
+      "sha256": "284210c424a2d8d155cf442f63015ecbc338305b35dfec32cd9a83faf87a621a"
+    },
+    {
+      "path": "plugins/editormd/plugins/preformatted-text-dialog/preformatted-text-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/preformatted-text-dialog/preformatted-text-dialog.js",
+      "sha256": "fa9435e948ef919f4dfed8005759e5f57bab58f469a5766e5f2fda3ea7688363"
+    },
+    {
+      "path": "plugins/editormd/plugins/reference-link-dialog/reference-link-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/reference-link-dialog/reference-link-dialog.js",
+      "sha256": "3e9f3be9b8db81e989af6dfeaab67c18b217df95496287b4cb0dcaf27a2da7af"
+    },
+    {
+      "path": "plugins/editormd/plugins/table-dialog/table-dialog.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/table-dialog/table-dialog.js",
+      "sha256": "432095285604af851a32ceb8b32bc2f3a36a0d0698c8d2e23eaf65f97be5365c"
+    },
+    {
+      "path": "plugins/editormd/plugins/test-plugin/test-plugin.js",
+      "source": "src/main/resources/static/plugins/editormd/plugins/test-plugin/test-plugin.js",
+      "sha256": "fbb5e77f09658c8c84e7d8eaa1ba59f36fcfb59ac9a62166134cd34fd539f08a"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.codemirror.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.codemirror.scss",
+      "sha256": "be14bbe277004405df0fd889f37c9c663bfaa5774aab18e539a1da0b7bdf0ed8"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.dialog.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.dialog.scss",
+      "sha256": "3a76a869a976712fc399cd5e5b73a5fbf11b5e9640fe19dcc8264e5f3d336b1b"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.form.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.form.scss",
+      "sha256": "2caea6ce7243729a2505c749a75c3d64f97d5f036a07d47d19ab78fe1661fea8"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.grid.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.grid.scss",
+      "sha256": "6b16b157791996b9cfb2b0669c18c690fba450f33b5972121a758aaa118bac57"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.logo.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.logo.scss",
+      "sha256": "66178a4be3c68b6b742b98f549bcd667d8bc48bad3f016b52898f74f675ef01a"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.menu.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.menu.scss",
+      "sha256": "483101dde0d2ba946df2c3daa441954b33c61cf7c4049edcf81380fd9a7e7cd5"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.preview.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.preview.scss",
+      "sha256": "fb9b9a99c125a7071750e7a0e597180581acb5b57303ae1765b476545ba50649"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.preview.themes.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.preview.themes.scss",
+      "sha256": "efdd1e8ea90c805089b57cf6d53ec1beeba0e13db029a12d4769ed6fab221f2c"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.scss",
+      "sha256": "68f5bae1ff36593391c5be92d44a38a5b5d28aecafb8da7eacdeeb4551afb302"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.tab.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.tab.scss",
+      "sha256": "3977494b66a6064043f74efa2104056790632fb63b60c25c9d901789ba51bced"
+    },
+    {
+      "path": "plugins/editormd/scss/editormd.themes.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/editormd.themes.scss",
+      "sha256": "6fc078715f35efdc9604895684e9472d8beffbcc2740fc68ee67b5164861e727"
+    },
+    {
+      "path": "plugins/editormd/scss/font-awesome.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/font-awesome.scss",
+      "sha256": "c374efba54279628793f04e10ebf5d0c1b4dbc36b3f4132d9235f01d64ca5c8e"
+    },
+    {
+      "path": "plugins/editormd/scss/github-markdown.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/github-markdown.scss",
+      "sha256": "a70fe6db84356a66bc77eaa54d3f68102d9e3bd374538de1b765c76131bf1faf"
+    },
+    {
+      "path": "plugins/editormd/scss/lib/prefixes.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/lib/prefixes.scss",
+      "sha256": "d9ee3cb10ec2ce112639b023b0989445f818fc36ab06ba56d4a6483e626a0218"
+    },
+    {
+      "path": "plugins/editormd/scss/lib/variables.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/lib/variables.scss",
+      "sha256": "f694fd6bcf9512c50e15649a424241444432b3e72edd23929299d2e82c3e9ad8"
+    },
+    {
+      "path": "plugins/editormd/scss/prettify.scss",
+      "source": "src/main/resources/static/plugins/editormd/scss/prettify.scss",
+      "sha256": "e56e6fbc034cadc36fc86a5697a32f9e97a2fc40dfb89fe8b7379e2d5a805ec7"
+    },
+    {
+      "path": "plugins/editormd/src/editormd.js",
+      "source": "src/main/resources/static/plugins/editormd/src/editormd.js",
+      "sha256": "6b7324936c44651b1395a293a1099f4b083dc12a82704a0c5e3e295b937a6cfa"
+    },
+    {
+      "path": "plugins/editormd/tests/bootstrap-test.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/bootstrap-test.html",
+      "sha256": "7125906814748de6fb396bcf177504d654b809b156e0b0a8f40235c74fb536dd"
+    },
+    {
+      "path": "plugins/editormd/tests/codemirror-searchbox-test.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/codemirror-searchbox-test.html",
+      "sha256": "1d0d52a404de433860e76694958c668b2a887322fc811850b138477fc074b3d7"
+    },
+    {
+      "path": "plugins/editormd/tests/codemirror-test.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/codemirror-test.html",
+      "sha256": "1d7b965f83d90cb180ca26a03679b6f53369872e15683343c77d9959e3176d17"
+    },
+    {
+      "path": "plugins/editormd/tests/css/bootstrap-theme.min.css",
+      "source": "src/main/resources/static/plugins/editormd/tests/css/bootstrap-theme.min.css",
+      "sha256": "2453e31f9c5e0dbee528d11f97a85edf897ed93406954ce8e475f0244abf249a"
+    },
+    {
+      "path": "plugins/editormd/tests/css/bootstrap.min.css",
+      "source": "src/main/resources/static/plugins/editormd/tests/css/bootstrap.min.css",
+      "sha256": "f04b517ba5d6a0510485689a3e42dac000f51640fd71b986804cba178eae42a5"
+    },
+    {
+      "path": "plugins/editormd/tests/js/bootstrap.min.js",
+      "source": "src/main/resources/static/plugins/editormd/tests/js/bootstrap.min.js",
+      "sha256": "d5fd173d00d9733900834e0e1083de86b532e048b15c0420ba5c2db0623644b8"
+    },
+    {
+      "path": "plugins/editormd/tests/js/searchbox.js",
+      "source": "src/main/resources/static/plugins/editormd/tests/js/searchbox.js",
+      "sha256": "e27b1a965768f0beca4dd84b456c25edcc6fdf7ef2a7138608e3ab9595c07899"
+    },
+    {
+      "path": "plugins/editormd/tests/katex-tests.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/katex-tests.html",
+      "sha256": "6ec22239d49682a82fd8cc47d6ec124b3fb0d271bb22ad06ce6a374474b9e1e5"
+    },
+    {
+      "path": "plugins/editormd/tests/marked-@at-test.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/marked-@at-test.html",
+      "sha256": "dc97c84dc70334e717f51f764b13730c2f37a6299213a8c2c93109ada7fa7dd0"
+    },
+    {
+      "path": "plugins/editormd/tests/marked-emoji-test.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/marked-emoji-test.html",
+      "sha256": "b13fce17599c75020c5899d728f9e0544043e7184c104e03db54ff79c2d552cb"
+    },
+    {
+      "path": "plugins/editormd/tests/marked-heading-link-test.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/marked-heading-link-test.html",
+      "sha256": "b06b1c972e5cfe807e35f1a5d9d338d9d2f606a04c4a14f01f528dcaed80cd67"
+    },
+    {
+      "path": "plugins/editormd/tests/marked-todo-list-test.html",
+      "source": "src/main/resources/static/plugins/editormd/tests/marked-todo-list-test.html",
+      "sha256": "1b5743073beac4a62b7a82190c84a7da0ac4aff7437e2208ce02d6c90726b594"
+    },
+    {
+      "path": "plugins/editormd/tests/qunit/qunit-1.16.0.css",
+      "source": "src/main/resources/static/plugins/editormd/tests/qunit/qunit-1.16.0.css",
+      "sha256": "901fc509189789bfcd0cf42bdc9b07d49953d7ae92397be9b6d7d8653bd4bd5f"
+    },
+    {
+      "path": "plugins/editormd/tests/qunit/qunit-1.16.0.js",
+      "source": "src/main/resources/static/plugins/editormd/tests/qunit/qunit-1.16.0.js",
+      "sha256": "641bad7e9f47fc5415f18518bc731411d679b2cd8b148c5f0744871908725c57"
+    },
+    {
+      "path": "plugins/jquery/jquery.min.js",
+      "source": "src/main/resources/static/plugins/jquery/jquery.min.js",
+      "sha256": "3e7501d15c3630e791c8b20392eb9dee31a9f65ce3efdde76cef5c710141ab24"
+    },
+    {
+      "path": "upload/08172781-4977-4034-87d7-5705563a35ee.jpg",
+      "source": "upload/08172781-4977-4034-87d7-5705563a35ee.jpg",
+      "sha256": "7eede90224df991f4e9fd0e2db746c725907f3ff21313a0989167707b0d3625c"
+    },
+    {
+      "path": "upload/0e1740e4-c7bc-4113-ba91-ba536f8a49b9.jpg",
+      "source": "upload/0e1740e4-c7bc-4113-ba91-ba536f8a49b9.jpg",
+      "sha256": "8b929eb118d26f15d8f70a742d876ae12faf4c340d76bfe8870a716c6b95ac89"
+    },
+    {
+      "path": "upload/19c66fed-d022-4199-b641-4e5052eded84.jpg",
+      "source": "upload/19c66fed-d022-4199-b641-4e5052eded84.jpg",
+      "sha256": "4c4b120eb45cbb46374a641736302307f5981fa98874b2fcb8b2a5a576cb77b9"
+    },
+    {
+      "path": "upload/28e3ce56-5070-4acc-b039-a69cdb196491.jpg",
+      "source": "upload/28e3ce56-5070-4acc-b039-a69cdb196491.jpg",
+      "sha256": "8b929eb118d26f15d8f70a742d876ae12faf4c340d76bfe8870a716c6b95ac89"
+    },
+    {
+      "path": "upload/2d637701-1560-4989-be98-6232827bf7ce.jpg",
+      "source": "upload/2d637701-1560-4989-be98-6232827bf7ce.jpg",
+      "sha256": "d6ccefce344718d03344d50d5fc65631c01de5d7d58528c6b2fd2c4a749a3aa6"
+    },
+    {
+      "path": "upload/3d079600-f16e-49aa-9892-7a731c1ad526.jpg",
+      "source": "upload/3d079600-f16e-49aa-9892-7a731c1ad526.jpg",
+      "sha256": "c8fb317158b88419e788dfdc4b9e8809b4038ae4195db2f9cde69e606bfc651b"
+    },
+    {
+      "path": "upload/67f6993b-0af8-43eb-9d94-481fabff99ba.jpg",
+      "source": "upload/67f6993b-0af8-43eb-9d94-481fabff99ba.jpg",
+      "sha256": "042859a74ed1a5cd15b6c02cacd69497c7ff39640d955240ecf8ca95c977552b"
+    },
+    {
+      "path": "upload/70624034-3677-4be6-a06e-e5483fcbf6be.jpg",
+      "source": "upload/70624034-3677-4be6-a06e-e5483fcbf6be.jpg",
+      "sha256": "d6ccefce344718d03344d50d5fc65631c01de5d7d58528c6b2fd2c4a749a3aa6"
+    },
+    {
+      "path": "upload/78cbfac8-8db1-456c-9f7e-68a9944df657.jpg",
+      "source": "upload/78cbfac8-8db1-456c-9f7e-68a9944df657.jpg",
+      "sha256": "c374f71efcc4e9e9024659670a9b83bf3a02b5a61b4026c456f000b1daa8f66d"
+    },
+    {
+      "path": "upload/8bbb308b-936e-4ebc-8187-20b88c287584.png",
+      "source": "upload/8bbb308b-936e-4ebc-8187-20b88c287584.png",
+      "sha256": "ac89c6d13ca7e2ee0d217dbe90cda32bcdbef83113882fc86d1f2ee532e50a42"
+    },
+    {
+      "path": "upload/a2665e31-cedb-4bf7-a0e4-05231a7a292e.jpg",
+      "source": "upload/a2665e31-cedb-4bf7-a0e4-05231a7a292e.jpg",
+      "sha256": "c374f71efcc4e9e9024659670a9b83bf3a02b5a61b4026c456f000b1daa8f66d"
+    }
+  ],
+  "extracted_libraries": [
+    "Bootstrap 5.3.2",
+    "Bootstrap Icons 1.13.1",
+    "Spring Security default-ui.css"
+  ]
+}

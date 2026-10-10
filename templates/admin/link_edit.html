@@ -1,0 +1,45 @@
+{% extends "admin/layout/admin.html" %}
+{% set title = '编辑友链' %}
+{% block content %}
+<div id="main-content">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+<h1 class="h2">{{ ('添加友链' if link.id == none else '编辑友链') }}</h1>
+</div>
+<form method="post" class="row g-3" style="max-width: 800px;" action="/admin/links/save">
+{% if csrf_token %}<input type="hidden" name="_csrf" value="{{ csrf_token }}">{% endif %}
+
+<input type="hidden" name="id" id="id" value="{{ link.id if link.id is not none else '' }}">
+<div class="col-md-6">
+<label class="form-label">网站名称</label>
+<input type="text" class="form-control" required="" name="name" id="name" value="{{ link.name if link.name is not none else '' }}">
+</div>
+<div class="col-md-6">
+<label class="form-label">网站地址 (URL)</label>
+<input type="url" class="form-control" required="" placeholder="https://..." name="url" id="url" value="{{ link.url if link.url is not none else '' }}">
+</div>
+<div class="col-12">
+<label class="form-label">Logo 地址</label>
+<input type="text" class="form-control" placeholder="https://..." name="logo" id="logo" value="{{ link.logo if link.logo is not none else '' }}">
+</div>
+<div class="col-12">
+<label class="form-label">网站描述</label>
+<input type="text" class="form-control" name="description" id="description" value="{{ link.description if link.description is not none else '' }}">
+</div>
+<div class="col-md-6">
+<label class="form-label">分组</label>
+<input type="text" class="form-control" list="teamOptions" placeholder="例如: Friends" name="team" id="team" value="{{ link.team if link.team is not none else '' }}">
+<datalist id="teamOptions">
+<option value="Friends"></option>
+<option value="Official"></option></datalist>
+</div>
+<div class="col-md-6">
+<label class="form-label">排序 (数字越大越靠前)</label>
+<input type="number" class="form-control" value="{{ link.sort if link.sort is not none else '' }}" name="sort" id="sort">
+</div>
+<div class="col-12 mt-4">
+<button type="submit" class="btn btn-primary">保存</button>
+<a href="/admin/links" class="btn btn-outline-secondary">取消</a>
+</div>
+</form>
+</div>
+{% endblock %}

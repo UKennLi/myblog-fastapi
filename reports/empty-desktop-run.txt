@@ -1,0 +1,8 @@
+/ MATCH
+/archive MATCH
+/links MATCH
+/admin/posts MATCH
+/admin/drafts MATCH
+/admin/comments MATCH
+/admin/links MATCH
+/admin/about MATCH

@@ -1,0 +1,32 @@
+<nav id="nav" class="show">
+<span id="blog-info">
+<a href="/">
+<span class="site-name">{{ site_title }}</span>
+</a>
+</span>
+<div id="menus">
+<div id="search-button">
+<a class="site-page social-icon search">
+<i class="fas fa-search fa-fw"></i>
+<span> 搜索</span>
+</a>
+</div>
+<div id="toggle-menu">
+<a class="site-page"><i class="fas fa-bars fa-fw"></i></a>
+</div>
+<div class="menus_items">
+<div class="menus_item">
+<a class="site-page" href="/">
+<i class="fa-fw fas fa-home"></i> <span>首页</span>
+</a>
+</div>
+{% for menu in menuItems %}<div class="menus_item">
+<a class="site-page" href="{{ menu.url }}">
+<i class="{{ 'fa-fw ' ~ menu.icon }}"></i>
+<span>{{ menu.name }}</span>
+</a>
+</div>
+{% endfor %}
+</div>
+</div>
+</nav>

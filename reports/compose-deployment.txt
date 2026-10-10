@@ -1,0 +1,4 @@
+ Container myblog-fastapi-validation-blog-1  Recreate
+ Container myblog-fastapi-validation-blog-1  Recreated
+ Container myblog-fastapi-validation-blog-1  Starting
+ Container myblog-fastapi-validation-blog-1  Started

@@ -1,0 +1,96 @@
+{
+  "groups": [
+    {
+      "group": "desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "pages": 23,
+      "dom_matches": 23,
+      "pixel_exact": 21,
+      "differences": [
+        {
+          "route": "/about",
+          "pixels": 10906,
+          "total": 2393280
+        },
+        {
+          "route": "/admin/about",
+          "pixels": 23,
+          "total": 1308960
+        }
+      ],
+      "external_unavailable": 7
+    },
+    {
+      "group": "mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "pages": 23,
+      "dom_matches": 23,
+      "pixel_exact": 22,
+      "differences": [
+        {
+          "route": "/admin/about",
+          "pixels": 22,
+          "total": 370500
+        }
+      ],
+      "external_unavailable": 7
+    },
+    {
+      "group": "fixture-desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "pages": 9,
+      "dom_matches": 9,
+      "pixel_exact": 7,
+      "differences": [
+        {
+          "route": "/post/hello-world",
+          "pixels": 9733,
+          "total": 2668320
+        },
+        {
+          "route": "/admin/posts/edit/650001",
+          "pixels": 23,
+          "total": 1772640
+        }
+      ],
+      "external_unavailable": 6
+    },
+    {
+      "group": "fixture-mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "pages": 5,
+      "dom_matches": 5,
+      "pixel_exact": 5,
+      "differences": [],
+      "external_unavailable": 5
+    },
+    {
+      "group": "empty-desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "pages": 8,
+      "dom_matches": 8,
+      "pixel_exact": 8,
+      "differences": [],
+      "external_unavailable": 3
+    }
+  ],
+  "total_pages": 68,
+  "total_dom_matches": 68,
+  "total_pixel_exact": 63,
+  "conditions": "Same Chromium, fixed animation frames, shared external responses; unavailable CDN behavior and antialiasing limits recorded; no claim of universal visual equivalence."
+}

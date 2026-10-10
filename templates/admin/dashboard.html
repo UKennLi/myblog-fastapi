@@ -1,0 +1,34 @@
+{% extends "admin/layout/admin.html" %}
+{% set title = '仪表盘' %}
+{% block content %}
+<div id="main-content">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+<h1 class="h2">仪表盘</h1>
+<div class="btn-toolbar mb-2 mb-md-0">
+<div class="btn-group me-2">
+<a target="_blank" class="btn btn-sm btn-outline-secondary" href="/">
+<i class="bi bi-house"></i> 查看前台首页
+                </a>
+</div>
+</div>
+</div>
+<div class="alert alert-success" role="alert">
+        欢迎回来，<strong>{{ username }}</strong>！准备好分享今天的故事了吗？
+    </div>
+<div class="row">
+<div class="col-md-4 mb-4">
+<div class="card text-white bg-primary h-100">
+<div class="card-body">
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<h6 class="card-title mb-0">文章总数</h6>
+<h2 class="display-4 mt-2 mb-0">{{ postCount }}</h2>
+</div>
+<i class="bi bi-journal-text fs-1 opacity-50"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,233 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 1123590
+    },
+    {
+      "route": "/post/hello-world",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 985920
+    },
+    {
+      "route": "/about",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 901680
+    },
+    {
+      "route": "/archive",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 781170
+    },
+    {
+      "route": "/links",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 860340
+    },
+    {
+      "route": "/post/nonexistent",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 337600
+    },
+    {
+      "route": "/category/default",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 970320
+    },
+    {
+      "route": "/search?keyword=Spring",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 959400
+    },
+    {
+      "route": "/admin",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/admin/posts",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/admin/drafts",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/admin/comments",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/admin/links",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/admin/posts/new",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 463710
+    },
+    {
+      "route": "/admin/posts/edit/2",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 476580
+    },
+    {
+      "route": "/admin/links/new",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/admin/links/edit/1",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/admin/about",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 22,
+      "total_pixels": 370500
+    },
+    {
+      "route": "/admin/options",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 551070
+    },
+    {
+      "route": "/admin/profile",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 354900
+    },
+    {
+      "route": "/login",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/login?error",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    },
+    {
+      "route": "/logout",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 329160
+    }
+  ],
+  "external_resources": [
+    {
+      "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://s2.loli.net/2023/01/18/bIJTVaR3MLPzcZ7.jpg",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+      "status": 200
+    },
+    {
+      "url": "https://typecho.org/usr/themes/default/img/logo.png",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://spring.io/images/spring-logo-9146a4d3298760c2e7e4cd59a5a8bd84.svg",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://avatars.githubusercontent.com/u/1?v=4",
+      "status": "unavailable",
+      "reason": "URLError"
+    }
+  ]
+}

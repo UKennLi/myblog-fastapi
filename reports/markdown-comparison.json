@@ -1,0 +1,72 @@
+[
+  {
+    "name": "headings",
+    "source": "# 标题\n\n## Heading\n\n文字 **加粗** *斜体* ~~删除~~\n",
+    "original": "<h1>标题</h1>\n<h2>Heading</h2>\n<p>文字 <strong>加粗</strong> <em>斜体</em> ~~删除~~</p>\n",
+    "new": "<h1>标题</h1>\n<h2>Heading</h2>\n<p>文字 <strong>加粗</strong> <em>斜体</em> ~~删除~~</p>\n",
+    "exact_match": true
+  },
+  {
+    "name": "lists",
+    "source": "- a\n- b\n\n1. A\n2. B\n",
+    "original": "<ul>\n<li>a</li>\n<li>b</li>\n</ul>\n<ol>\n<li>A</li>\n<li>B</li>\n</ol>\n",
+    "new": "<ul>\n<li>a</li>\n<li>b</li>\n</ul>\n<ol>\n<li>A</li>\n<li>B</li>\n</ol>\n",
+    "exact_match": true
+  },
+  {
+    "name": "quote",
+    "source": "> quote\n>\n> **bold**\n",
+    "original": "<blockquote>\n<p>quote</p>\n<p><strong>bold</strong></p>\n</blockquote>\n",
+    "new": "<blockquote>\n<p>quote</p>\n<p><strong>bold</strong></p>\n</blockquote>\n",
+    "exact_match": true
+  },
+  {
+    "name": "code",
+    "source": "```python\nprint(\"你好\")\n```\n\n    indented\n",
+    "original": "<pre><code class=\"language-python\">print(&quot;你好&quot;)\n</code></pre>\n<pre><code>indented\n</code></pre>\n",
+    "new": "<pre><code class=\"language-python\">print(&quot;你好&quot;)\n</code></pre>\n<pre><code>indented\n</code></pre>\n",
+    "exact_match": true
+  },
+  {
+    "name": "html",
+    "source": "<div class=\"sample\">raw HTML</div>\n\n<script>var x=1;</script>\n",
+    "original": "<div class=\"sample\">raw HTML</div>\n<script>var x=1;</script>\n",
+    "new": "<div class=\"sample\">raw HTML</div>\n<script>var x=1;</script>\n",
+    "exact_match": true
+  },
+  {
+    "name": "table",
+    "source": "| A | B | C |\n| :--- | :---: | ---: |\n| a | b | c |\n",
+    "original": "<table>\n<thead>\n<tr>\n<th align=\"left\">A</th>\n<th align=\"center\">B</th>\n<th align=\"right\">C</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"left\">a</td>\n<td align=\"center\">b</td>\n<td align=\"right\">c</td>\n</tr>\n</tbody>\n</table>\n",
+    "new": "<table>\n<thead>\n<tr>\n<th align=\"left\">A</th>\n<th align=\"center\">B</th>\n<th align=\"right\">C</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"left\">a</td>\n<td align=\"center\">b</td>\n<td align=\"right\">c</td>\n</tr>\n</tbody>\n</table>\n",
+    "exact_match": true
+  },
+  {
+    "name": "links",
+    "source": "[link](https://example.com?a=1&b=2 \"标题\") ![图](a.png)\n",
+    "original": "<p><a href=\"https://example.com?a=1&amp;b=2\" title=\"标题\">link</a> <img src=\"a.png\" alt=\"图\" /></p>\n",
+    "new": "<p><a href=\"https://example.com?a=1&amp;b=2\" title=\"标题\">link</a> <img src=\"a.png\" alt=\"图\" /></p>\n",
+    "exact_match": true
+  },
+  {
+    "name": "entities",
+    "source": "&amp; &copy; <https://example.com>\n",
+    "original": "<p>&amp; © <a href=\"https://example.com\">https://example.com</a></p>\n",
+    "new": "<p>&amp; © <a href=\"https://example.com\">https://example.com</a></p>\n",
+    "exact_match": true
+  },
+  {
+    "name": "breaks",
+    "source": "line  \nnext\n\n---\n",
+    "original": "<p>line<br />\nnext</p>\n<hr />\n",
+    "new": "<p>line<br />\nnext</p>\n<hr />\n",
+    "exact_match": true
+  },
+  {
+    "name": "nested",
+    "source": "- a\n  - b\n    - c\n\ntext\n\n```\n<>&\n```\n",
+    "original": "<ul>\n<li>a\n<ul>\n<li>b\n<ul>\n<li>c</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p>text</p>\n<pre><code>&lt;&gt;&amp;\n</code></pre>\n",
+    "new": "<ul>\n<li>a\n<ul>\n<li>b\n<ul>\n<li>c</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p>text</p>\n<pre><code>&lt;&gt;&amp;\n</code></pre>\n",
+    "exact_match": true
+  }
+]

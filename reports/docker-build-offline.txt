@@ -1,0 +1,53 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.offline
+#1 transferring dockerfile: 928B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 144B done
+#3 DONE 0.0s
+
+#4 [ 1/10] FROM docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 257.70kB 0.1s done
+#5 DONE 0.1s
+
+#6 [ 2/10] WORKDIR /app
+#6 CACHED
+
+#7 [ 3/10] COPY requirements.lock ./
+#7 CACHED
+
+#8 [ 5/10] RUN pip install --no-cache-dir --no-index --find-links=/wheels -r requirements.lock && pip check && rm -rf /wheels
+#8 CACHED
+
+#9 [ 4/10] COPY .build-wheels /wheels
+#9 CACHED
+
+#10 [ 6/10] RUN groupadd --gid 1000 blog && useradd --uid 1000 --gid blog --no-create-home blog
+#10 CACHED
+
+#11 [ 7/10] COPY --chown=blog:blog app ./app
+#11 DONE 0.7s
+
+#12 [ 8/10] COPY --chown=blog:blog templates ./templates
+#12 DONE 0.3s
+
+#13 [ 9/10] COPY --chown=blog:blog static ./static
+#13 DONE 0.5s
+
+#14 [10/10] RUN mkdir -p /app/uploads /app/state && chown blog:blog /app/uploads /app/state
+#14 DONE 0.5s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.4s done
+#15 writing image sha256:f4d7255a23ddf99279fb0bf555d1d80aab12fea24b060cb2442e0b6da2c49f33 done
+#15 naming to docker.io/library/myblog-fastapi:1.0.0 done
+#15 DONE 0.5s

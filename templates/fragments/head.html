@@ -1,0 +1,18 @@
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>{{ title }}</title>
+<link rel="icon" href="{{ (site_logo if not is_empty(site_logo) else '/favicon.ico') }}">
+<link rel="stylesheet" href="/butterfly/css/index.css">
+<link rel="stylesheet" href="/butterfly/css/style.css">
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+      var GLOBAL_CONFIG = {
+          root: {{ root_js | safe }},
+          islazyload: false
+      };
+  </script>
+</head>

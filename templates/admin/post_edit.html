@@ -1,0 +1,137 @@
+{% extends "admin/layout/admin.html" %}
+{% set title = '写文章' %}
+{% block content %}
+<div id="main-content">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+<h1 class="h2">{{ ('撰写新文章' if post.id == none else '编辑文章') }}</h1>
+</div>
+<form id="postForm" method="post" action="/admin/posts/save">
+{% if csrf_token %}<input type="hidden" name="_csrf" value="{{ csrf_token }}">{% endif %}
+
+<input type="hidden" name="id" id="id" value="{{ post.id if post.id is not none else '' }}">
+<input type="hidden" id="statusField" name="status" value="{{ post.status if post.status is not none else '' }}">
+<div class="row mb-3">
+<div class="col-md-8">
+<input type="text" class="form-control form-control-lg" id="title" required="" placeholder="在此输入文章标题" name="title" value="{{ post.title if post.title is not none else '' }}">
+</div>
+<div class="col-md-4 text-end">
+<button type="button" class="btn btn-secondary btn-lg me-2" onclick="submitForm(&#x27;DRAFT&#x27;)">
+<i class="bi bi-save"></i> 存草稿
+                 </button>
+<button type="button" class="btn btn-primary btn-lg" onclick="submitForm(&#x27;PUBLISHED&#x27;)">
+<i class="bi bi-send-fill me-2"></i> 发布
+                 </button>
+</div>
+</div>
+<div class="row mb-3">
+<div class="col-md-4">
+<div class="input-group">
+<span class="input-group-text">访问路径</span>
+<input type="text" class="form-control" id="slug" placeholder="留空自动生成" name="slug" value="{{ post.slug if post.slug is not none else '' }}">
+</div>
+</div>
+<div class="col-md-4">
+<div class="input-group">
+<label class="input-group-text" for="category">文章分类</label>
+<select class="form-select" id="category" name="categoryId">
+{% for cat in categories %}<option{% if cat.id == post.categoryId %} selected{% endif %} value="{{ cat.id }}">{{ cat.name }}</option>{% endfor %}
+</select>
+</div>
+</div>
+<div class="col-md-4">
+<div class="input-group">
+<span class="input-group-text">文章标签</span>
+<input type="text" class="form-control" id="tags" placeholder="Java, Spring Boot (逗号分隔)" name="tagsStr" value="{{ post.tagsStr if post.tagsStr is not none else '' }}">
+</div>
+</div>
+</div>
+<div class="mb-3 mt-3">
+<label for="thumbnail" class="form-label">文章封面 (可选)</label>
+<div class="input-group">
+<input type="text" class="form-control" id="thumbnail" placeholder="输入图片URL，或点击右侧按钮上传 -&gt;" name="thumbnail" value="{{ post.thumbnail if post.thumbnail is not none else '' }}">
+<button class="btn btn-outline-secondary" type="button" id="upload-thumbnail-btn">
+<i class="bi bi-cloud-upload"></i> 上传封面
+                </button>
+<input type="file" id="thumbnail-file" style="display: none;" accept="image/*">
+</div>
+{% if not is_empty(post.thumbnail) %}<div id="thumbnail-preview" class="mt-2">
+<img style="max-height: 150px; border-radius: 5px; border: 1px solid #ddd; padding: 3px;" src="{{ post.thumbnail }}">
+</div>{% endif %}
+</div>
+<div id="test-editormd" style="z-index: 1000 !important;">
+<textarea style="display:none;" name="content" id="content">{{ post.content if post.content is not none else '' }}</textarea>
+</div>
+<div class="mb-3 mt-3">
+<label for="summary" class="form-label">文章摘要 (选填)</label>
+<textarea class="form-control" id="summary" rows="2" placeholder="不填则自动截取正文前150字" name="summary">{{ post.summary if post.summary is not none else '' }}</textarea>
+</div>
+</form>
+</div>
+{% endblock %}
+{% block scripts %}
+
+<link rel="stylesheet" href="/plugins/editormd/css/editormd.min.css">
+<script src="/plugins/jquery/jquery.min.js"></script>
+<script src="/plugins/editormd/editormd.min.js"></script>
+<script src="/plugins/editormd/languages/en.js"></script>
+<script type="text/javascript">
+        var testEditor;
+        $(function() {
+            testEditor = editormd("test-editormd", {
+                width   : "100%",
+                height  : 640,
+                syncScrolling : "single",
+                path    : "/plugins/editormd/lib/",
+                saveHTMLToTextarea : true,
+                emoji : false,
+                
+                imageUpload : true,
+                imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                imageUploadURL : "/admin/api/upload",
+                
+                onload : function() { }
+            });
+        });
+
+        // 封面上传逻辑
+        $('#upload-thumbnail-btn').click(function() {
+            $('#thumbnail-file').click();
+        });
+
+        $('#thumbnail-file').change(function() {
+            var file = this.files[0];
+            if (!file) return;
+            var formData = new FormData();
+            formData.append('editormd-image-file', file); 
+            $.ajax({
+                url: '/admin/api/upload',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(result) {
+                    if (result.success === 1) {
+                        $('#thumbnail').val(result.url);
+                        var preview = '<img src="' + result.url + '" style="max-height: 150px; border-radius: 5px; border: 1px solid #ddd; padding: 3px;">';
+                        $('#thumbnail-preview').html(preview);
+                    } else {
+                        alert('上传失败: ' + result.message);
+                    }
+                },
+                error: function() { alert('上传出错，请检查网络或服务器配置'); }
+            });
+        });
+
+        // ✨ 新增：提交表单函数
+        function submitForm(status) {
+            $('#statusField').val(status);
+            // 简单的非空校验
+            if ($('#title').val().trim() === '') {
+                alert('文章标题不能为空');
+                return;
+            }
+            $('#postForm').submit();
+        }
+    </script>
+
+{% endblock %}

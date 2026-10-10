@@ -1,0 +1,218 @@
+/*
+此css用于适配移植
+*/
+:root{
+  --btn-comm-bg: #fff;
+}
+[data-theme=dark]{
+  --btn-comm-bg: #1f1f1f;
+}
+.vmaster,
+.vvisitor,
+.vauth {
+  background: #ffa51e;
+  font-size: 12px;
+  color: white;
+  padding: 1px 5px;
+  border-radius: 4px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.vvisitor {
+  background: #828282 !important;
+}
+
+.vauth {
+  background: #00a2d8 !important;
+}
+
+.vimg {
+  float: left;
+  margin: 8px 10px 0px 0px;
+  width: 45px;
+  height: 45px;
+  transition: filter 375ms ease-in 0.2s, transform 0.3s;
+}
+
+.vimg:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.vh {
+    border-bottom: 1px dashed #f5f5f5;
+    padding-bottom: 10px;
+}
+
+/* =========================================
+   🚀 Butterfly 主题终极修复补丁 v2
+   ========================================= */
+
+/* 1. 强制显示文章发布时间 */
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap time,
+#post-info #post-meta time {
+    display: inline !important;
+    margin-left: 4px !important; /* 给时间左侧加点间距 */
+}
+
+/* 2. 修复元信息图标和文字过于拥挤的问题 */
+.article-meta-wrap i, 
+#post-meta i {
+    margin-right: 4px !important;
+}
+
+/* 3. 修复“发表于”等文字标签的间距 */
+.article-meta-label {
+    margin-right: 4px !important;
+}
+
+/* 4. 修复分隔符“|”的间距 */
+.article-meta-separator {
+    margin: 0 8px !important;
+}
+
+/* 5. 修复分类和标签链接的间距 */
+.article-meta__categories,
+.article-meta__tags {
+    margin-right: 8px !important;
+}
+
+/* =========================================
+   🧩 分页条终极修复补丁
+   ========================================= */
+#pagination {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+#pagination .pagination {
+    text-align: center;
+    display: block !important; /* 强制块级显示，防止被挤压 */
+}
+
+/* 页码按钮通用样式 */
+#pagination .page-number,
+#pagination .extend {
+    display: inline-block !important; /* 核心：让它们横向排列 */
+    margin: 0 6px;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff; /* 默认白色背景 */
+    color: #99a9bf;
+    transition: all 0.3s;
+    box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05); /* 加点小阴影更有质感 */
+}
+
+/* 暗黑模式适配 */
+[data-theme="dark"] #pagination .page-number,
+[data-theme="dark"] #pagination .extend {
+    background-color: #121212;
+    color: #99a9bf;
+}
+
+/* 当前页高亮 */
+#pagination .page-number.current {
+    background: #00c4b6 !important;
+    color: #fff !important;
+    cursor: default;
+    box-shadow: 0 3px 8px 6px rgba(0, 196, 182, 0.15); /* 高亮时的阴影 */
+}
+
+/* 鼠标悬停效果 */
+#pagination .page-number:not(.current):hover,
+#pagination .extend:hover {
+    background: #ff7242 !important; /* 经典的橙色悬停 */
+    color: #fff !important;
+}
+
+/* 省略号样式 */
+#pagination .space {
+    display: inline-block;
+    margin: 0 6px;
+    color: #99a9bf;
+    vertical-align: bottom; /* 微调对齐 */
+}
+
+/* =========================================
+   🧩 分页条微调补丁 (修复图标和对齐)
+   ========================================= */
+#pagination .pagination {
+    display: flex !important;
+    justify-content: center;
+    align-items: center; /* 核心：让所有子元素垂直居中对齐 */
+}
+
+#pagination .page-number,
+#pagination .extend {
+    display: flex !important; /* 改用 flex 布局来完美居中内部的文字/图标 */
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px !important; /* 稍微减小一点间距 */
+}
+
+/* 专门修复图标不显示的问题 */
+#pagination .extend i {
+    font-size: 0.9em; /* 稍微调小一点图标，防止溢出 */
+    line-height: 1 !important; /*重置行高，由 flex 容器负责居中 */
+}
+
+/* 修复省略号的位置 */
+#pagination .space {
+    display: inline-block !important;
+    margin: 0 4px !important;
+    vertical-align: middle !important;
+    line-height: 2.5em; /* 与按钮高度一致 */
+}
+
+/* =========================================
+   🧩 分页条终极微调补丁 v2 (修复图标和居中)
+   ========================================= */
+#pagination {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+#pagination .pagination {
+    display: flex !important;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#pagination .page-number,
+#pagination .extend {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px !important;
+    width: 35px !important;  /* 固定宽度，确保正方形 */
+    height: 35px !important; /* 固定高度 */
+    line-height: 1 !important; /* 重置行高，交给flex居中 */
+    border-radius: 8px;
+    background-color: #fff;
+    color: #99a9bf;
+    transition: all 0.3s;
+    box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
+    text-decoration: none !important; /* 去掉下划线 */
+}
+
+/* 强制图标显示，并设置合适的大小 */
+#pagination .extend i {
+    font-size: 14px !important; /* 明确指定图标大小 */
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: inherit !important; /* 继承父元素的颜色 */
+}
+
+/* ... (其他暗黑模式、高亮样式保持不变，如果之前没加，这里需要补上) ... */

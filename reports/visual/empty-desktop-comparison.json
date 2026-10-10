@@ -1,0 +1,89 @@
+{
+  "viewport": [
+    1440,
+    900
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 2926080
+    },
+    {
+      "route": "/archive",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 2206080
+    },
+    {
+      "route": "/links",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 2206080
+    },
+    {
+      "route": "/admin/posts",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 1296000
+    },
+    {
+      "route": "/admin/drafts",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 1296000
+    },
+    {
+      "route": "/admin/comments",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 1296000
+    },
+    {
+      "route": "/admin/links",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 1296000
+    },
+    {
+      "route": "/admin/about",
+      "dom_match": true,
+      "difference": null,
+      "screenshot_size_match": true,
+      "different_pixels": 0,
+      "total_pixels": 1308960
+    }
+  ],
+  "external_resources": [
+    {
+      "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+      "status": "unavailable",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+      "status": "unavailable",
+      "reason": "URLError"
+    }
+  ]
+}

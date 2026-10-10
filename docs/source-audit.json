@@ -1,0 +1,242 @@
+{
+  "commit": "5f7353824b80e68e492253dac2ef84006d911908",
+  "files": [
+    {
+      "path": "src/main/java/com/xuan/PasswordGenerator.java",
+      "sha256": "ecd5f2f22690624f563a6caefd5c9303447c5b56ad0207677e61ab5f0f46ca9f"
+    },
+    {
+      "path": "src/main/java/com/xuan/MyBlogButterflyApplication.java",
+      "sha256": "d3ad8a52ee0eb86536bf679d64e674f138a5321bbb5bcdf0c441f8d9f574cc38"
+    },
+    {
+      "path": "src/main/java/com/xuan/dto/CategoryDto.java",
+      "sha256": "3004a2b1c47910f775aeeb6398a965efce68fb9628286fd9d2f6ee207aa93ca8"
+    },
+    {
+      "path": "src/main/java/com/xuan/service/OptionService.java",
+      "sha256": "49fba663da665d3003327190eaf0094620e609c515f67de40c6419be5788565c"
+    },
+    {
+      "path": "src/main/java/com/xuan/service/CategoryService.java",
+      "sha256": "b086eb2c0072ace78c1ba8532bc7cfefcf86b5da37b2651691211bb6b28356df"
+    },
+    {
+      "path": "src/main/java/com/xuan/service/CommentService.java",
+      "sha256": "f787287dfaefb394bb39aecc50680271166c8c7fe26660fdbefae5f2e95cec76"
+    },
+    {
+      "path": "src/main/java/com/xuan/service/UserDetailsServiceImpl.java",
+      "sha256": "acbc415d1570800e1efe13b76bbba7c9428dfe1042d435e933b477f8ee6a8601"
+    },
+    {
+      "path": "src/main/java/com/xuan/service/LinkService.java",
+      "sha256": "4663aaf822c7352a804738c35132b100ec336a4926b427cd6c4ec9f6c6bfeb03"
+    },
+    {
+      "path": "src/main/java/com/xuan/service/PostService.java",
+      "sha256": "e23cc5f94105b198be440b2dab8bc0cd48a7cb496e262fd4639a0fd35a7c5490"
+    },
+    {
+      "path": "src/main/java/com/xuan/service/UserService.java",
+      "sha256": "d00c05261b9e63dbbc4669e17ee0e5bddb484710a43d958d61c6037f09b3a75f"
+    },
+    {
+      "path": "src/main/java/com/xuan/mapper/CategoryMapper.java",
+      "sha256": "4387ad91a5519d5c7474365fc3b5596de7b436266c14d1bf99e409a1d9737842"
+    },
+    {
+      "path": "src/main/java/com/xuan/mapper/CommentMapper.java",
+      "sha256": "a5333840237aa56c5d627f0b93e7489994d753a771cc2a0477299c3b49cee3f5"
+    },
+    {
+      "path": "src/main/java/com/xuan/mapper/OptionMapper.java",
+      "sha256": "a3a8f7bfbe7dc4d4ba2413bfdc18cdb52a4f1a41042c4ad4b4e93537303f0f8f"
+    },
+    {
+      "path": "src/main/java/com/xuan/mapper/LinkMapper.java",
+      "sha256": "08b939d1e358dfd528bc85b4a730feb520943b28bd1a114edafc404222949616"
+    },
+    {
+      "path": "src/main/java/com/xuan/mapper/UserMapper.java",
+      "sha256": "103a1ed426e6713b58a03daa7d2409b612d8b471113c08d757d2af644bb73fa5"
+    },
+    {
+      "path": "src/main/java/com/xuan/mapper/PostMapper.java",
+      "sha256": "523434a945274f54c41675dc950e05ff308459a16911424211e958b05502dcbc"
+    },
+    {
+      "path": "src/main/java/com/xuan/mapper/TagMapper.java",
+      "sha256": "c9fed9251e806d49e56a9f6ca8eea36dfc66f1df718e9f9562861651baaa1abc"
+    },
+    {
+      "path": "src/main/java/com/xuan/controller/UploadController.java",
+      "sha256": "2b5605c96720c458907d601a1aeef69323466114203bfe5329ef91ba1fcc4552"
+    },
+    {
+      "path": "src/main/java/com/xuan/controller/IndexController.java",
+      "sha256": "3f5b3524eb2b39f3e7060a397ab17a0cf4bcc703f975d2a50e6895f60ad6f158"
+    },
+    {
+      "path": "src/main/java/com/xuan/controller/CommentController.java",
+      "sha256": "f583d1cfce101155a83445f4d6e1b6f233ebc0afb227b2eb9193b57e24c6281f"
+    },
+    {
+      "path": "src/main/java/com/xuan/controller/AdminController.java",
+      "sha256": "d6aee3ebfb9e1bd44ad2461ee41980d9c97380e5d6a8a9a2d0bd51183cdc1a17"
+    },
+    {
+      "path": "src/main/java/com/xuan/entity/Category.java",
+      "sha256": "e5fe072aecca38d44d0c3afc899b455e11f869746d625ac41bc0161bf363a3ec"
+    },
+    {
+      "path": "src/main/java/com/xuan/entity/Option.java",
+      "sha256": "7d32d65a676c6367596794e71d0caf565332ec96d77bf2bd75e92995e8c8bfbd"
+    },
+    {
+      "path": "src/main/java/com/xuan/entity/Comment.java",
+      "sha256": "d845568c5cbb8df1c0d5578d2d6b26c426a0b7fc99091b3bfae0bd6acc70fafb"
+    },
+    {
+      "path": "src/main/java/com/xuan/entity/Tag.java",
+      "sha256": "9ab4019d0f7ddd975351e722b49d4d839b8efb60e022fd3db83bf6d99db3fb0b"
+    },
+    {
+      "path": "src/main/java/com/xuan/entity/Post.java",
+      "sha256": "45f12589578f85d4588165ba870afe412dd00b399d2b9a67fff4c671673f5df4"
+    },
+    {
+      "path": "src/main/java/com/xuan/entity/User.java",
+      "sha256": "35f0f76f5df3c4c5b909071302fb169634eb2f569d6ee1da002183483eb589c9"
+    },
+    {
+      "path": "src/main/java/com/xuan/entity/Link.java",
+      "sha256": "9ccd8c359dccb8fb49cc434ff50d195836d3cfa52e46aa341ab30f7c7753d640"
+    },
+    {
+      "path": "src/main/java/com/xuan/config/WebMvcConfig.java",
+      "sha256": "a2d04560bc0871ab01285fc2ed7a12ee9e1f1339554f9fa9ece60c7eecf29f7b"
+    },
+    {
+      "path": "src/main/java/com/xuan/config/GlobalViewConfig.java",
+      "sha256": "db4aa1d67a3de1a1e9a8f2474af95d20e5087344e67432e846b48d3d1edba183"
+    },
+    {
+      "path": "src/main/java/com/xuan/config/SecurityConfig.java",
+      "sha256": "a5e52d4e398d266a1dda7d8b9431e4e03a117959848ceb2c27ce57fe51beeedc"
+    },
+    {
+      "path": "src/main/resources/templates/links.html",
+      "sha256": "aa56583d7f56ccf513acfd2c8dc4890c2e1edba986c214fd9768b8aada575f87"
+    },
+    {
+      "path": "src/main/resources/templates/archives.html",
+      "sha256": "8c7e54ca9fbf3e30a685f9fe65de6bfbd11791ae06577116ab77926c16ed0632"
+    },
+    {
+      "path": "src/main/resources/templates/post.html",
+      "sha256": "a6e49beab530503d849a0a772c4c1882ba48a49a36f5d05f4a167d8250174aa2"
+    },
+    {
+      "path": "src/main/resources/templates/page.html",
+      "sha256": "3a5afc6ebda3029bdb2c0be61501d3fb0061a1608992aedadec8392d3ee028f1"
+    },
+    {
+      "path": "src/main/resources/templates/index.html",
+      "sha256": "029adb516f74b3f6c9c278109947bc7c923e5fc6a8ddfe1cc7d27739958455e5"
+    },
+    {
+      "path": "src/main/resources/templates/fragments/nav.html",
+      "sha256": "3897c41bcf6e6f0a9ac2bc5f7c697f48c1c1fb0ed87aec8d2e4e3d3409c19367"
+    },
+    {
+      "path": "src/main/resources/templates/fragments/comment.html",
+      "sha256": "f828e6a4e70466605a3e7745041d8d335d8971e5869b229b7496c4195e9e1c73"
+    },
+    {
+      "path": "src/main/resources/templates/fragments/sidebar.html",
+      "sha256": "56d6013a6e95c0118a4e54bad5cd6cda5a5d4784b76f059ac13e298651aff456"
+    },
+    {
+      "path": "src/main/resources/templates/fragments/emoji.html",
+      "sha256": "7fa4cd601e3095337431491f0dfee8c222b78edee09752928d814b01fdecc9b5"
+    },
+    {
+      "path": "src/main/resources/templates/fragments/head.html",
+      "sha256": "4437de2052525dc85ada134797187126fc06e1c22a6dc6264a0ce31e9d04f948"
+    },
+    {
+      "path": "src/main/resources/templates/fragments/footer.html",
+      "sha256": "8e5bdb8a04cf1c289bbdd9cec53237647946324024bafc478b130dfe1c776bf3"
+    },
+    {
+      "path": "src/main/resources/templates/layout/main.html",
+      "sha256": "550fc93795c9c886a22b7d04a874c53e031367a90823385817c04b38f29e0334"
+    },
+    {
+      "path": "src/main/resources/templates/error/404.html",
+      "sha256": "95f2f958662733a8092af1710110b776674fc9496d2788201ebe338fd1ca4612"
+    },
+    {
+      "path": "src/main/resources/templates/admin/options.html",
+      "sha256": "417e9d44016dfccbdb6a70db8ae5c9b62be663b514f2c05d516cde504d10e2db"
+    },
+    {
+      "path": "src/main/resources/templates/admin/links.html",
+      "sha256": "882cda3b3b2967f453290a0f896ee42165e3ade46452ee565174113a8333153b"
+    },
+    {
+      "path": "src/main/resources/templates/admin/drafts.html",
+      "sha256": "fe095ecc725c6adfe78c93044bfee19de7442329f158cef5ae5277ad18f149f7"
+    },
+    {
+      "path": "src/main/resources/templates/admin/dashboard.html",
+      "sha256": "6be1c437989c8646f9003796c3106b0e847c87ef18e5b3126b9684b720ff446a"
+    },
+    {
+      "path": "src/main/resources/templates/admin/comments.html",
+      "sha256": "02f9d6563b5a66388256250e9802eb2460a1dbf547186e07a6a5d02eb85e8438"
+    },
+    {
+      "path": "src/main/resources/templates/admin/profile.html",
+      "sha256": "b7e2db4b7b9e6717a39ef0d00711d5ccb49baeea392131137934c6dc41d0d4ad"
+    },
+    {
+      "path": "src/main/resources/templates/admin/post_edit.html",
+      "sha256": "dcf442221259f7853b7ad33567bc7628ca75e53798cf0792ffed3b95a4db135f"
+    },
+    {
+      "path": "src/main/resources/templates/admin/link_edit.html",
+      "sha256": "d89f8d165abf175d8791585cbdad2c81e8fb5c542a7d205a00dde0e8e7bdf0f2"
+    },
+    {
+      "path": "src/main/resources/templates/admin/about_edit.html",
+      "sha256": "9beb0227709160e935b86381ef1be8414aa122e687b82e1975193506c0b33b67"
+    },
+    {
+      "path": "src/main/resources/templates/admin/posts.html",
+      "sha256": "d0f85890456a6ccb46ae3990f3c9f8481698ff4111d726243f3ebe485dbfaf0a"
+    },
+    {
+      "path": "src/main/resources/templates/admin/layout/admin.html",
+      "sha256": "a5dc2f9cfff44ccde2729002389086791f3aac15ce7b9b9e90a98af510e703ce"
+    },
+    {
+      "path": "pom.xml",
+      "sha256": "dfc94060811fe9b2c5bfc384c239a6b4d9181d210f238ff27784b3bf73c1626c"
+    },
+    {
+      "path": "src/main/resources/application.properties",
+      "sha256": "b313411cb1f32fd1de8716bc6be288b63bb2d92fd54ba39ac3d04b9d65cc29e7"
+    },
+    {
+      "path": "sql/blog_init.sql",
+      "sha256": "3c2359cf7a3b1d41b8d5d88d38d8cf16e3a561d313d8100e35728e8de736202d"
+    },
+    {
+      "path": "src/test/java/com/xuan/MyBlogButterflyApplicationTests.java",
+      "sha256": "59204bc1f4f6e2acbaa54aaf2f8c80c574b408016a355c498948da2292bd0c94"
+    }
+  ],
+  "static_asset_count": 712
+}

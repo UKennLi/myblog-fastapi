@@ -1,0 +1,87 @@
+CREATE TABLE `t_user` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '用户ID',
+  `username` VARCHAR(50) NOT NULL COMMENT '用户名',
+  `password` VARCHAR(100) NOT NULL COMMENT '密码(加密存储)',
+  `nickname` VARCHAR(50) DEFAULT NULL COMMENT '昵称(显示用)',
+  `email` VARCHAR(100) DEFAULT NULL COMMENT '邮箱',
+  `avatar` VARCHAR(255) DEFAULT NULL COMMENT '头像URL',
+  `created` DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_username` (`username`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='用户表';
+
+CREATE TABLE `t_category` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '分类ID',
+  `name` VARCHAR(50) NOT NULL COMMENT '分类名称',
+  `slug` VARCHAR(50) NOT NULL COMMENT '分类缩略名(用于URL)',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_slug` (`slug`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='分类表';
+
+CREATE TABLE `t_post` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '文章ID',
+  `title` VARCHAR(255) NOT NULL COMMENT '文章标题',
+  `slug` VARCHAR(255) DEFAULT NULL COMMENT '文章缩略名(用于URL)',
+  `content` LONGTEXT COMMENT '文章内容(Markdown)',
+  `content_html` LONGTEXT COMMENT '文章内容(HTML)',
+  `summary` VARCHAR(500) DEFAULT NULL COMMENT '文章摘要',
+  `thumbnail` VARCHAR(255) DEFAULT NULL COMMENT '封面图URL',
+  `category_id` BIGINT(20) DEFAULT 1 COMMENT '分类ID',
+  `status` VARCHAR(20) DEFAULT 'PUBLISHED' COMMENT '状态: DRAFT/PUBLISHED',
+  `type` VARCHAR(20) DEFAULT 'POST' COMMENT '类型: POST/PAGE',
+  `created` DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `modified` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_slug` (`slug`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='文章表';
+
+CREATE TABLE `t_tag` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL COMMENT '标签名称',
+  `slug` VARCHAR(50) NOT NULL COMMENT '标签缩略名',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_name` (`name`),
+  UNIQUE KEY `uk_slug` (`slug`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='标签表';
+
+CREATE TABLE `t_post_tag` (
+  `post_id` BIGINT(20) NOT NULL COMMENT '文章ID',
+  `tag_id` BIGINT(20) NOT NULL COMMENT '标签ID',
+  PRIMARY KEY (`post_id`, `tag_id`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='文章-标签关联表';
+
+CREATE TABLE `t_comment` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '评论ID',
+  `post_id` BIGINT(20) NOT NULL COMMENT '关联文章ID',
+  `parent_id` BIGINT(20) DEFAULT NULL COMMENT '父评论ID',
+  `author` VARCHAR(50) NOT NULL COMMENT '评论者昵称',
+  `email` VARCHAR(100) NOT NULL COMMENT '评论者邮箱',
+  `url` VARCHAR(200) DEFAULT NULL COMMENT '评论者网址',
+  `ip` VARCHAR(50) DEFAULT NULL COMMENT '评论者IP',
+  `user_agent` VARCHAR(500) DEFAULT NULL COMMENT '评论者浏览器信息',
+  `content` TEXT NOT NULL COMMENT '评论内容',
+  `status` VARCHAR(20) DEFAULT 'APPROVED' COMMENT '状态: APPROVED/WAITING/SPAM',
+  `is_admin` TINYINT(1) DEFAULT 0 COMMENT '是否博主评论',
+  `created` DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '评论时间',
+  PRIMARY KEY (`id`),
+  KEY `idx_post_id` (`post_id`),
+  KEY `idx_parent_id` (`parent_id`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='评论表';
+
+CREATE TABLE `t_option` (
+  `option_key` VARCHAR(50) NOT NULL COMMENT '配置键',
+  `option_value` LONGTEXT COMMENT '配置值',
+  PRIMARY KEY (`option_key`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='系统配置表';
+
+CREATE TABLE `t_link` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '友链ID',
+  `name` VARCHAR(50) NOT NULL COMMENT '网站名称',
+  `url` VARCHAR(1024) NOT NULL COMMENT '网站地址',
+  `logo` VARCHAR(1024) DEFAULT NULL COMMENT '网站Logo/头像',
+  `description` VARCHAR(1024) DEFAULT NULL COMMENT '网站描述',
+  `team` VARCHAR(50) DEFAULT 'Friends' COMMENT '分组',
+  `sort` INT(11) DEFAULT 0 COMMENT '排序',
+  `created` DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='友情链接表';

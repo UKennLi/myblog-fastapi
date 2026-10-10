@@ -1,0 +1,46 @@
+{% extends "layout/main.html" %}
+{% set title = '友情链接 - ' ~ site_title %}
+{% set headerClass = 'post-bg' %}
+{% set headerStyle = 'background-image: url(/butterfly/img/DefualtThumbnail.jpg)' %}
+{% block header_content %}
+<div id="post-info">
+<h1 class="post-title">友情链接</h1>
+</div>
+{% endblock %}
+{% block main_content %}
+<div id="page">
+<div id="article-container">
+<div class="flink">
+{% for team, team_links in linkMap.items() %}
+<h2>{{ team }}</h2>
+<div class="flink-list">
+{% for link in team_links %}<div class="flink-list-item">
+<a target="_blank" href="{{ link.url }}" title="{{ link.name }}">
+<div class="flink-item-icon">
+<img onerror="this.onerror=null;this.src=&#x27;/butterfly/img/friend_404.gif&#x27;" alt="link-logo" src="{{ link.logo }}">
+</div>
+<div class="flink-item-name">{{ link.name }}</div>
+<div class="flink-item-desc" title="{{ link.description }}">{{ link.description }}</div>
+</a>
+</div>{% endfor %}
+</div>
+{% endfor %}
+</div>
+</div>
+<!--
+        <hr/>
+        <div id="post-comment">
+            <div class="comment-head">
+                <div class="comment-headline">
+                    <i class="fas fa-comments fa-fw"></i> <span>评论</span>
+                </div>
+            </div>
+			
+            <div class="comment-wrap">
+                <div>评论功能开发中... (你需要为这个页面创建一个虚拟的 postId 才能使用评论)</div>
+            </div>
+			
+        </div>
+		-->
+</div>
+{% endblock %}

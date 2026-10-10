@@ -1,0 +1,2 @@
+NAME                               IMAGE                  COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+myblog-fastapi-validation-blog-1   myblog-fastapi:1.0.0   "uvicorn app.main:ap…"   blog      50 seconds ago   Up 25 seconds (healthy)   127.0.0.1:8000->8000/tcp

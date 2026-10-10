@@ -1,0 +1,501 @@
+{
+  "checks": [
+    {
+      "name": "GET /",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /?page=0",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /?size=0",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /?page=-1",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /?page=999",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /archive",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /search",
+      "match": true,
+      "old": {
+        "status": 400,
+        "location": ""
+      },
+      "new": {
+        "status": 400,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /search?keyword=Spring",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /post/missing",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /tag/missing",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /category/missing",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /admin/categories",
+      "match": true,
+      "old": {
+        "status": 500,
+        "location": ""
+      },
+      "new": {
+        "status": 500,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /admin/posts/edit/999999",
+      "match": true,
+      "old": {
+        "status": 500,
+        "location": ""
+      },
+      "new": {
+        "status": 500,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /admin/links/edit/999999",
+      "match": true,
+      "old": {
+        "status": 500,
+        "location": ""
+      },
+      "new": {
+        "status": 500,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /admin/posts?page=bad",
+      "match": true,
+      "old": {
+        "status": 400,
+        "location": ""
+      },
+      "new": {
+        "status": 400,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /admin/posts/download/999999",
+      "match": true,
+      "old": {
+        "status": 200,
+        "location": ""
+      },
+      "new": {
+        "status": 200,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /error",
+      "match": true,
+      "old": {
+        "status": 500,
+        "location": ""
+      },
+      "new": {
+        "status": 500,
+        "location": ""
+      }
+    },
+    {
+      "name": "GET /login?logout",
+      "match": true,
+      "old": {
+        "status": 500,
+        "location": ""
+      },
+      "new": {
+        "status": 500,
+        "location": ""
+      }
+    },
+    {
+      "name": "POST missing CSRF",
+      "match": true,
+      "old": {
+        "status": 403,
+        "location": ""
+      },
+      "new": {
+        "status": 403,
+        "location": ""
+      }
+    },
+    {
+      "name": "UTF16 emoji summary",
+      "match": true,
+      "old": {
+        "status": 302,
+        "location": "/admin/posts"
+      },
+      "new": {
+        "status": 302,
+        "location": "/admin/posts"
+      }
+    },
+    {
+      "name": "UTF16 persisted summary",
+      "match": true,
+      "old": [
+        {
+          "summary": "a😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀?..."
+        }
+      ],
+      "new": [
+        {
+          "summary": "a😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀?..."
+        }
+      ]
+    },
+    {
+      "name": "create article",
+      "match": true,
+      "old": {
+        "status": 302,
+        "location": "/admin/posts"
+      },
+      "new": {
+        "status": 302,
+        "location": "/admin/posts"
+      }
+    },
+    {
+      "name": "article fields",
+      "match": true,
+      "old": [
+        {
+          "title": "兼容测试 <>& Emoji 😀",
+          "slug": "migration-probe",
+          "content": "# 内容\n\n![图片](/upload/probe.png)\n\n| A | B |\n| :- | -: |\n| 1 | 2 |\n",
+          "content_html": null,
+          "summary": "  内容  ![图片](/upload/probe.png)  | A | B | | :- | -: | | 1 | 2 | ",
+          "thumbnail": "/upload/probe.png",
+          "category_id": 1,
+          "status": "PUBLISHED",
+          "type": "POST"
+        }
+      ],
+      "new": [
+        {
+          "title": "兼容测试 <>& Emoji 😀",
+          "slug": "migration-probe",
+          "content": "# 内容\n\n![图片](/upload/probe.png)\n\n| A | B |\n| :- | -: |\n| 1 | 2 |\n",
+          "content_html": null,
+          "summary": "  内容  ![图片](/upload/probe.png)  | A | B | | :- | -: | | 1 | 2 | ",
+          "thumbnail": "/upload/probe.png",
+          "category_id": 1,
+          "status": "PUBLISHED",
+          "type": "POST"
+        }
+      ]
+    },
+    {
+      "name": "tag associations",
+      "match": true,
+      "old": [
+        {
+          "name": "迁移",
+          "slug": "迁移"
+        },
+        {
+          "name": "测试",
+          "slug": "测试"
+        }
+      ],
+      "new": [
+        {
+          "name": "迁移",
+          "slug": "迁移"
+        },
+        {
+          "name": "测试",
+          "slug": "测试"
+        }
+      ]
+    },
+    {
+      "name": "edit preserves type and clears tags",
+      "match": true,
+      "old": [
+        {
+          "title": "修改",
+          "slug": "migration-probe",
+          "content": "edited",
+          "content_html": null,
+          "summary": "edited",
+          "thumbnail": null,
+          "category_id": null,
+          "status": "DRAFT",
+          "type": "POST"
+        }
+      ],
+      "new": [
+        {
+          "title": "修改",
+          "slug": "migration-probe",
+          "content": "edited",
+          "content_html": null,
+          "summary": "edited",
+          "thumbnail": null,
+          "category_id": null,
+          "status": "DRAFT",
+          "type": "POST"
+        }
+      ]
+    },
+    {
+      "name": "draft deletion",
+      "match": true,
+      "old": [],
+      "new": []
+    },
+    {
+      "name": "create link",
+      "match": true,
+      "old": {
+        "status": 302,
+        "location": "/admin/links"
+      },
+      "new": {
+        "status": 302,
+        "location": "/admin/links"
+      }
+    },
+    {
+      "name": "link defaults",
+      "match": true,
+      "old": [
+        {
+          "name": "兼容友链",
+          "url": "https://example.com",
+          "logo": null,
+          "description": null,
+          "team": "Friends",
+          "sort": 0
+        }
+      ],
+      "new": [
+        {
+          "name": "兼容友链",
+          "url": "https://example.com",
+          "logo": null,
+          "description": null,
+          "team": "Friends",
+          "sort": 0
+        }
+      ]
+    },
+    {
+      "name": "comment data",
+      "match": true,
+      "old": [
+        {
+          "post_id": 2,
+          "parent_id": null,
+          "author": "兼容评论",
+          "email": "test@example.com",
+          "url": null,
+          "content": "文本 <b>纯文本</b>",
+          "status": "APPROVED",
+          "is_admin": 0
+        }
+      ],
+      "new": [
+        {
+          "post_id": 2,
+          "parent_id": null,
+          "author": "兼容评论",
+          "email": "test@example.com",
+          "url": null,
+          "content": "文本 <b>纯文本</b>",
+          "status": "APPROVED",
+          "is_admin": 0
+        }
+      ]
+    },
+    {
+      "name": "settings save",
+      "match": true,
+      "old": {
+        "status": 302,
+        "location": "/admin/options"
+      },
+      "new": {
+        "status": 302,
+        "location": "/admin/options"
+      }
+    },
+    {
+      "name": "settings business value",
+      "match": true,
+      "old": [
+        {
+          "option_value": "兼容性测试"
+        }
+      ],
+      "new": [
+        {
+          "option_value": "兼容性测试"
+        }
+      ]
+    },
+    {
+      "name": "own profile save",
+      "match": true,
+      "old": {
+        "status": 302,
+        "location": "/admin/profile?success=profile"
+      },
+      "new": {
+        "status": 302,
+        "location": "/admin/profile?success=profile"
+      }
+    },
+    {
+      "name": "profile fields",
+      "match": true,
+      "old": [
+        {
+          "username": "riuken",
+          "nickname": "兼容测试",
+          "email": "test@example.com",
+          "avatar": "/butterfly/img/avatar.jpg"
+        }
+      ],
+      "new": [
+        {
+          "username": "riuken",
+          "nickname": "兼容测试",
+          "email": "test@example.com",
+          "avatar": "/butterfly/img/avatar.jpg"
+        }
+      ]
+    },
+    {
+      "name": "wrong old password",
+      "match": true,
+      "old": {
+        "status": 302,
+        "location": "/admin/profile?error=password"
+      },
+      "new": {
+        "status": 302,
+        "location": "/admin/profile?error=password"
+      }
+    },
+    {
+      "name": "schema unchanged for all 8 tables",
+      "match": true
+    }
+  ],
+  "passed": true,
+  "completed": true,
+  "scope": "Two isolated MySQL instances, snapshots restored with DML; auto-increment counters naturally advance."
+}

@@ -1,0 +1,64 @@
+{% extends "admin/layout/admin.html" %}
+{% set title = '个人设置' %}
+{% block content %}
+<div id="main-content">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+<h1 class="h2">个人设置</h1>
+</div>
+{% if param.success %}<div class="alert alert-success">保存成功！</div>{% endif %}
+{% if param.error %}<div class="alert alert-danger">旧密码错误，修改失败！</div>{% endif %}
+<div class="row">
+<div class="col-md-6">
+<div class="card mb-4">
+<div class="card-header">基本资料</div>
+<div class="card-body">
+<form method="post" action="/admin/profile/save">
+{% if csrf_token %}<input type="hidden" name="_csrf" value="{{ csrf_token }}">{% endif %}
+
+<input type="hidden" name="id" value="{{ user.id }}">
+<div class="mb-3">
+<label class="form-label">登录用户名</label>
+<input type="text" class="form-control" name="username" readonly="" value="{{ user.username }}">
+<div class="form-text">用户名暂不支持修改</div>
+</div>
+<div class="mb-3">
+<label class="form-label">昵称</label>
+<input type="text" class="form-control" name="nickname" required="" value="{{ user.nickname }}">
+</div>
+<div class="mb-3">
+<label class="form-label">邮箱</label>
+<input type="email" class="form-control" name="email" value="{{ user.email }}">
+</div>
+<div class="mb-3">
+<label class="form-label">头像 URL</label>
+<input type="text" class="form-control" name="avatar" value="{{ user.avatar }}">
+</div>
+<button type="submit" class="btn btn-primary">保存资料</button>
+</form>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card mb-4 border-danger">
+<div class="card-header bg-danger text-white">修改密码</div>
+<div class="card-body">
+<form method="post" action="/admin/profile/password">
+{% if csrf_token %}<input type="hidden" name="_csrf" value="{{ csrf_token }}">{% endif %}
+
+<input type="hidden" name="userId" value="{{ user.id }}">
+<div class="mb-3">
+<label class="form-label">当前旧密码</label>
+<input type="password" class="form-control" name="oldPassword" required="">
+</div>
+<div class="mb-3">
+<label class="form-label">新密码</label>
+<input type="password" class="form-control" name="newPassword" required="" minlength="6">
+</div>
+<button type="submit" class="btn btn-danger">确认修改密码</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

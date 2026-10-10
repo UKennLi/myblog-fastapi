@@ -1,0 +1,35 @@
+{% extends "layout/main.html" %}
+{% set title = '归档 - ' ~ site_title %}
+{% set headerClass = 'post-bg' %}
+{% set headerStyle = 'background-image: url(/butterfly/img/archive.jpg)' %}
+{% block header_content %}
+<div id="post-info">
+<h1 class="post-title">归档</h1>
+</div>
+{% endblock %}
+{% block main_content %}
+<div id="archive">
+<div class="article-sort-title">文章总览 - <span>{{ articleCount }}</span></div>
+<div class="article-sort">
+{% for post in posts %}
+{% set currYear = date_year(post.created) %}
+{% if loop.first  or  currYear != date_year(posts[loop.index0 - 1].created) %}<div class="article-sort-item year">{{ currYear }}</div>{% endif %}
+<div class="article-sort-item">
+<a class="article-sort-item-img" title="文章封面" href="{{ '/post/' ~ post.slug }}">
+<img src="{{ (post.thumbnail if post.thumbnail != none else '/butterfly/img/DefualtThumbnail.jpg') }}">
+</a>
+<div class="article-sort-item-info">
+<div class="article-sort-item-time">
+<i class="far fa-calendar-alt"></i>
+<time class="post-meta-date-created">{{ date_format(post.created, 'yyyy-MM-dd') }}</time>
+</div>
+<a class="article-sort-item-title" href="{{ '/post/' ~ post.slug }}">{{ post.title }}</a>
+</div>
+</div>
+
+{% endfor %}
+</div>
+{% if pageInfo.pages > 1 %}<nav id="pagination" class="pagination">
+</nav>{% endif %}
+</div>
+{% endblock %}
