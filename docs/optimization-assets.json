@@ -1,0 +1,7 @@
+{
+  "butterfly/css/comment.css": {
+    "before_sha256": "fa69420b7c161216ef4195c1b0710b7d6cdc157c74b106bc95d61780b97c789c",
+    "after_sha256": "4d0ab90fa689f39b8100f9d5c0b92161789e9a862ac060442655d84b4102d206",
+    "reason": "native vlist is accidentally hidden by theme nth-child(2) comment-provider rule; scoped display:block"
+  }
+}

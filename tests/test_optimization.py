@@ -101,3 +101,12 @@ def test_markdown_cache_updates_and_keeps_html_security_contract():
     before=_cached_markdown.cache_info().currsize
     render_markdown('x'*65537)
     assert _cached_markdown.cache_info().currsize==before
+
+
+def test_page_comments_unique_native_container_and_styles(application):
+    app,client=application
+    root=write(app,"INSERT INTO t_comment(post_id,author,email,content) VALUES(1,'page visitor','','page comment')")
+    html=client.get('/about').text
+    assert html.count(f'id="comment-{root}"')==1
+    assert html.count('id="comment-form"')==1
+    assert '#post-comment .comment-wrap > .vlist' in client.get('/butterfly/css/comment.css').text

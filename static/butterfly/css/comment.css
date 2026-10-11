@@ -289,3 +289,7 @@
         margin-bottom: 5px;
     }
 }
+/* The native comment list is not Butterfly's optional second comment provider. */
+#post #post-comment .comment-wrap > .vlist {
+    display: block;
+}

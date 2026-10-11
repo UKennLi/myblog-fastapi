@@ -251,7 +251,12 @@ def test_static_files_unchanged_and_markdown_commonmark(application):
         if item["path"].startswith("upload/"):
             continue
         file = ROOT / "static" / item["path"]
-        assert hashlib.sha256(file.read_bytes()).hexdigest() == item["sha256"]
+        if item["path"] == "butterfly/css/comment.css":
+            expected = json.loads((ROOT / "docs/optimization-assets.json").read_text())[item["path"]]
+            assert hashlib.sha256(file.read_bytes()).hexdigest() == expected["after_sha256"]
+            assert expected["before_sha256"] == item["sha256"]
+        else:
+            assert hashlib.sha256(file.read_bytes()).hexdigest() == item["sha256"]
     assert render_markdown("# 标题\n\n**粗体**") == "<h1>标题</h1>\n<p><strong>粗体</strong></p>\n"
     assert "<table>" in render_markdown("|a|b|\n|-|-|\n|1|2|")
     assert "<div>原HTML</div>" in render_markdown("<div>原HTML</div>")
