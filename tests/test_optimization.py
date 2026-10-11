@@ -38,3 +38,32 @@ def test_comment_renders_each_level_once(application):
     assert html.count(f'id="comment-{child}"') == 1
     assert html.count('id="comment-form"') == 1
     assert 'vchildren' in html and f'reply({root},' in html
+
+
+def test_legacy_fixes_and_missing_status(application):
+    app, client = application
+    for path in ['/post/missing','/category/missing','/tag/missing','/missing']:
+        assert client.get(path).status_code == 404
+    assert 'You have been signed out' in client.get('/login?logout').text
+    assert 'root: "/"' in client.get('/').text
+    from conftest import login
+    login(client)
+    assert '/bootstrap-icons/1.13.1/' in client.get('/admin').text
+    assert client.get('/webjars/bootstrap-icons/1.13.1/font/bootstrap-icons.css').status_code == 200
+
+
+def test_summary_non_destructive_and_manual_value_preserved(application):
+    from app.services.posts import automatic_summary, display_summary
+    from conftest import login,post,query
+    assert automatic_summary('# 中文 日本語 English\n![图片](https://example.com/a.png)\n[链接](https://example.com) **正文**') == '中文 日本語 English 链接 正文'
+    assert display_summary('历史 ![图片](https://example.com/truncated') == '历史'
+    assert '<script>' not in display_summary('<script>alert(1)</script>正文')
+    app,client=application
+    old='历史 ![图片](https://example.com/a.png) [正文](https://example.com)'
+    write(app,'UPDATE t_post SET summary=:summary WHERE id=2',summary=old)
+    assert 'https://example.com/a.png' not in client.get('/').text
+    assert query(app,'SELECT summary FROM t_post WHERE id=2')[0]['summary']==old
+    login(client)
+    post(client,'/admin/posts/save',dict(title='手写',slug='manual-summary',content='正文',summary='保留 **手写** 摘要'))
+    assert query(app,"SELECT summary FROM t_post WHERE slug='manual-summary'")[0]['summary']=='保留 **手写** 摘要'
+

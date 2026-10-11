@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     max_upload_bytes: int = 10 * 1024 * 1024
     db_pool_size: int = 5
     db_max_overflow: int = 10
-    legacy_template_js: bool = True
+    legacy_template_js: bool = False
     public_site_url: str = ""
 
     @field_validator("session_secret")

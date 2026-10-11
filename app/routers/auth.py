@@ -13,8 +13,6 @@ router = APIRouter()
 
 @router.get("/login")
 def login_page(request: Request):
-    if "logout" in request.query_params:
-        raise CompatibilityError("Original login?logout forward failure")
     return render(request, "login.html")
 
 

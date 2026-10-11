@@ -26,7 +26,7 @@ def index(request: Request, repo: Repo, page: int = 1, size: int = 10):
 def post(request: Request, slug: str, repo: Repo):
     item = repo.post_by_slug(slug)
     if item is None:
-        return views.render(request, "error/404.html")
+        return views.render(request, "error/404.html", status=404)
     item["content"] = posts.render_markdown(item["content"]) if item["content"] is not None else None
     return views.render(request, "post.html", repo, public=True, post=item,
                         comments=comments.comment_tree(repo.comments_for_post(item["id"])))
@@ -36,7 +36,7 @@ def post(request: Request, slug: str, repo: Repo):
 def category(request: Request, slug: str, repo: Repo, page: int = 1, size: int = 10):
     category = repo.category_by_slug(slug)
     if category is None:
-        return views.render(request, "error/404.html")
+        return views.render(request, "error/404.html", status=404)
     return listing(request, repo, "category", slug, page, size, currentCategory=category, paginationUrl="/category/" + slug)
 
 
@@ -44,7 +44,7 @@ def category(request: Request, slug: str, repo: Repo, page: int = 1, size: int =
 def tag(request: Request, slug: str, repo: Repo, page: int = 1, size: int = 10):
     tag = repo.tag_by_slug(slug)
     if tag is None:
-        return views.render(request, "error/404.html")
+        return views.render(request, "error/404.html", status=404)
     return listing(request, repo, "tag", slug, page, size, currentTag=tag, paginationUrl="/tag/" + slug)
 
 
@@ -84,7 +84,7 @@ def page(request: Request, slug: str, repo: Repo):
         raise CompatibilityError("Original /error has no explicit status")
     item = repo.page_by_slug(slug)
     if item is None:
-        return views.render(request, "error/404.html")
+        return views.render(request, "error/404.html", status=404)
     item["content"] = posts.render_markdown(item["content"])
     return views.render(request, "page.html", repo, public=True, post=item,
                         comments=comments.comment_tree(repo.comments_for_post(item["id"])))

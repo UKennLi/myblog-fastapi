@@ -2,6 +2,7 @@ import io
 import re
 import time
 import zipfile
+from html.parser import HTMLParser
 from urllib.parse import quote_plus
 from markdown_it import MarkdownIt
 from sqlalchemy.exc import IntegrityError
@@ -35,6 +36,43 @@ def java_summary(content):
     return truncated.encode("utf-8", errors="replace").decode("utf-8") + "..."
 
 
+class SummaryText(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+        self.hidden = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"):
+            self.hidden += 1
+        if tag in ("p", "br", "div", "li", "h1", "h2", "h3", "tr"):
+            self.parts.append(" ")
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style") and self.hidden:
+            self.hidden -= 1
+        if tag in ("p", "div", "li", "h1", "h2", "h3", "tr"):
+            self.parts.append(" ")
+
+    def handle_data(self, data):
+        if not self.hidden:
+            self.parts.append(data)
+
+
+def display_summary(content):
+    # Legacy 150-character summaries may end inside an image/link destination.
+    source = re.sub(r"!\[[^\]]*\]\([^)]*(?:\)|$)", " ", content or "")
+    source = re.sub(r"(?<!!)\[([^\]]+)\]\([^)]*(?:\)|$)", r"\1", source)
+    parser = SummaryText()
+    parser.feed(render_markdown(source))
+    return " ".join("".join(parser.parts).split())
+
+
+def automatic_summary(content):
+    plain = display_summary(content)
+    return plain[:150] + ("..." if len(plain) > 150 else "")
+
+
 class PostService:
     def __init__(self, repository):
         self.repo = repository
@@ -45,7 +83,7 @@ class PostService:
     def save(self, form):
         data = form.model_dump()
         if not data["summary"]:
-            data["summary"] = java_summary(data["content"])
+            data["summary"] = automatic_summary(data["content"])
         if not data["slug"]:
             data["slug"] = str(int(time.time() * 1000))
         if data["thumbnail"] is None or not data["thumbnail"].strip():

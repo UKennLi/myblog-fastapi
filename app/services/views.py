@@ -9,6 +9,7 @@ import re
 from app.core.config import ROOT
 from app.core.security import masked_csrf
 from app.services.site_url import public_site_url, public_url
+from app.services.posts import display_summary
 
 
 def date_format(value, pattern):
@@ -53,6 +54,7 @@ def make_templates():
         str(htmlsafe_json_dumps(value))))
     templates.env.globals.update(date_format=date_format, date_year=lambda value: int(date_format(value, "yyyy")),
                                  date_now=datetime.now, is_empty=lambda value: not value,
+                                 display_summary=display_summary,
                                  string_contains=lambda value, substring: substring in (value or ""), page_url=page_url)
     return templates
 

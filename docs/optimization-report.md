@@ -38,3 +38,13 @@
 P0 验证：`/workspace/.venvs/myblog-fastapi/bin/python /workspace/.myblog/phase2-run.py test -q --junitxml=reports/optimization/p0-pytest.xml` 实际 **34 passed, 1 warning**（原 Starlette/httpx 弃用警告）。全套原功能、安全/上传/历史图片/Schema检查均执行。`python scripts/optimization_visual.py` 保存四视口×五页面×新旧共40张截图及资源/溢出/JS数据；新旧都有原 root SyntaxError。当前静态首页 document.scrollWidth 等于视口宽，但 scroll-down 和右侧按钮几何越界，需继续滚动/交互定位，不把几何越界直接等同于已复现滚动条。P0 不更改CSS。公网/生产网络条件未执行。
 
 基线 SQL 首页15、文章13、归档11、搜索13。P0性能共1200 localhost请求/并发4/两轮反序，无错误；该批仅用于检查P0没有大幅退化，不代表生产容量。详见p0-performance.json。
+
+## P1 实施与兼容变化
+
+- 自动摘要由原“删几个符号/UTF16截断”改为Markdown→可见纯文本，去除图片/目标地址/HTML标签，保留多语言正文，150个Unicode码点不截断Emoji。手动摘要仍按输入保存；历史摘要只在首页展示清理，不回写。原UTF16边界测试改为验证完整Emoji，这属于明确批准的摘要优化行为变化，不降低校验。
+- 默认 LEGACY_TEMPLATE_JS=false；显式旧 .env=true 仍保持兼容，生产必须更新为false。不存在页面的原404模板改为HTTP404；login?logout恢复模板中已有提示，GET只显示提示不执行注销；认证和改密流程不改。
+- 后台图标引用改为现有1.13.1。1.11.3旧URL仍404，未重命名公开路径或资产。
+- 首页四视口当前数据未复现整页横向滚动：scrollWidth=viewport。几何越界属于原header/固定隐藏按钮，尚无证明会增加根滚动宽度，不盲目增加CSS。记录为未解决/需真实溢出内容复现。
+- 新发现原footer请求 /butterfly/js/main.js，但仓库没有此文件。已有 custom.main.js 为混淆脚本，并含依赖jQuery和主题署名检查；不能直接当作同等main.js替换。本轮不引入来源不明脚本，记录待单独交互设计/确认。
+
+P1实际文件：config.py、public.py、auth.py、posts.py、views.py、index.html、admin/layout/admin.html、.env.example、test_application.py、test_optimization.py。全套测试实际36 passed,1 warning；包含保存/手动摘要/历史摘要不回写/Emoji/404/图标/JS配置。P1不改Schema，不批量改历史数据；预期视觉差异是摘要文字清理与后台图标恢复。截图p1-visual保留四视口证据。回滚本阶段提交即可恢复旧行为；新生成的纯文本摘要保持可读，不需要恢复DB。Ubuntu仍单Worker，仅新增/调整环境变量，生产服务本轮未重启。

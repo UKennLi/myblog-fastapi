@@ -18,14 +18,14 @@ from conftest import login, post, query, token, write
 
 def test_public_read_routes_and_binding(application):
     app, client = application
-    for path in ["/", "/post/hello-world", "/post/springboot-is-good", "/about", "/archive", "/links", "/category/default", "/category/dev-think", "/search?keyword=Spring", "/tag/nonexistent", "/unknown"]:
+    for path in ["/", "/post/hello-world", "/post/springboot-is-good", "/about", "/archive", "/links", "/category/default", "/category/dev-think", "/search?keyword=Spring"]:
         assert client.get(path).status_code == 200, path
     assert "你好，世界！" in client.get("/post/hello-world").text
     assert client.get("/search").status_code == 400
     assert client.get("/?page=invalid").status_code == 400
     assert "recent-post-item" not in client.get("/?page=0&size=1").text
     assert client.head("/").status_code == 200
-    assert client.get("/post/missing").status_code == 200
+    assert client.get("/post/missing").status_code == 404
     assert client.get("/error").status_code == 500
 
 
@@ -60,7 +60,7 @@ def test_post_publish_edit_tags_draft_and_delete(application):
     assert response.status_code == 302 and response.headers["location"].endswith("/admin/posts")
     row = query(app, "SELECT * FROM t_post WHERE title=:title", title="迁移测试")[0]
     assert row["slug"].isdigit() and row["thumbnail"] == "/upload/example.png"
-    assert row["summary"].startswith("  测试 ")
+    assert row["summary"] == "测试"
     assert row["content_html"] is None
     assert len(query(app, "SELECT * FROM t_post_tag WHERE post_id=:id", id=row["id"])) == 2
     assert "Python" in client.get("/tag/Python").text
@@ -234,7 +234,7 @@ def test_sql_injection_special_characters_and_error_routes(application):
     app, client = application
     assert client.get("/search", params={"keyword": "' OR 1=1 --"}).status_code == 200
     assert "recent-post-item" not in client.get("/search", params={"keyword": "' OR 1=1 --"}).text
-    assert client.get("/login?logout").status_code == 500
+    assert client.get("/login?logout").status_code == 200
     login(client)
     assert client.get("/admin/posts/edit/not-a-number").status_code == 400
     assert client.get("/admin/posts/edit/999999").status_code == 500
@@ -273,12 +273,12 @@ def test_comment_active_urls_and_cross_origin_redirects(application):
     assert 'href="javascript:' not in client.get('/post/hello-world').text
 
 
-def test_summary_utf16_surrogate_boundary_matches_jdbc(application):
+def test_summary_unicode_boundary_preserves_whole_emoji(application):
     app, client = application
     login(client)
     response = post(client, '/admin/posts/save', dict(title='Emoji边界',slug='emoji-boundary',content='a'+'😀'*150))
     assert response.status_code == 302
-    assert query(app,"SELECT summary FROM t_post WHERE slug='emoji-boundary'")[0]['summary'] == 'a'+'😀'*74+'?...'
+    assert query(app,"SELECT summary FROM t_post WHERE slug='emoji-boundary'")[0]['summary'] == 'a'+'😀'*149+'...'
 
 
 def test_application_restart_invalidates_session_like_spring(application):
