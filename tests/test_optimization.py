@@ -67,3 +67,37 @@ def test_summary_non_destructive_and_manual_value_preserved(application):
     post(client,'/admin/posts/save',dict(title='手写',slug='manual-summary',content='正文',summary='保留 **手写** 摘要'))
     assert query(app,"SELECT summary FROM t_post WHERE slug='manual-summary'")[0]['summary']=='保留 **手写** 摘要'
 
+
+def test_batched_relationships_match_existing_lookup(application):
+    from app.repositories.blog import BlogRepository
+    from sqlalchemy import event
+    app,client=application
+    with app.state.session_factory() as db:
+        repo=BlogRepository(db,app.state.settings)
+        for kind,value in [('published',None),('category','default'),('tag','Spring Boot'),('search','Spring')]:
+            sql,params=repo.post_query(kind,value)
+            rows=repo.rows(sql,**params)
+            expected=[repo.post_view(row) for row in rows]
+            actual,total=repo.page_posts(kind,1,10,value)
+            assert actual==expected and total==len(expected)
+    calls=[]
+    def count(*args): calls.append(args[2])
+    event.listen(app.state.engine,'before_cursor_execute',count)
+    try:
+        assert client.get('/').status_code==200
+    finally:
+        event.remove(app.state.engine,'before_cursor_execute',count)
+    assert len(calls)<=9, calls
+
+
+def test_markdown_cache_updates_and_keeps_html_security_contract():
+    from app.services.posts import render_markdown,_cached_markdown
+    _cached_markdown.cache_clear()
+    assert render_markdown('# before')=='<h1>before</h1>\n'
+    assert render_markdown('# before')=='<h1>before</h1>\n'
+    assert _cached_markdown.cache_info().hits==1
+    assert render_markdown('# after')=='<h1>after</h1>\n'
+    assert '<div>trusted author</div>' in render_markdown('<div>trusted author</div>')
+    before=_cached_markdown.cache_info().currsize
+    render_markdown('x'*65537)
+    assert _cached_markdown.cache_info().currsize==before

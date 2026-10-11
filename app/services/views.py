@@ -74,7 +74,8 @@ def context(request, repo=None, public=False, **values):
                   csrf_token=masked_csrf(request.state.session["csrf"]),
                   root_js='""\\/""' if request.app.state.settings.legacy_template_js else '"/"')
     if public:
-        sidebar, _ = repo.page_posts("published", 1, 5)
+        # Sidebar template only uses title/slug/created/thumbnail, not relations/count.
+        sidebar = repo.post_list_views(repo.rows("SELECT id,title,slug,created,thumbnail FROM t_post WHERE type='POST' AND status='PUBLISHED' ORDER BY created DESC LIMIT 5"), relationships=False)
         result.update(categories=repo.categories(counts=True), tags=repo.tags(), sidebarRecentPosts=sidebar,
                       siteArticleCount=repo.published_count(), menuItems=[
                           dict(name="归档", url="/archive", icon="fas fa-archive"),

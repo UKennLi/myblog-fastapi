@@ -108,8 +108,29 @@ class BlogRepository:
             rows = self.rows(sql + " LIMIT :limit OFFSET :offset", **parameters, limit=size, offset=offset)
         else:
             rows = self.rows(sql, **parameters)
-        posts = [self.post_view(row, include_category=kind != "archives", include_tags=kind != "archives") for row in rows]
+        posts = self.post_list_views(rows, relationships=kind != "archives")
         return posts, total
+
+    def post_list_views(self, rows, relationships=True):
+        posts = [self.post_view(row, False, False) for row in rows]
+        if not posts or not relationships:
+            return posts
+        parameters = {f"id{i}": post["id"] for i, post in enumerate(posts)}
+        placeholders = ",".join(":" + key for key in parameters)
+        tag_rows = self.rows("SELECT pt.post_id,t.* FROM t_post_tag pt INNER JOIN t_tag t ON pt.tag_id=t.id WHERE pt.post_id IN (" + placeholders + ")", **parameters)
+        by_id = {post["id"]: post for post in posts}
+        for tag in tag_rows:
+            post_id = tag.pop("post_id")
+            by_id[post_id]["tags"].append(tag)
+        category_ids = set(post["categoryId"] for post in posts if post["categoryId"] is not None)
+        category_map = {}
+        if category_ids:
+            params = {f"cat{i}": id for i, id in enumerate(sorted(category_ids))}
+            category_map = {row["id"]: row for row in self.rows("SELECT * FROM t_category WHERE id IN (" + ",".join(":" + key for key in params) + ")", **params)}
+        for post in posts:
+            post["category"] = category_map.get(post["categoryId"])
+            post["tagsStr"] = ", ".join(tag["name"] for tag in post["tags"])
+        return posts
 
     def save_post(self, data):
         if data["id"] is None:

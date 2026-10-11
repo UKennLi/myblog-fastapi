@@ -48,3 +48,15 @@ P0 验证：`/workspace/.venvs/myblog-fastapi/bin/python /workspace/.myblog/phas
 - 新发现原footer请求 /butterfly/js/main.js，但仓库没有此文件。已有 custom.main.js 为混淆脚本，并含依赖jQuery和主题署名检查；不能直接当作同等main.js替换。本轮不引入来源不明脚本，记录待单独交互设计/确认。
 
 P1实际文件：config.py、public.py、auth.py、posts.py、views.py、index.html、admin/layout/admin.html、.env.example、test_application.py、test_optimization.py。全套测试实际36 passed,1 warning；包含保存/手动摘要/历史摘要不回写/Emoji/404/图标/JS配置。P1不改Schema，不批量改历史数据；预期视觉差异是摘要文字清理与后台图标恢复。截图p1-visual保留四视口证据。回滚本阶段提交即可恢复旧行为；新生成的纯文本摘要保持可读，不需要恢复DB。Ubuntu仍单Worker，仅新增/调整环境变量，生产服务本轮未重启。
+
+## P2 后端性能
+
+批量加载列表分类/标签（保留筛选/排序/关联），侧栏只读实际使用字段，取消无用COUNT及关联查询。Markdown最多64条、单条输入不超过65536字符；摘要最多256条、4096字符，超大输入绕过缓存。缓存键是内容，不是post ID；更新即命中新内容，无TTL等待；不缓存整页/Option/评论。作者HTML安全契约不改。SQL连接池保持5+10，未提高worker/引入重型服务；线程池上限/连接等待在更高并发生产负载下仍需测量。
+
+基线6批算术平均P95 32.95ms；吞吐 157.0req/s；最终应用RSS 98.3MiB。
+
+优化6批算术平均P95 26.06ms；吞吐 205.7req/s；最终应用RSS 94.2MiB。
+
+同机同隔离库/数据，单worker，并发4，每路由200请求，两轮反序共2400，无错误；包含首页、文章、搜索。归档以查询数及功能测试验证。已预热，缓存热状态收益不能推为冷启动收益；不是生产容量预测。原Java服务不参与本阶段比较。原八表DDL校验通过；38 passed,1 warning。
+
+SQL：首页15→8，文章13→8，归档11→6，搜索13→8；列表篇数增长不会线性增加关系查询。实际文件blog.py、views.py、posts.py、test_optimization.py。回滚本阶段提交，重启由运维执行，内存缓存自动清空，不涉及数据恢复。证据before/after-queries.json、p2-performance.json、p2-performance-pytest.xml。

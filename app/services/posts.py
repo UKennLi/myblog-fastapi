@@ -3,6 +3,7 @@ import re
 import time
 import zipfile
 from html.parser import HTMLParser
+from functools import lru_cache
 from urllib.parse import quote_plus
 from markdown_it import MarkdownIt
 from sqlalchemy.exc import IntegrityError
@@ -22,8 +23,16 @@ markdown.add_render_rule("th_open", table_cell)
 markdown.add_render_rule("td_open", table_cell)
 
 
+@lru_cache(maxsize=64)
+def _cached_markdown(content):
+    return markdown.render(content)
+
+
 def render_markdown(content):
-    return markdown.render(content) if content is not None else ""
+    if content is None:
+        return ""
+    # Bounded input size and entry count; large documents bypass the cache.
+    return _cached_markdown(content) if len(content) <= 65536 else markdown.render(content)
 
 
 def java_summary(content):
@@ -60,6 +69,17 @@ class SummaryText(HTMLParser):
 
 
 def display_summary(content):
+    if len(content or "") <= 4096:
+        return _cached_summary(content)
+    return _plain_summary(content)
+
+
+@lru_cache(maxsize=256)
+def _cached_summary(content):
+    return _plain_summary(content)
+
+
+def _plain_summary(content):
     # Legacy 150-character summaries may end inside an image/link destination.
     source = re.sub(r"!\[[^\]]*\]\([^)]*(?:\)|$)", " ", content or "")
     source = re.sub(r"(?<!!)\[([^\]]+)\]\([^)]*(?:\)|$)", r"\1", source)
