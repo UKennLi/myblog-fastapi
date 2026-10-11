@@ -1,0 +1,6 @@
+{
+  "synthetic_posts": 12,
+  "nested_comments": 5,
+  "production_data": false,
+  "cleanup": "finally deletes only created IDs"
+}

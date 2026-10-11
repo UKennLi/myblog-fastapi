@@ -1,5 +1,7 @@
 # 兼容性风险与决策
 
+> 本文保留第一阶段迁移基线。第二阶段已修复的状态码、摘要、JS、图标与SEO行为以 [optimization-report.md](optimization-report.md) 为准。生产更新见 [production-maintenance.md](production-maintenance.md)。
+
 1. 原源码profile/password按请求id操作存在IDOR；公开评论可绑定isAdmin；上传任何后缀可造成主动内容XSS。用户已明确批准修复恶意/越权请求，正常UI/数据结构不变；差异在契约与测试中列明。
 2. MySQL既有BCrypt哈希继续可用；不更改用户密码。Java JSESSIONID内存Session不能转移；切换需重新登录，Cookie名/表单字段保持，sqlite服务端Session独立持久化。
 3. Spring默认_csrf为XOR masking，需接受同等表单/头，403优先于登录跳转；成功登录旋转Session防固定攻击。框架生成的HTML登录/退出页需提取。

@@ -1,0 +1,19 @@
+# Reference only. Review existing unit before replacing it; never apply automatically.
+[Unit]
+Description=MyBlog FastAPI
+After=network.target mysql.service
+
+[Service]
+Type=simple
+User=riuken
+Group=riuken
+WorkingDirectory=/home/riuken/Blog
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/riuken/Blog/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

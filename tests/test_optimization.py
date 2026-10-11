@@ -148,6 +148,33 @@ def test_static_browser_cache_and_lazy_non_hero_images(application):
     assert 'loading="lazy"' in html and 'decoding="async"' in html
 
 
+def test_backup_preview_and_mocked_export(tmp_path):
+    import os,subprocess
+    from pathlib import Path
+    from app.core.config import ROOT
+    project=tmp_path/'project';project.mkdir();(project/'uploads').mkdir();(project/'uploads'/'kept.png').write_bytes(b'fixture')
+    (project/'.env').write_text('TEST_ONLY=fixture\n')
+    subprocess.run(['git','init','-q',str(project)],check=True)
+    subprocess.run(['git','-C',str(project),'-c','user.name=Test','-c','user.email=test@example.com','commit','--allow-empty','-qm','fixture'],check=True)
+    cnf=tmp_path/'client.cnf';cnf.write_text('[client]\nuser=fixture\n');cnf.chmod(0o600)
+    backups=tmp_path/'backups';script=ROOT/'scripts/production_backup.sh'
+    subprocess.run(['bash',str(script),str(project),str(backups),str(cnf)],check=True,capture_output=True)
+    assert not backups.exists()
+    bad=subprocess.run(['bash',str(script),str(project),str(project/'backup'),str(cnf)],capture_output=True)
+    assert bad.returncode!=0
+    tools=tmp_path/'bin';tools.mkdir();dump=tools/'mysqldump'
+    dump.write_text('#!/bin/sh\nfor arg in "$@"; do echo "$arg" >> "$TEST_ARGS_FILE"; done\necho "INSERT INTO t_option VALUES (1);"\n');dump.chmod(0o700)
+    args_file=tmp_path/'args';env={**os.environ,'PATH':str(tools)+':'+os.environ['PATH'],'TEST_ARGS_FILE':str(args_file)}
+    subprocess.run(['bash',str(script),'--execute',str(project),str(backups),str(cnf)],check=True,capture_output=True,env=env)
+    args=args_file.read_text()
+    assert all(flag in args for flag in ['--no-create-info','--skip-add-drop-table','--single-transaction','--skip-disable-keys','--skip-add-locks'])
+    destination=next(backups.iterdir())
+    assert (destination/'uploads.tar.gz').is_file() and (destination/'private.env').is_file()
+    assert destination.stat().st_mode & 0o077==0
+    subprocess.run(['sha256sum','-c','SHA256SUMS'],cwd=destination,check=True,capture_output=True)
+    assert (project/'uploads'/'kept.png').read_bytes()==b'fixture'
+
+
 def test_page_comments_unique_native_container_and_styles(application):
     app,client=application
     root=write(app,"INSERT INTO t_comment(post_id,author,email,content) VALUES(1,'page visitor','','page comment')")

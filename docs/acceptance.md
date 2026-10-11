@@ -1,5 +1,7 @@
 # 迁移验收与测试报告
 
+> 本文保留第一阶段迁移基线。第二阶段已修复的状态码、摘要、JS、图标与SEO行为以 [optimization-report.md](optimization-report.md) 为准。生产更新见 [production-maintenance.md](production-maintenance.md)。
+
 审计基线：`UKennLi/MyBlog-butterfly` master `5f7353824b80e68e492253dac2ef84006d911908`。新项目是独立目录，不改原有 Java/Thymeleaf/CSS/JS 文件，不操作现有部署或生产数据。本文描述已执行证据与覆盖边界，不把写完代码等同于无限条件下等价。
 
 ## 功能验收

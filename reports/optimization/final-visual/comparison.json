@@ -1,0 +1,500 @@
+[
+  {
+    "before": "1366-before-about.png",
+    "after": "1366-after-about.png",
+    "before_size": [
+      1366,
+      1878
+    ],
+    "after_size": [
+      1366,
+      1878
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0008341948148945094
+  },
+  {
+    "before": "1366-before-admin-options.png",
+    "after": "1366-after-admin-options.png",
+    "before_size": [
+      1366,
+      1079
+    ],
+    "after_size": [
+      1366,
+      1079
+    ],
+    "different_pixels": 10113,
+    "fraction_changed": 0.0068613229808523425
+  },
+  {
+    "before": "1366-before-admin-posts-new.png",
+    "after": "1366-after-admin-posts-new.png",
+    "before_size": [
+      1366,
+      1073
+    ],
+    "after_size": [
+      1366,
+      1073
+    ],
+    "different_pixels": 13942,
+    "fraction_changed": 0.009512061665340809
+  },
+  {
+    "before": "1366-before-admin-profile.png",
+    "after": "1366-after-admin-profile.png",
+    "before_size": [
+      1366,
+      768
+    ],
+    "after_size": [
+      1366,
+      768
+    ],
+    "different_pixels": 7747,
+    "fraction_changed": 0.007384509211810639
+  },
+  {
+    "before": "1366-before-admin.png",
+    "after": "1366-after-admin.png",
+    "before_size": [
+      1366,
+      768
+    ],
+    "after_size": [
+      1366,
+      768
+    ],
+    "different_pixels": 8541,
+    "fraction_changed": 0.00814135706442167
+  },
+  {
+    "before": "1366-before-archive.png",
+    "after": "1366-after-archive.png",
+    "before_size": [
+      1366,
+      2252
+    ],
+    "after_size": [
+      1366,
+      2252
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0006956562443924905
+  },
+  {
+    "before": "1366-before-home.png",
+    "after": "1366-after-home.png",
+    "before_size": [
+      1366,
+      3759
+    ],
+    "after_size": [
+      1366,
+      3759
+    ],
+    "different_pixels": 87938,
+    "fraction_changed": 0.017125906122037224
+  },
+  {
+    "before": "1366-before-post-hello-world.png",
+    "after": "1366-after-post-hello-world.png",
+    "before_size": [
+      1366,
+      1878
+    ],
+    "after_size": [
+      1366,
+      1878
+    ],
+    "different_pixels": 91468,
+    "fraction_changed": 0.03565520155550046
+  },
+  {
+    "before": "1366-before-search-keyword-Spring.png",
+    "after": "1366-after-search-keyword-Spring.png",
+    "before_size": [
+      1366,
+      2246
+    ],
+    "after_size": [
+      1366,
+      2246
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0006975146315101909
+  },
+  {
+    "before": "1920-before-about.png",
+    "after": "1920-after-about.png",
+    "before_size": [
+      1920,
+      1878
+    ],
+    "after_size": [
+      1920,
+      1878
+    ],
+    "different_pixels": 11871,
+    "fraction_changed": 0.003292232428115016
+  },
+  {
+    "before": "1920-before-admin-options.png",
+    "after": "1920-after-admin-options.png",
+    "before_size": [
+      1920,
+      1080
+    ],
+    "after_size": [
+      1920,
+      1080
+    ],
+    "different_pixels": 10076,
+    "fraction_changed": 0.004859182098765432
+  },
+  {
+    "before": "1920-before-admin-posts-new.png",
+    "after": "1920-after-admin-posts-new.png",
+    "before_size": [
+      1920,
+      1080
+    ],
+    "after_size": [
+      1920,
+      1080
+    ],
+    "different_pixels": 13944,
+    "fraction_changed": 0.006724537037037037
+  },
+  {
+    "before": "1920-before-admin-profile.png",
+    "after": "1920-after-admin-profile.png",
+    "before_size": [
+      1920,
+      1080
+    ],
+    "after_size": [
+      1920,
+      1080
+    ],
+    "different_pixels": 7747,
+    "fraction_changed": 0.0037360146604938273
+  },
+  {
+    "before": "1920-before-admin.png",
+    "after": "1920-after-admin.png",
+    "before_size": [
+      1920,
+      1080
+    ],
+    "after_size": [
+      1920,
+      1080
+    ],
+    "different_pixels": 8540,
+    "fraction_changed": 0.004118441358024691
+  },
+  {
+    "before": "1920-before-archive.png",
+    "after": "1920-after-archive.png",
+    "before_size": [
+      1920,
+      2252
+    ],
+    "after_size": [
+      1920,
+      2252
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0004949304322084074
+  },
+  {
+    "before": "1920-before-home.png",
+    "after": "1920-after-home.png",
+    "before_size": [
+      1920,
+      4071
+    ],
+    "after_size": [
+      1920,
+      4071
+    ],
+    "different_pixels": 102996,
+    "fraction_changed": 0.01317704495210022
+  },
+  {
+    "before": "1920-before-post-hello-world.png",
+    "after": "1920-after-post-hello-world.png",
+    "before_size": [
+      1920,
+      1878
+    ],
+    "after_size": [
+      1920,
+      1878
+    ],
+    "different_pixels": 86137,
+    "fraction_changed": 0.023888722488462903
+  },
+  {
+    "before": "1920-before-search-keyword-Spring.png",
+    "after": "1920-after-search-keyword-Spring.png",
+    "before_size": [
+      1920,
+      2558
+    ],
+    "after_size": [
+      1920,
+      2558
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0004357245243679958
+  },
+  {
+    "before": "390-before-about.png",
+    "after": "390-after-about.png",
+    "before_size": [
+      390,
+      2527
+    ],
+    "after_size": [
+      390,
+      2527
+    ],
+    "different_pixels": 10204,
+    "fraction_changed": 0.01035381977210232
+  },
+  {
+    "before": "390-before-admin-options.png",
+    "after": "390-after-admin-options.png",
+    "before_size": [
+      390,
+      1413
+    ],
+    "after_size": [
+      390,
+      1413
+    ],
+    "different_pixels": 2332,
+    "fraction_changed": 0.00423176728909213
+  },
+  {
+    "before": "390-before-admin-posts-new.png",
+    "after": "390-after-admin-posts-new.png",
+    "before_size": [
+      390,
+      1189
+    ],
+    "after_size": [
+      390,
+      1189
+    ],
+    "different_pixels": 6269,
+    "fraction_changed": 0.013519225377930173
+  },
+  {
+    "before": "390-before-admin-profile.png",
+    "after": "390-after-admin-profile.png",
+    "before_size": [
+      390,
+      910
+    ],
+    "after_size": [
+      390,
+      910
+    ],
+    "different_pixels": 0,
+    "fraction_changed": 0.0
+  },
+  {
+    "before": "390-before-admin.png",
+    "after": "390-after-admin.png",
+    "before_size": [
+      390,
+      844
+    ],
+    "after_size": [
+      390,
+      844
+    ],
+    "different_pixels": 506,
+    "fraction_changed": 0.0015372463239761817
+  },
+  {
+    "before": "390-before-archive.png",
+    "after": "390-after-archive.png",
+    "before_size": [
+      390,
+      3426
+    ],
+    "after_size": [
+      390,
+      3426
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0016016285718562426
+  },
+  {
+    "before": "390-before-home.png",
+    "after": "390-after-home.png",
+    "before_size": [
+      390,
+      6597
+    ],
+    "after_size": [
+      390,
+      6317
+    ]
+  },
+  {
+    "before": "390-before-post-hello-world.png",
+    "after": "390-after-post-hello-world.png",
+    "before_size": [
+      390,
+      3098
+    ],
+    "after_size": [
+      390,
+      3153
+    ]
+  },
+  {
+    "before": "390-before-search-keyword-Spring.png",
+    "after": "390-after-search-keyword-Spring.png",
+    "before_size": [
+      390,
+      2675
+    ],
+    "after_size": [
+      390,
+      2675
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0020512820512820513
+  },
+  {
+    "before": "768-before-about.png",
+    "after": "768-after-about.png",
+    "before_size": [
+      768,
+      2527
+    ],
+    "after_size": [
+      768,
+      2527
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0011026744492810975
+  },
+  {
+    "before": "768-before-admin-options.png",
+    "after": "768-after-admin-options.png",
+    "before_size": [
+      768,
+      1243
+    ],
+    "after_size": [
+      768,
+      1243
+    ],
+    "different_pixels": 10075,
+    "fraction_changed": 0.010553893470099222
+  },
+  {
+    "before": "768-before-admin-posts-new.png",
+    "after": "768-after-admin-posts-new.png",
+    "before_size": [
+      768,
+      1117
+    ],
+    "after_size": [
+      768,
+      1117
+    ],
+    "different_pixels": 11332,
+    "fraction_changed": 0.013209676216054908
+  },
+  {
+    "before": "768-before-admin-profile.png",
+    "after": "768-after-admin-profile.png",
+    "before_size": [
+      768,
+      1024
+    ],
+    "after_size": [
+      768,
+      1024
+    ],
+    "different_pixels": 7747,
+    "fraction_changed": 0.009850819905598959
+  },
+  {
+    "before": "768-before-admin.png",
+    "after": "768-after-admin.png",
+    "before_size": [
+      768,
+      1024
+    ],
+    "after_size": [
+      768,
+      1024
+    ],
+    "different_pixels": 8390,
+    "fraction_changed": 0.010668436686197916
+  },
+  {
+    "before": "768-before-archive.png",
+    "after": "768-after-archive.png",
+    "before_size": [
+      768,
+      3426
+    ],
+    "after_size": [
+      768,
+      3426
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0008133270091457482
+  },
+  {
+    "before": "768-before-home.png",
+    "after": "768-after-home.png",
+    "before_size": [
+      768,
+      6497
+    ],
+    "after_size": [
+      768,
+      6497
+    ],
+    "different_pixels": 30950,
+    "fraction_changed": 0.006202782694576984
+  },
+  {
+    "before": "768-before-post-hello-world.png",
+    "after": "768-after-post-hello-world.png",
+    "before_size": [
+      768,
+      3049
+    ],
+    "after_size": [
+      768,
+      3059
+    ]
+  },
+  {
+    "before": "768-before-search-keyword-Spring.png",
+    "after": "768-after-search-keyword-Spring.png",
+    "before_size": [
+      768,
+      2855
+    ],
+    "after_size": [
+      768,
+      2855
+    ],
+    "different_pixels": 2140,
+    "fraction_changed": 0.0009759924109748978
+  }
+]

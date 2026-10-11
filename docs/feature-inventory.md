@@ -1,5 +1,7 @@
 # 源码功能清单
 
+> 本文保留第一阶段迁移基线。第二阶段已修复的状态码、摘要、JS、图标与SEO行为以 [optimization-report.md](optimization-report.md) 为准。生产更新见 [production-maintenance.md](production-maintenance.md)。
+
 | 功能 | 实际规则 | 原实现 |
 |---|---|---|
 | 首页/分类/标签/搜索 | POST+PUBLISHED，created DESC；搜索使用 SQL LIKE 保留通配符语义；PageHelper 分页 | IndexController/PostMapper |

@@ -1,3 +1,7 @@
+# 第二阶段优化
+
+本分支包含第二阶段修复。详见 [优化报告](docs/optimization-report.md) 和 [Ubuntu/systemd维护手册](docs/production-maintenance.md)。`artifacts/` ZIP 是第一阶段归档，第二阶段代码请下载本分支源码，勿用旧ZIP覆盖更新。
+
 # MyBlog-butterfly · FastAPI / MySQL
 
 原项目 `UKennLi/MyBlog-butterfly` master `5f7353824b80e68e492253dac2ef84006d911908` 的实际后端迁移。Python 3.12、FastAPI、SQLAlchemy 2、PyMySQL、Jinja2；直接读取原有 8 张 MySQL 表，启动不执行任何 MySQL DDL。无需 Java、Spring Boot、Thymeleaf 或前端构建服务。

@@ -1,5 +1,7 @@
 # HTTP 与数据契约
 
+> 本文保留第一阶段迁移基线。第二阶段已修复的状态码、摘要、JS、图标与SEO行为以 [optimization-report.md](optimization-report.md) 为准。生产更新见 [production-maintenance.md](production-maintenance.md)。
+
 完整路径清单见 `routes.md`，以下参数和规则来自实际 Controller/Service/Mapper。GET 支持 HEAD：相同状态和响应头，空响应体。模板错误返回 500；参数绑定失败 400，SQL 非空/唯一/长度约束错误 500。错误 JSON 含 timestamp/status/error/path，HTML Accept 返回原 Whitelabel 结构；框架措辞、时间和序列化细节见兼容风险。
 
 ## 公共查询

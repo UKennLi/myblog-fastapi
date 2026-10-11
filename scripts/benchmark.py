@@ -1,6 +1,7 @@
 """Read-only localhost comparison; not a production capacity prediction."""
 import argparse,concurrent.futures,json,math,time,os
 from pathlib import Path
+from urllib.parse import urlsplit
 import httpx
 import pymysql
 from dotenv import load_dotenv
@@ -15,7 +16,9 @@ def process(pid):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--old',required=True);p.add_argument('--new',required=True);p.add_argument('--old-pid',type=int);p.add_argument('--new-pid',type=int);p.add_argument('--old-db-pid',type=int);p.add_argument('--new-db-pid',type=int);p.add_argument('--env-file');p.add_argument('--requests',type=int,default=200);p.add_argument('--concurrency',type=int,default=8);p.add_argument('--output',default='reports/performance.json');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--old',required=True);p.add_argument('--new',required=True);p.add_argument('--old-pid',type=int);p.add_argument('--new-pid',type=int);p.add_argument('--old-db-pid',type=int);p.add_argument('--new-db-pid',type=int);p.add_argument('--env-file');p.add_argument('--requests',type=int,default=200);p.add_argument('--concurrency',type=int,default=8);p.add_argument('--output',default='reports/performance.json');p.add_argument('--routes',nargs='+',default=['/','/post/hello-world','/archive','/search?keyword=Spring']);a=p.parse_args()
+    if any(urlsplit(u).hostname not in ('127.0.0.1','localhost') for u in (a.old,a.new)):p.error('Benchmark only supports isolated localhost targets')
+    if any(not route.startswith('/') or route.startswith('//') for route in a.routes):p.error('Routes must be local absolute paths')
     if a.env_file:load_dotenv(a.env_file,override=True)
     def database_status(port):
         if not a.env_file:return None
@@ -30,7 +33,7 @@ def main():
         for label,base,pid,dbpid,dbport in targets:
             with httpx.Client(base_url=base,timeout=30,limits=httpx.Limits(max_connections=a.concurrency,max_keepalive_connections=a.concurrency)) as client:
                 for _ in range(20):assert client.get('/').status_code==200
-                for route in ['/','/post/hello-world','/search?keyword=Spring']:
+                for route in a.routes:
                     before=process(pid);dbbefore=process(dbpid);statusbefore=database_status(dbport)
                     def request(_):
                         start=time.perf_counter()

@@ -1,0 +1,54 @@
+[
+  {
+    "before": "1366-before-about.png",
+    "after": "1366-after-about.png",
+    "before_size": [
+      1366,
+      1878
+    ],
+    "after_size": [
+      1366,
+      1878
+    ],
+    "different_pixels": 57843,
+    "fraction_changed": 0.022547818073805192
+  },
+  {
+    "before": "1920-before-about.png",
+    "after": "1920-after-about.png",
+    "before_size": [
+      1920,
+      1878
+    ],
+    "after_size": [
+      1920,
+      1878
+    ],
+    "different_pixels": 104882,
+    "fraction_changed": 0.02908734913028044
+  },
+  {
+    "before": "390-before-about.png",
+    "after": "390-after-about.png",
+    "before_size": [
+      390,
+      2765
+    ],
+    "after_size": [
+      390,
+      2775
+    ]
+  },
+  {
+    "before": "768-before-about.png",
+    "after": "768-after-about.png",
+    "before_size": [
+      768,
+      2744
+    ],
+    "after_size": [
+      768,
+      2754
+    ]
+  }
+]

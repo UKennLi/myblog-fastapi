@@ -1,0 +1,1280 @@
+{
+  "pages": [
+    {
+      "label": "before",
+      "viewport": [
+        390,
+        844
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [
+        "Invalid or unexpected token",
+        "Invalid or unexpected token"
+      ],
+      "initial": {
+        "vitals": {
+          "lcp": 236
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098",
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 390
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 448,
+          "right": 483
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 448,
+          "right": 483
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        }
+      ],
+      "vitals": {
+        "lcp": 236
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/index.css",
+          "duration": 21.899999998509884,
+          "bytes": 117736
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/style.css",
+          "duration": 23.899999998509884,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 32.899999998509884,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 36.69999999552965,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 42.099999994039536,
+          "bytes": 0
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 45.899999998509884,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/comment.css",
+          "duration": 48.70000000298023,
+          "bytes": 6288
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/avatar.jpg",
+          "duration": 62.79999999701977,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/1d.png",
+          "duration": 84.09999999403954,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/main.js",
+          "duration": 111.70000000298023,
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/utils.js",
+          "duration": 81.70000000298023,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 78.39999999850988,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 4.199999995529652,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 519.1000000014901,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/logo.png",
+          "duration": 17,
+          "bytes": 2373717
+        }
+      ]
+    },
+    {
+      "label": "after",
+      "viewport": [
+        390,
+        844
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [],
+      "initial": {
+        "vitals": {
+          "lcp": 204
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 390
+      },
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 448,
+          "right": 483
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 448,
+          "right": 483
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 403,
+          "right": 438
+        }
+      ],
+      "vitals": {
+        "lcp": 204
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/index.css",
+          "duration": 21.69999999552965,
+          "bytes": 117736
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/style.css",
+          "duration": 16.899999998509884,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 11.300000004470348,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 11.399999998509884,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 11.399999998509884,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/comment.css",
+          "duration": 23,
+          "bytes": 6439
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 12.600000001490116,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/avatar.jpg",
+          "duration": 23.69999999552965,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/1d.png",
+          "duration": 24.900000005960464,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/utils.js",
+          "duration": 32.399999998509884,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/main.js",
+          "duration": 125.70000000298023,
+          "bytes": 300
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 1.6999999955296516,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 112.60000000149012,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 104.89999999850988,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/logo.png",
+          "duration": 18.899999998509884,
+          "bytes": 2373717
+        }
+      ]
+    },
+    {
+      "label": "before",
+      "viewport": [
+        768,
+        1024
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [
+        "Invalid or unexpected token",
+        "Invalid or unexpected token"
+      ],
+      "initial": {
+        "vitals": {
+          "lcp": 288
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098",
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 768
+      },
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 826,
+          "right": 861
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 826,
+          "right": 861
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        }
+      ],
+      "vitals": {
+        "lcp": 288
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/index.css",
+          "duration": 38.20000000298023,
+          "bytes": 117736
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/style.css",
+          "duration": 31.19999999552965,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 21.299999997019768,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 21.600000001490116,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 21.600000001490116,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/comment.css",
+          "duration": 33.600000001490116,
+          "bytes": 6288
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 20.19999999552965,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/avatar.jpg",
+          "duration": 34.69999999552965,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/1d.png",
+          "duration": 53.099999994039536,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/utils.js",
+          "duration": 37.80000000447035,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/main.js",
+          "duration": 168,
+          "bytes": 300
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 8.100000001490116,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 141.89999999850988,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 136.89999999850988,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/logo.png",
+          "duration": 37.70000000298023,
+          "bytes": 2373717
+        }
+      ]
+    },
+    {
+      "label": "after",
+      "viewport": [
+        768,
+        1024
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [],
+      "initial": {
+        "vitals": {
+          "lcp": 232
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 768
+      },
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 826,
+          "right": 861
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 826,
+          "right": 861
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 781,
+          "right": 816
+        }
+      ],
+      "vitals": {
+        "lcp": 232
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/index.css",
+          "duration": 30.399999998509884,
+          "bytes": 117736
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/style.css",
+          "duration": 27.299999997019768,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 16.30000000447035,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 16.5,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 17.399999998509884,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/comment.css",
+          "duration": 28,
+          "bytes": 6439
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 16.80000000447035,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/1d.png",
+          "duration": 34.100000001490116,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/avatar.jpg",
+          "duration": 34.30000000447035,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/utils.js",
+          "duration": 39.79999999701977,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/main.js",
+          "duration": 137.39999999850988,
+          "bytes": 300
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 2.899999998509884,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 111.70000000298023,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 102.40000000596046,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/logo.png",
+          "duration": 37.399999998509884,
+          "bytes": 2373717
+        }
+      ]
+    },
+    {
+      "label": "before",
+      "viewport": [
+        1366,
+        768
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [
+        "Invalid or unexpected token",
+        "Invalid or unexpected token"
+      ],
+      "initial": {
+        "vitals": {
+          "lcp": 220
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098",
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 1366
+      },
+      "width": 1366,
+      "scrollWidth": 1366,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 1424,
+          "right": 1459
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 1424,
+          "right": 1459
+        },
+        {
+          "tag": "BUTTON",
+          "id": "hide-aside-btn",
+          "cls": "",
+          "left": 1424,
+          "right": 1459
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        }
+      ],
+      "vitals": {
+        "lcp": 220
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/index.css",
+          "duration": 22.900000005960464,
+          "bytes": 117736
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/style.css",
+          "duration": 21.400000005960464,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 12.199999995529652,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 13.599999994039536,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 13.5,
+          "bytes": 0
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 11,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/comment.css",
+          "duration": 21.600000001490116,
+          "bytes": 6288
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/avatar.jpg",
+          "duration": 21.600000001490116,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/1d.png",
+          "duration": 34.600000001490116,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/utils.js",
+          "duration": 24.5,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/main.js",
+          "duration": 31.600000001490116,
+          "bytes": 300
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 1.6000000014901161,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 112.60000000149012,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 105.39999999850988,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/logo.png",
+          "duration": 15.099999994039536,
+          "bytes": 2373717
+        }
+      ]
+    },
+    {
+      "label": "after",
+      "viewport": [
+        1366,
+        768
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [],
+      "initial": {
+        "vitals": {
+          "lcp": 228
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 1366
+      },
+      "width": 1366,
+      "scrollWidth": 1366,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 1424,
+          "right": 1459
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 1424,
+          "right": 1459
+        },
+        {
+          "tag": "BUTTON",
+          "id": "hide-aside-btn",
+          "cls": "",
+          "left": 1424,
+          "right": 1459
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 1379,
+          "right": 1414
+        }
+      ],
+      "vitals": {
+        "lcp": 228
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/index.css",
+          "duration": 20.600000001490116,
+          "bytes": 117736
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 14.299999997019768,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 17.799999997019768,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/style.css",
+          "duration": 27.799999997019768,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 17.80000000447035,
+          "bytes": 0
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 14.700000002980232,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/comment.css",
+          "duration": 26.400000005960464,
+          "bytes": 6439
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/avatar.jpg",
+          "duration": 23.80000000447035,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/1d.png",
+          "duration": 35,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/utils.js",
+          "duration": 37.899999998509884,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/main.js",
+          "duration": 128.20000000298023,
+          "bytes": 300
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 6.199999995529652,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 113.5,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 103.89999999850988,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/logo.png",
+          "duration": 34.600000001490116,
+          "bytes": 2373717
+        }
+      ]
+    },
+    {
+      "label": "before",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [
+        "Invalid or unexpected token",
+        "Invalid or unexpected token"
+      ],
+      "initial": {
+        "vitals": {
+          "lcp": 228,
+          "cls": 0.0005818210177951389
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098",
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 1920
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 1978,
+          "right": 2013
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 1978,
+          "right": 2013
+        },
+        {
+          "tag": "BUTTON",
+          "id": "hide-aside-btn",
+          "cls": "",
+          "left": 1978,
+          "right": 2013
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        }
+      ],
+      "vitals": {
+        "lcp": 228,
+        "cls": 0.0005818210177951389
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/index.css",
+          "duration": 24.099999994039536,
+          "bytes": 117736
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/style.css",
+          "duration": 20.600000001490116,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 11.5,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 11.200000002980232,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 11,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/css/comment.css",
+          "duration": 26.899999998509884,
+          "bytes": 6288
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 14.600000001490116,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/avatar.jpg",
+          "duration": 21.30000000447035,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/1d.png",
+          "duration": 37.899999998509884,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/utils.js",
+          "duration": 29.299999997019768,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/js/main.js",
+          "duration": 72.69999999552965,
+          "bytes": 300
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 55.599999994039536,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 3.6999999955296516,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 72.10000000149012,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8081/butterfly/img/logo.png",
+          "duration": 23.899999998509884,
+          "bytes": 2373717
+        }
+      ]
+    },
+    {
+      "label": "after",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "route": "/about",
+      "status": 200,
+      "errors": [],
+      "initial": {
+        "vitals": {
+          "lcp": 216
+        },
+        "resources": 15
+      },
+      "interactions": {
+        "reply_parent": "610097",
+        "unique_comment_ids": [
+          "comment-610097",
+          "comment-610098"
+        ],
+        "visible_comments": 2,
+        "scrolled_width": 1920
+      },
+      "width": 1920,
+      "scrollWidth": 1920,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "id": "rightside",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-hide",
+          "cls": "",
+          "left": 1978,
+          "right": 2013
+        },
+        {
+          "tag": "BUTTON",
+          "id": "darkmode",
+          "cls": "",
+          "left": 1978,
+          "right": 2013
+        },
+        {
+          "tag": "BUTTON",
+          "id": "hide-aside-btn",
+          "cls": "",
+          "left": 1978,
+          "right": 2013
+        },
+        {
+          "tag": "DIV",
+          "id": "rightside-config-show",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        },
+        {
+          "tag": "BUTTON",
+          "id": "rightside_config",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        },
+        {
+          "tag": "BUTTON",
+          "id": "go-up",
+          "cls": "",
+          "left": 1933,
+          "right": 1968
+        }
+      ],
+      "vitals": {
+        "lcp": 216
+      },
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/index.css",
+          "duration": 21.80000000447035,
+          "bytes": 117736
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/style.css",
+          "duration": 19.100000001490116,
+          "bytes": 5900
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          "duration": 13.699999995529652,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+          "duration": 13.200000002980232,
+          "bytes": 0
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+          "duration": 13.299999997019768,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/css/comment.css",
+          "duration": 23.69999999552965,
+          "bytes": 6439
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 12.400000005960464,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/avatar.jpg",
+          "duration": 37.30000000447035,
+          "bytes": 127964
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/1d.png",
+          "duration": 28.299999997019768,
+          "bytes": 131807
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/utils.js",
+          "duration": 31.299999997019768,
+          "bytes": 8565
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/js/main.js",
+          "duration": 124.10000000149012,
+          "bytes": 300
+        },
+        {
+          "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+          "duration": 3,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/DefualtThumbnail.jpg",
+          "duration": 112.70000000298023,
+          "bytes": 1006689
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp",
+          "duration": 110.69999999552965,
+          "bytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:8082/butterfly/img/logo.png",
+          "duration": 19.600000001490116,
+          "bytes": 2373717
+        }
+      ]
+    }
+  ],
+  "external_failures": [
+    {
+      "url": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+      "error": "URLError"
+    },
+    {
+      "url": "https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css",
+      "error": "URLError"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+      "error": "URLError"
+    },
+    {
+      "url": "https://cravatar.cn/avatar/?d=mp&s=100",
+      "error": "URLError"
+    }
+  ]
+}

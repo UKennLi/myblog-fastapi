@@ -1,5 +1,7 @@
 # 路由审计
 
+> 本文保留第一阶段迁移基线。第二阶段已修复的状态码、摘要、JS、图标与SEO行为以 [optimization-report.md](optimization-report.md) 为准。生产更新见 [production-maintenance.md](production-maintenance.md)。
+
 | 方法 | 路径 | 原Controller |
 |---|---|---|
 | GET | `/` | IndexController.java |

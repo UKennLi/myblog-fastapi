@@ -9,3 +9,15 @@ state/
 dist/
 build/
 .build-wheels/
+
+# Keep real uploads and local backup artifacts out of Git. Existing fixtures remain tracked.
+uploads/
+backups/
+*.sql.gz
+.env.*
+!.env.example
+private.env
+*.cnf
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
