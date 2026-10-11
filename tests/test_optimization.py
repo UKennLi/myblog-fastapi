@@ -155,3 +155,13 @@ def test_page_comments_unique_native_container_and_styles(application):
     assert html.count(f'id="comment-{root}"')==1
     assert html.count('id="comment-form"')==1
     assert '#post-comment .comment-wrap > .vlist' in client.get('/butterfly/css/comment.css').text
+
+
+def test_existing_favicon_option_is_rendered_after_cache_reload(application):
+    from conftest import login,post,query
+    app,client=application
+    login(client)
+    response=post(client,'/admin/options/save',dict(site_favicon='/butterfly/img/1d.png',site_logo='/butterfly/img/logo.png'))
+    assert response.status_code==302
+    assert query(app,"SELECT option_value FROM t_option WHERE option_key='site_favicon'")[0]['option_value']=='/butterfly/img/1d.png'
+    assert '<link rel="icon" href="/butterfly/img/1d.png">' in client.get('/').text

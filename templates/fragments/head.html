@@ -11,7 +11,7 @@
 <meta property="og:description" content="{{ seo_description }}">
 <meta property="og:type" content="{{ og_type }}">
 {% if og_image %}<meta property="og:image" content="{{ og_image }}">{% endif %}
-<link rel="icon" href="{{ (site_logo if not is_empty(site_logo) else '/favicon.ico') }}">
+<link rel="icon" href="{{ (site_favicon if not is_empty(site_favicon) else (site_logo if not is_empty(site_logo) else '/favicon.ico')) }}">
 <link rel="stylesheet" href="/butterfly/css/index.css">
 <link rel="stylesheet" href="/butterfly/css/style.css">
 <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
