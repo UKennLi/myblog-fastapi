@@ -1,5 +1,6 @@
 """Public URLs come only from operator configuration, never request headers."""
 from ipaddress import ip_address
+import re
 from urllib.parse import quote, urlsplit, urlunsplit
 
 
@@ -22,10 +23,11 @@ def normalize_site_url(value):
             if not ip_address(host).is_global:
                 return ""
         except ValueError:
-            if "." not in host:
+            host = host.encode("idna").decode("ascii")
+            if "." not in host or not re.search(r"[a-zA-Z]", host) or not all(re.fullmatch(r"[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?", label) for label in host.split(".")):
                 return ""
         return urlunsplit((parts.scheme, parts.netloc, parts.path.rstrip("/"), "", ""))
-    except ValueError:
+    except (ValueError, UnicodeError):
         return ""
 
 

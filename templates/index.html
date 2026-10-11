@@ -1,5 +1,5 @@
 {% extends "layout/main.html" %}
-{% set title = '首页 - ' ~ site_title %}
+{% set title = (('分类：' ~ currentCategory.name) if currentCategory != none else (('标签：' ~ currentTag.name) if currentTag != none else (('搜索：' ~ keyword) if keyword != none else '首页'))) ~ ' - ' ~ site_title %}
 {% set headerClass = 'full_page' %}
 {% set headerStyle = 'background-image: url(/butterfly/img/DefualtThumbnail.jpg)' %}
 {% block header_content %}
@@ -14,7 +14,7 @@
 {% for post in recentPosts %}<div class="recent-post-item">
 <div class="post_cover {{ ('right' if (loop.index is even) else 'left') }}">
 <a href="{{ '/post/' ~ post.slug }}" title="{{ post.title }}">
-<img class="post-bg" onerror="this.onerror=null;this.src=&#x27;/butterfly/img/404.jpg&#x27;" src="{{ (post.thumbnail if not is_empty(post.thumbnail) else '/butterfly/img/DefualtThumbnail.jpg') }}" alt="{{ post.title }}">
+<img class="post-bg" {% if not loop.first %}loading="lazy"{% endif %} decoding="async" onerror="this.onerror=null;this.src=&#x27;/butterfly/img/404.jpg&#x27;" src="{{ (post.thumbnail if not is_empty(post.thumbnail) else '/butterfly/img/DefualtThumbnail.jpg') }}" alt="{{ post.title }}">
 </a>
 </div>
 <div class="recent-post-info">

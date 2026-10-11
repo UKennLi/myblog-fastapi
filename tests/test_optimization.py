@@ -3,7 +3,7 @@ from conftest import write
 from app.services.site_url import normalize_site_url
 
 
-@pytest.mark.parametrize("value", [None, "", "null", "javascript:alert(1)", "http://127.0.0.1:8000", "http://localhost", "https://user:pass@example.com", "https://example.com/?x=1", "https://example.com/#x", "https://example.com\n", "http://10.0.0.1", "https://example.com:bad"])
+@pytest.mark.parametrize("value", [None, "", "null", "javascript:alert(1)", "http://127.0.0.1:8000", "http://localhost", "https://user:pass@example.com", "https://example.com/?x=1", "https://example.com/#x", "https://example.com\n", "http://10.0.0.1", "https://example.com:bad", "http://127.1", "https://bad_host.example"])
 def test_invalid_public_origins(value):
     # Surrounding whitespace is harmless; embedded control characters are not.
     if value == "https://example.com\n":
@@ -101,6 +101,51 @@ def test_markdown_cache_updates_and_keeps_html_security_contract():
     before=_cached_markdown.cache_info().currsize
     render_markdown('x'*65537)
     assert _cached_markdown.cache_info().currsize==before
+
+
+def test_seo_sitemap_fresh_published_only_and_unconfigured_safe(application):
+    import xml.etree.ElementTree as ET
+    from conftest import login,post
+    app,client=application
+    with app.state.options.lock: app.state.options.options.pop('siteUrl',None)
+    app.state.settings.public_site_url=''
+    assert client.get('/sitemap.xml').status_code==503
+    assert 'Sitemap:' not in client.get('/robots.txt').text
+    assert 'rel="canonical"' not in client.get('/').text
+    app.state.settings.public_site_url='https://riuken.com'
+    html=client.get('/post/hello-world').text
+    assert 'rel="canonical" href="https://riuken.com/post/hello-world"' in html
+    assert 'property="og:type" content="article"' in html
+    assert 'name="description"' in html
+    assert 'name="robots" content="noindex,follow"' in client.get('/search?keyword=Spring').text
+    assert 'https://riuken.com/?page=2' in client.get('/?page=2').text
+    assert 'Disallow: /admin' in client.get('/robots.txt').text
+    assert 'Sitemap: https://riuken.com/sitemap.xml' in client.get('/robots.txt').text
+    login(client)
+    for slug,kind,status in [('seo-live','POST','PUBLISHED'),('seo-draft','POST','DRAFT'),('seo-page','PAGE','PUBLISHED'),('seo-page-draft','PAGE','DRAFT')]:
+        post(client,'/admin/posts/save',dict(title='SEO',slug=slug,content='正文',type=kind,status=status))
+    def urls():
+        r=client.get('/sitemap.xml');assert r.status_code==200
+        return [n.text for n in ET.fromstring(r.content).findall('.//{*}loc')]
+    paths=urls()
+    assert 'https://riuken.com/post/seo-live' in paths and 'https://riuken.com/seo-page' in paths
+    assert not any('draft' in u or '/admin' in u or '/login' in u or '127.0.0.1' in u for u in paths)
+    from conftest import query
+    id=query(app,"SELECT id FROM t_post WHERE slug='seo-live'")[0]['id']
+    post(client,f'/admin/posts/delete/{id}')
+    assert 'https://riuken.com/post/seo-live' not in urls()
+
+
+def test_static_browser_cache_and_lazy_non_hero_images(application):
+    app,client=application
+    r=client.get('/butterfly/css/index.css')
+    assert r.headers['cache-control']=='private, max-age=300, must-revalidate'
+    assert client.get('/butterfly/css/index.css',headers={'If-None-Match':r.headers['etag']}).status_code==304
+    assert 'no-store' in client.get('/').headers['cache-control']
+    assert client.get('/butterfly/missing.css').status_code==404
+    assert 'no-store' in client.get('/butterfly/missing.css').headers['cache-control']
+    html=client.get('/').text
+    assert 'loading="lazy"' in html and 'decoding="async"' in html
 
 
 def test_page_comments_unique_native_container_and_styles(application):

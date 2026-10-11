@@ -83,6 +83,21 @@ def context(request, repo=None, public=False, **values):
                           dict(name="关于", url="/about", icon="fas fa-user"),
                       ])
     result.update(values)
+    item = values.get("post")
+    result["seo_description"] = display_summary((item.get("summary") or item.get("content")) if item else result.get("site_description"))[:160]
+    result["seo_noindex"] = request.url.path == "/search" or bool(item and item.get("status") != "PUBLISHED")
+    result["canonical_url"] = public_url(result["siteUrl"], request.url.path) if result["siteUrl"] else ""
+    if result["canonical_url"] and not item and request.query_params.get("page", "1").isdigit() and int(request.query_params.get("page", "1")) > 1:
+        result["canonical_url"] += "?page=" + str(int(request.query_params["page"]))
+    result["og_type"] = "article" if item and item.get("type") == "POST" else "website"
+    result["og_image"] = ""
+    if item and item.get("thumbnail"):
+        image = item["thumbnail"]
+        parts = urlsplit(image)
+        if parts.scheme in ("http", "https") and parts.hostname and not parts.username and not parts.password:
+            result["og_image"] = image
+        elif image.startswith("/") and not image.startswith("//") and result["siteUrl"]:
+            result["og_image"] = public_url(result["siteUrl"], image)
     return result
 
 

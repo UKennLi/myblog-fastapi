@@ -1,7 +1,7 @@
 {% macro page_comments(comments) %}
 
 {% for comment in comments %}<div class="vcard" id="{{ 'comment-' ~ comment.id }}">
-<img class="vimg" src="{{ 'https://cravatar.cn/avatar/' ~ comment.gravatarMd5 ~ '?d=mp&s=100' }}">
+<img class="vimg" alt="{{ comment.author }}" src="{{ 'https://cravatar.cn/avatar/' ~ comment.gravatarMd5 ~ '?d=mp&s=100' }}">
 <div class="vh">
 <div class="vhead">
 <a class="vnick" target="_blank" rel="nofollow" href="{{ comment.url }}">{{ comment.author }}</a>

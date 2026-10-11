@@ -9,6 +9,7 @@ from app.core.config import ROOT, Settings
 from app.core.exceptions import BindingError, CompatibilityError
 from app.core.middleware import HeadMiddleware, SecurityMiddleware, error_response
 from app.core.security import SessionStore
+from app.core.static_cache import StaticCacheMiddleware
 from app.db.session import make_database
 from app.repositories.blog import BlogRepository
 from app.services.options import OptionCache
@@ -42,6 +43,7 @@ def create_app(settings=None):
     settings.uploads_dir.mkdir(parents=True, exist_ok=True)
     app.add_middleware(SecurityMiddleware)
     app.add_middleware(HeadMiddleware)
+    app.add_middleware(StaticCacheMiddleware)
 
     @app.exception_handler(RequestValidationError)
     @app.exception_handler(BindingError)
