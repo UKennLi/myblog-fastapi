@@ -1,0 +1,149 @@
+{
+  "results": [
+    {
+      "round": 1,
+      "target": "old",
+      "route": "/",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.816610016998311,
+      "throughput_rps": 122.45747409219794,
+      "p50_ms": 30.8522589984932,
+      "p95_ms": 45.6813639975735,
+      "errors": 0
+    },
+    {
+      "round": 1,
+      "target": "old",
+      "route": "/post/hello-world",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7804380980014685,
+      "throughput_rps": 128.13316040833752,
+      "p50_ms": 28.937477996805683,
+      "p95_ms": 55.01197100238642,
+      "errors": 0
+    },
+    {
+      "round": 1,
+      "target": "old",
+      "route": "/search?keyword=Spring",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7011968529986916,
+      "throughput_rps": 142.61330405626705,
+      "p50_ms": 27.363716006220784,
+      "p95_ms": 38.02472299867077,
+      "errors": 0
+    },
+    {
+      "round": 1,
+      "target": "new",
+      "route": "/",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7804541590012377,
+      "throughput_rps": 128.130523550508,
+      "p50_ms": 30.121593998046592,
+      "p95_ms": 40.10181700141402,
+      "errors": 0
+    },
+    {
+      "round": 1,
+      "target": "new",
+      "route": "/post/hello-world",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.8132977610002854,
+      "throughput_rps": 122.95619734278958,
+      "p50_ms": 29.334715000004508,
+      "p95_ms": 51.86577799759107,
+      "errors": 0
+    },
+    {
+      "round": 1,
+      "target": "new",
+      "route": "/search?keyword=Spring",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7238683120012865,
+      "throughput_rps": 138.14667439099375,
+      "p50_ms": 28.027724001731258,
+      "p95_ms": 36.37007700308459,
+      "errors": 0
+    },
+    {
+      "round": 2,
+      "target": "new",
+      "route": "/",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.8251773160009179,
+      "throughput_rps": 121.18607487252929,
+      "p50_ms": 31.826894999539945,
+      "p95_ms": 43.73415200097952,
+      "errors": 0
+    },
+    {
+      "round": 2,
+      "target": "new",
+      "route": "/post/hello-world",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7749704960006056,
+      "throughput_rps": 129.0371704678701,
+      "p50_ms": 30.18198299832875,
+      "p95_ms": 42.734945003758185,
+      "errors": 0
+    },
+    {
+      "round": 2,
+      "target": "new",
+      "route": "/search?keyword=Spring",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7123034099931829,
+      "throughput_rps": 140.38961290520433,
+      "p50_ms": 28.157298998849,
+      "p95_ms": 37.03174100519391,
+      "errors": 0
+    },
+    {
+      "round": 2,
+      "target": "old",
+      "route": "/",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7567906859985669,
+      "throughput_rps": 132.13693277428808,
+      "p50_ms": 29.781732999254018,
+      "p95_ms": 39.76504599995678,
+      "errors": 0
+    },
+    {
+      "round": 2,
+      "target": "old",
+      "route": "/post/hello-world",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7124168070004089,
+      "throughput_rps": 140.36726677048006,
+      "p50_ms": 27.649502000713255,
+      "p95_ms": 36.70484900067095,
+      "errors": 0
+    },
+    {
+      "round": 2,
+      "target": "old",
+      "route": "/search?keyword=Spring",
+      "requests": 100,
+      "concurrency": 4,
+      "elapsed_seconds": 0.6765400170042994,
+      "throughput_rps": 147.81091655567877,
+      "p50_ms": 26.860221005335916,
+      "p95_ms": 36.05674499704037,
+      "errors": 0
+    }
+  ],
+  "conditions": "Same host, separate cloned MySQL 8.4 instances, warmed existing session, one process each; 2 rounds reverse order; small public seed dataset; CPU/RSS samples and MySQL counters; no production sizing inference."
+}

@@ -23,6 +23,7 @@ class Settings(BaseSettings):
     db_pool_size: int = 5
     db_max_overflow: int = 10
     legacy_template_js: bool = True
+    public_site_url: str = ""
 
     @field_validator("session_secret")
     @classmethod

@@ -43,7 +43,7 @@
 <div class="post-copyright__type">
 <span class="post-copyright-meta">文章链接: </span>
 <span class="post-copyright-info">
-<a href="{{ '/post/' ~ post.slug }}">{{ ('null' if siteUrl is none else siteUrl) ~ '/post/' ~ post.slug }}</a>
+<a href="{{ public_url('/post/' ~ post.slug) }}">{{ public_url('/post/' ~ post.slug) }}</a>
 </span>
 </div>
 <div class="post-copyright__notice">
@@ -104,7 +104,6 @@
 </div>{% endif %}
 </div>
 </div>
-{{ post_comments(comments) }}
 </div>
 {% endblock %}
 {% block scripts %}

@@ -8,6 +8,7 @@ from markupsafe import Markup
 import re
 from app.core.config import ROOT
 from app.core.security import masked_csrf
+from app.services.site_url import public_site_url, public_url
 
 
 def date_format(value, pattern):
@@ -63,6 +64,8 @@ def context(request, repo=None, public=False, **values):
         "statsCategoryCount", "siteUrl", "isPost", "currentCategory", "currentTag", "keyword",
     ])
     result.update(request.app.state.options.get())
+    result["siteUrl"] = public_site_url(request.app.state.settings, result)
+    result["public_url"] = lambda path: public_url(result["siteUrl"], path)
     result.update(currentURI=request.url.path,
                   param=dict(success=request.query_params.get("success"), error="error" in request.query_params,
                              logout="logout" in request.query_params),
